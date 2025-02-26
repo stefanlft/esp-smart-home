@@ -1,0 +1,19 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6325: piezo_wrapper_on at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:65
+[0m
+[0;33m--- 0x400d64f8: led_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/led_wrapper.c:7
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400d6322: piezo_wrapper_on at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:64
+0x400d6399: piezo_wrapper_play_note at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:91
+0x400d6457: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:128
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

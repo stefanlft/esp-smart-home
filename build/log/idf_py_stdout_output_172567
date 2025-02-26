@@ -1,0 +1,833 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=254c0h (152768) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000354e8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000354f4 vaddr=3ffb0000 size=03d18h ( 15640) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00039214 vaddr=40080000 size=06e04h ( 28164) load[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=8cd80h (576896) map[0m
+[0;32mI (380) esp_image: segment 5: paddr=000ccda8 vaddr=40086e04 size=0fc58h ( 64600) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (446) cpu_start: App version:      1[0m
+[0;32mI (451) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  ce042fc90...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (469) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (474) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (478) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (490) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 3FFB7EC8 len 00028138 (160 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40096A5C len 000095A4 (37 KiB): IRAM[0m
+[0;32mI (523) spi_flash: detected chip: generic[0m
+[0;32mI (526) spi_flash: flash io: dio[0m
+[0;33mW (530) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (594) wifi:wifi driver task: 3ffc3264, prio:23, stack:6656, core=0[0m
+[0;32mI (604) wifi:wifi firmware version: 3865d68[0m
+[0;32mI (604) wifi:wifi certification version: v7.0[0m
+[0;32mI (604) wifi:config NVS flash: enabled[0m
+[0;32mI (604) wifi:config nano formating: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (614) wifi:Init management short buffer num: 32[0m
+[0;32mI (624) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (624) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (634) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (634) wifi_init: accept mbox: 6[0m
+[0;32mI (644) wifi_init: tcpip mbox: 32[0m
+[0;32mI (644) wifi_init: udp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp tx win: 5760[0m
+[0;32mI (654) wifi_init: tcp rx win: 5760[0m
+[0;32mI (664) wifi_init: tcp mss: 1440[0m
+[0;32mI (664) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (674) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (684) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (764) wifi:mode : sta (30:c6:f7:04:86:20) + softAP (30:c6:f7:04:86:21)[0m
+[0;32mI (764) wifi:enable tsf[0m
+[0;32mI (764) wifi:Total power save buffer number: 16[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (774) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (774) WIFI_HANDLER: Wi-Fi AP Mode Initialized[0m
+[0;32mI (774) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (794) WEB_HANDLER: STARTED HTTP[0m
+[0;31mE (1574) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1574) DHT: Could not read data from sensor[0m
+[0;32mI (2594) main: Temperature: 2.0°C[0m
+[0;32mI (2594) main: Humidity:    -0.0%[0m
+[0;32mI (2594) main: Lightness:   8.0%[0m
+[0;32mI (2594) main: ------------------------------------------[0m
+[0;32mI (4594) main: Temperature: 25.0°C[0m
+[0;32mI (4594) main: Humidity:    40.0%[0m
+[0;32mI (4594) main: Lightness:   11.0%[0m
+[0;32mI (4594) main: ------------------------------------------[0m
+[0;32mI (6594) main: Temperature: 25.0°C[0m
+[0;32mI (6594) main: Humidity:    40.0%[0m
+[0;32mI (6594) main: Lightness:   4.0%[0m
+[0;32mI (6594) main: ------------------------------------------[0m
+[0;32mI (8594) main: Temperature: 25.0°C[0m
+[0;32mI (8594) main: Humidity:    40.0%[0m
+[0;32mI (8594) main: Lightness:   20.0%[0m
+[0;32mI (8594) main: ------------------------------------------[0m
+[0;32mI (10594) main: Temperature: 25.0°C[0m
+[0;32mI (10594) main: Humidity:    40.0%[0m
+[0;32mI (10594) main: Lightness:   21.0%[0m
+[0;32mI (10594) main: ------------------------------------------[0m
+[0;32mI (12594) main: Temperature: 25.0°C[0m
+[0;32mI (12594) main: Humidity:    40.0%[0m
+[0;32mI (12594) main: Lightness:   23.0%[0m
+[0;32mI (12594) main: ------------------------------------------[0m
+[0;32mI (14594) main: Temperature: 25.0°C[0m
+[0;32mI (14594) main: Humidity:    40.0%[0m
+[0;32mI (14594) main: Lightness:   2.0%[0m
+[0;32mI (14594) main: ------------------------------------------[0m
+[0;32mI (16594) main: Temperature: 25.0°C[0m
+[0;32mI (16594) main: Humidity:    40.0%[0m
+[0;32mI (16594) main: Lightness:   4.0%[0m
+[0;32mI (16594) main: ------------------------------------------[0m
+[0;32mI (18594) main: Temperature: 25.0°C[0m
+[0;32mI (18594) main: Humidity:    41.0%[0m
+[0;32mI (18594) main: Lightness:   19.0%[0m
+[0;32mI (18594) main: ------------------------------------------[0m
+[0;32mI (20594) main: Temperature: 25.0°C[0m
+[0;32mI (20594) main: Humidity:    41.0%[0m
+[0;32mI (20594) main: Lightness:   26.0%[0m
+[0;32mI (20594) main: ------------------------------------------[0m
+[0;32mI (22594) main: Temperature: 25.0°C[0m
+[0;32mI (22594) main: Humidity:    41.0%[0m
+[0;32mI (22594) main: Lightness:   26.0%[0m
+[0;32mI (22594) main: ------------------------------------------[0m
+[0;32mI (24594) main: Temperature: 25.0°C[0m
+[0;32mI (24594) main: Humidity:    41.0%[0m
+[0;32mI (24594) main: Lightness:   5.0%[0m
+[0;32mI (24594) main: ------------------------------------------[0m
+[0;32mI (26594) main: Temperature: 25.0°C[0m
+[0;32mI (26594) main: Humidity:    41.0%[0m
+[0;32mI (26594) main: Lightness:   25.0%[0m
+[0;32mI (26594) main: ------------------------------------------[0m
+[0;32mI (28594) main: Temperature: 25.0°C[0m
+[0;32mI (28594) main: Humidity:    41.0%[0m
+[0;32mI (28594) main: Lightness:   26.0%[0m
+[0;32mI (28594) main: ------------------------------------------[0m
+[0;32mI (30594) main: Temperature: 25.0°C[0m
+[0;32mI (30594) main: Humidity:    41.0%[0m
+[0;32mI (30594) main: Lightness:   26.0%[0m
+[0;32mI (30594) main: ------------------------------------------[0m
+[0;32mI (32594) main: Temperature: 25.0°C[0m
+[0;32mI (32594) main: Humidity:    41.0%[0m
+[0;32mI (32594) main: Lightness:   26.0%[0m
+[0;32mI (32594) main: ------------------------------------------[0m
+[0;32mI (34594) main: Temperature: 25.0°C[0m
+[0;32mI (34594) main: Humidity:    41.0%[0m
+[0;32mI (34594) main: Lightness:   26.0%[0m
+[0;32mI (34594) main: ------------------------------------------[0m
+[0;32mI (36594) main: Temperature: 25.0°C[0m
+[0;32mI (36594) main: Humidity:    41.0%[0m
+[0;32mI (36594) main: Lightness:   26.0%[0m
+[0;32mI (36594) main: ------------------------------------------[0m
+[0;32mI (38594) main: Temperature: 25.0°C[0m
+[0;32mI (38594) main: Humidity:    41.0%[0m
+[0;32mI (38594) main: Lightness:   25.0%[0m
+[0;32mI (38594) main: ------------------------------------------[0m
+[0;32mI (40594) main: Temperature: 25.0°C[0m
+[0;32mI (40594) main: Humidity:    41.0%[0m
+[0;32mI (40594) main: Lightness:   26.0%[0m
+[0;32mI (40594) main: ------------------------------------------[0m
+[0;32mI (42594) main: Temperature: 25.0°C[0m
+[0;32mI (42594) main: Humidity:    40.0%[0m
+[0;32mI (42594) main: Lightness:   26.0%[0m
+[0;32mI (42594) main: ------------------------------------------[0m
+[0;32mI (44594) main: Temperature: 25.0°C[0m
+[0;32mI (44594) main: Humidity:    40.0%[0m
+[0;32mI (44594) main: Lightness:   26.0%[0m
+[0;32mI (44594) main: ------------------------------------------[0m
+[0;32mI (46594) main: Temperature: 25.0°C[0m
+[0;32mI (46594) main: Humidity:    40.0%[0m
+[0;32mI (46594) main: Lightness:   26.0%[0m
+[0;32mI (46594) main: ------------------------------------------[0m
+[0;32mI (48594) main: Temperature: 25.0°C[0m
+[0;32mI (48594) main: Humidity:    40.0%[0m
+[0;32mI (48594) main: Lightness:   18.0%[0m
+[0;32mI (48594) main: ------------------------------------------[0m
+[0;32mI (50594) main: Temperature: 24.0°C[0m
+[0;32mI (50594) main: Humidity:    40.0%[0m
+[0;32mI (50594) main: Lightness:   23.0%[0m
+[0;32mI (50594) main: ------------------------------------------[0m
+[0;32mI (52594) main: Temperature: 24.0°C[0m
+[0;32mI (52594) main: Humidity:    40.0%[0m
+[0;32mI (52594) main: Lightness:   23.0%[0m
+[0;32mI (52594) main: ------------------------------------------[0m
+[0;32mI (54594) main: Temperature: 24.0°C[0m
+[0;32mI (54594) main: Humidity:    40.0%[0m
+[0;32mI (54594) main: Lightness:   33.0%[0m
+[0;32mI (54594) main: ------------------------------------------[0m
+[0;32mI (56594) main: Temperature: 24.0°C[0m
+[0;32mI (56594) main: Humidity:    41.0%[0m
+[0;32mI (56594) main: Lightness:   36.0%[0m
+[0;32mI (56594) main: ------------------------------------------[0m
+[0;32mI (58594) main: Temperature: 24.0°C[0m
+[0;32mI (58594) main: Humidity:    41.0%[0m
+[0;32mI (58594) main: Lightness:   30.0%[0m
+[0;32mI (58594) main: ------------------------------------------[0m
+[0;32mI (60594) main: Temperature: 24.0°C[0m
+[0;32mI (60594) main: Humidity:    41.0%[0m
+[0;32mI (60594) main: Lightness:   25.0%[0m
+[0;32mI (60594) main: ------------------------------------------[0m
+[0;32mI (62594) main: Temperature: 24.0°C[0m
+[0;32mI (62594) main: Humidity:    40.0%[0m
+[0;32mI (62594) main: Lightness:   28.0%[0m
+[0;32mI (62594) main: ------------------------------------------[0m
+[0;32mI (64594) main: Temperature: 24.0°C[0m
+[0;32mI (64594) main: Humidity:    40.0%[0m
+[0;32mI (64594) main: Lightness:   21.0%[0m
+[0;32mI (64594) main: ------------------------------------------[0m
+[0;32mI (66594) main: Temperature: 24.0°C[0m
+[0;32mI (66594) main: Humidity:    41.0%[0m
+[0;32mI (66594) main: Lightness:   7.0%[0m
+[0;32mI (66594) main: ------------------------------------------[0m
+[0;32mI (68594) main: Temperature: 24.0°C[0m
+[0;32mI (68594) main: Humidity:    41.0%[0m
+[0;32mI (68594) main: Lightness:   6.0%[0m
+[0;32mI (68594) main: ------------------------------------------[0m
+[0;31mE (1592) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1592) DHT: Could not read data from sensor[0m
+[0;32mI (2612) main: Temperature: 2.0°C[0m
+[0;32mI (2612) main: Humidity:    -0.0%[0m
+[0;32mI (2612) main: Lightness:   10.0%[0m
+[0;32mI (2612) main: ------------------------------------------[0m
+[0;32mI (4612) main: Temperature: 24.0°C[0m
+[0;32mI (4612) main: Humidity:    41.0%[0m
+[0;32mI (4612) main: Lightness:   15.0%[0m
+[0;32mI (4612) main: ------------------------------------------[0m
+[0;32mI (6612) main: Temperature: 24.0°C[0m
+[0;32mI (6612) main: Humidity:    41.0%[0m
+[0;32mI (6612) main: Lightness:   12.0%[0m
+[0;32mI (6612) main: ------------------------------------------[0m
+[0;32mI (8612) main: Temperature: 24.0°C[0m
+[0;32mI (8612) main: Humidity:    42.0%[0m
+[0;32mI (8612) main: Lightness:   15.0%[0m
+[0;32mI (8612) main: ------------------------------------------[0m
+[0;32mI (10612) main: Temperature: 24.0°C[0m
+[0;32mI (10612) main: Humidity:    41.0%[0m
+[0;32mI (10612) main: Lightness:   20.0%[0m
+[0;32mI (10612) main: ------------------------------------------[0m
+[0;32mI (12612) main: Temperature: 24.0°C[0m
+[0;32mI (12612) main: Humidity:    41.0%[0m
+[0;32mI (12612) main: Lightness:   23.0%[0m
+[0;32mI (12612) main: ------------------------------------------[0m
+[0;32mI (14612) main: Temperature: 24.0°C[0m
+[0;32mI (14612) main: Humidity:    41.0%[0m
+[0;32mI (14612) main: Lightness:   23.0%[0m
+[0;32mI (14612) main: ------------------------------------------[0m
+[0;32mI (16612) main: Temperature: 24.0°C[0m
+[0;32mI (16612) main: Humidity:    41.0%[0m
+[0;32mI (16612) main: Lightness:   32.0%[0m
+[0;32mI (16612) main: ------------------------------------------[0m
+[0;32mI (18612) main: Temperature: 24.0°C[0m
+[0;32mI (18612) main: Humidity:    41.0%[0m
+[0;32mI (18612) main: Lightness:   24.0%[0m
+[0;32mI (18612) main: ------------------------------------------[0m
+[0;32mI (20612) main: Temperature: 24.0°C[0m
+[0;32mI (20612) main: Humidity:    41.0%[0m
+[0;32mI (20612) main: Lightness:   14.0%[0m
+[0;32mI (20612) main: ------------------------------------------[0m
+[0;32mI (22612) main: Temperature: 24.0°C[0m
+[0;32mI (22612) main: Humidity:    41.0%[0m
+[0;32mI (22612) main: Lightness:   23.0%[0m
+[0;32mI (22612) main: ------------------------------------------[0m
+[0;32mI (24612) main: Temperature: 24.0°C[0m
+[0;32mI (24612) main: Humidity:    41.0%[0m
+[0;32mI (24612) main: Lightness:   58.0%[0m
+[0;32mI (24612) main: ------------------------------------------[0m
+[0;32mI (26612) main: Temperature: 24.0°C[0m
+[0;32mI (26612) main: Humidity:    41.0%[0m
+[0;32mI (26612) main: Lightness:   58.0%[0m
+[0;32mI (26612) main: ------------------------------------------[0m
+[0;32mI (28612) main: Temperature: 24.0°C[0m
+[0;32mI (28612) main: Humidity:    41.0%[0m
+[0;32mI (28612) main: Lightness:   59.0%[0m
+[0;32mI (28612) main: ------------------------------------------[0m
+[0;32mI (30612) main: Temperature: 24.0°C[0m
+[0;32mI (30612) main: Humidity:    41.0%[0m
+[0;32mI (30612) main: Lightness:   59.0%[0m
+[0;32mI (30612) main: ------------------------------------------[0m
+[0;32mI (32612) main: Temperature: 24.0°C[0m
+[0;32mI (32612) main: Humidity:    41.0%[0m
+[0;32mI (32612) main: Lightness:   59.0%[0m
+[0;32mI (32612) main: ------------------------------------------[0m
+[0;32mI (34612) main: Temperature: 24.0°C[0m
+[0;32mI (34612) main: Humidity:    41.0%[0m
+[0;32mI (34612) main: Lightness:   59.0%[0m
+[0;32mI (34612) main: ------------------------------------------[0m
+[0;32mI (36612) main: Temperature: 24.0°C[0m
+[0;32mI (36612) main: Humidity:    41.0%[0m
+[0;32mI (36612) main: Lightness:   2.0%[0m
+[0;32mI (36612) main: ------------------------------------------[0m
+[0;32mI (38612) main: Temperature: 24.0°C[0m
+[0;32mI (38612) main: Humidity:    41.0%[0m
+[0;32mI (38612) main: Lightness:   20.0%[0m
+[0;32mI (38612) main: ------------------------------------------[0m
+[0;32mI (40612) main: Temperature: 24.0°C[0m
+[0;32mI (40612) main: Humidity:    41.0%[0m
+[0;32mI (40612) main: Lightness:   0.0%[0m
+[0;32mI (40612) main: ------------------------------------------[0m
+[0;32mI (42612) main: Temperature: 24.0°C[0m
+[0;32mI (42612) main: Humidity:    41.0%[0m
+[0;32mI (42612) main: Lightness:   6.0%[0m
+[0;32mI (42612) main: ------------------------------------------[0m
+[0;32mI (44612) main: Temperature: 24.0°C[0m
+[0;32mI (44612) main: Humidity:    41.0%[0m
+[0;32mI (44612) main: Lightness:   0.0%[0m
+[0;32mI (44612) main: ------------------------------------------[0m
+[0;32mI (46612) main: Temperature: 24.0°C[0m
+[0;32mI (46612) main: Humidity:    42.0%[0m
+[0;32mI (46612) main: Lightness:   0.0%[0m
+[0;32mI (46612) main: ------------------------------------------[0m
+[0;32mI (48612) main: Temperature: 24.0°C[0m
+[0;32mI (48612) main: Humidity:    42.0%[0m
+[0;32mI (48612) main: Lightness:   1.0%[0m
+[0;32mI (48612) main: ------------------------------------------[0m
+[0;32mI (50612) main: Temperature: 24.0°C[0m
+[0;32mI (50612) main: Humidity:    42.0%[0m
+[0;32mI (50612) main: Lightness:   0.0%[0m
+[0;32mI (50612) main: ------------------------------------------[0m
+[0;32mI (52612) main: Temperature: 24.0°C[0m
+[0;32mI (52612) main: Humidity:    42.0%[0m
+[0;32mI (52612) main: Lightness:   46.0%[0m
+[0;32mI (52612) main: ------------------------------------------[0m
+[0;32mI (54612) main: Temperature: 24.0°C[0m
+[0;32mI (54612) main: Humidity:    42.0%[0m
+[0;32mI (54612) main: Lightness:   27.0%[0m
+[0;32mI (54612) main: ------------------------------------------[0m
+[0;32mI (56612) main: Temperature: 24.0°C[0m
+[0;32mI (56612) main: Humidity:    43.0%[0m
+[0;32mI (56612) main: Lightness:   56.0%[0m
+[0;32mI (56612) main: ------------------------------------------[0m
+[0;32mI (58612) main: Temperature: 24.0°C[0m
+[0;32mI (58612) main: Humidity:    43.0%[0m
+[0;32mI (58612) main: Lightness:   55.0%[0m
+[0;32mI (58612) main: ------------------------------------------[0m
+[0;32mI (60612) main: Temperature: 24.0°C[0m
+[0;32mI (60612) main: Humidity:    43.0%[0m
+[0;32mI (60612) main: Lightness:   56.0%[0m
+[0;32mI (60612) main: ------------------------------------------[0m
+[0;32mI (62612) main: Temperature: 24.0°C[0m
+[0;32mI (62612) main: Humidity:    42.0%[0m
+[0;32mI (62612) main: Lightness:   55.0%[0m
+[0;32mI (62612) main: ------------------------------------------[0m
+[0;32mI (64612) main: Temperature: 24.0°C[0m
+[0;32mI (64612) main: Humidity:    42.0%[0m
+[0;32mI (64612) main: Lightness:   56.0%[0m
+[0;32mI (64612) main: ------------------------------------------[0m
+[0;32mI (66612) main: Temperature: 24.0°C[0m
+[0;32mI (66612) main: Humidity:    42.0%[0m
+[0;32mI (66612) main: Lightness:   55.0%[0m
+[0;32mI (66612) main: ------------------------------------------[0m
+[0;32mI (68612) main: Temperature: 24.0°C[0m
+[0;32mI (68612) main: Humidity:    42.0%[0m
+[0;32mI (68612) main: Lightness:   55.0%[0m
+[0;32mI (68612) main: ------------------------------------------[0m
+[0;32mI (70612) main: Temperature: 24.0°C[0m
+[0;32mI (70612) main: Humidity:    42.0%[0m
+[0;32mI (70612) main: Lightness:   55.0%[0m
+[0;32mI (70612) main: ------------------------------------------[0m
+[0;32mI (72612) main: Temperature: 24.0°C[0m
+[0;32mI (72612) main: Humidity:    42.0%[0m
+[0;32mI (72612) main: Lightness:   55.0%[0m
+[0;32mI (72612) main: ------------------------------------------[0m
+[0;32mI (74612) main: Temperature: 24.0°C[0m
+[0;32mI (74612) main: Humidity:    42.0%[0m
+[0;32mI (74612) main: Lightness:   55.0%[0m
+[0;32mI (74612) main: ------------------------------------------[0m
+[0;32mI (76612) main: Temperature: 24.0°C[0m
+[0;32mI (76612) main: Humidity:    41.0%[0m
+[0;32mI (76612) main: Lightness:   55.0%[0m
+[0;32mI (76612) main: ------------------------------------------[0m
+[0;32mI (78612) main: Temperature: 24.0°C[0m
+[0;32mI (78612) main: Humidity:    41.0%[0m
+[0;32mI (78612) main: Lightness:   55.0%[0m
+[0;32mI (78612) main: ------------------------------------------[0m
+[0;32mI (80612) main: Temperature: 24.0°C[0m
+[0;32mI (80612) main: Humidity:    41.0%[0m
+[0;32mI (80612) main: Lightness:   55.0%[0m
+[0;32mI (80612) main: ------------------------------------------[0m
+[0;32mI (82612) main: Temperature: 24.0°C[0m
+[0;32mI (82612) main: Humidity:    41.0%[0m
+[0;32mI (82612) main: Lightness:   55.0%[0m
+[0;32mI (82612) main: ------------------------------------------[0m
+[0;32mI (84612) main: Temperature: 24.0°C[0m
+[0;32mI (84612) main: Humidity:    41.0%[0m
+[0;32mI (84612) main: Lightness:   55.0%[0m
+[0;32mI (84612) main: ------------------------------------------[0m
+[0;32mI (86612) main: Temperature: 24.0°C[0m
+[0;32mI (86612) main: Humidity:    41.0%[0m
+[0;32mI (86612) main: Lightness:   55.0%[0m
+[0;32mI (86612) main: ------------------------------------------[0m
+[0;32mI (88612) main: Temperature: 24.0°C[0m
+[0;32mI (88612) main: Humidity:    41.0%[0m
+[0;32mI (88612) main: Lightness:   55.0%[0m
+[0;32mI (88612) main: ------------------------------------------[0m
+[0;32mI (90612) main: Temperature: 24.0°C[0m
+[0;32mI (90612) main: Humidity:    41.0%[0m
+[0;32mI (90612) main: Lightness:   55.0%[0m
+[0;32mI (90612) main: ------------------------------------------[0m
+[0;32mI (92612) main: Temperature: 24.0°C[0m
+[0;32mI (92612) main: Humidity:    41.0%[0m
+[0;32mI (92612) main: Lightness:   55.0%[0m
+[0;32mI (92612) main: ------------------------------------------[0m
+[0;32mI (94612) main: Temperature: 24.0°C[0m
+[0;32mI (94612) main: Humidity:    41.0%[0m
+[0;32mI (94612) main: Lightness:   55.0%[0m
+[0;32mI (94612) main: ------------------------------------------[0m
+[0;32mI (96612) main: Temperature: 24.0°C[0m
+[0;32mI (96612) main: Humidity:    41.0%[0m
+[0;32mI (96612) main: Lightness:   55.0%[0m
+[0;32mI (96612) main: ------------------------------------------[0m
+[0;32mI (98612) main: Temperature: 24.0°C[0m
+[0;32mI (98612) main: Humidity:    40.0%[0m
+[0;32mI (98612) main: Lightness:   55.0%[0m
+[0;32mI (98612) main: ------------------------------------------[0m
+[0;32mI (100612) main: Temperature: 24.0°C[0m
+[0;32mI (100612) main: Humidity:    40.0%[0m
+[0;32mI (100612) main: Lightness:   55.0%[0m
+[0;32mI (100612) main: ------------------------------------------[0m
+[0;32mI (102612) main: Temperature: 24.0°C[0m
+[0;32mI (102612) main: Humidity:    40.0%[0m
+[0;32mI (102612) main: Lightness:   55.0%[0m
+[0;32mI (102612) main: ------------------------------------------[0m
+[0;32mI (104612) main: Temperature: 24.0°C[0m
+[0;32mI (104612) main: Humidity:    40.0%[0m
+[0;32mI (104612) main: Lightness:   55.0%[0m
+[0;32mI (104612) main: ------------------------------------------[0m
+[0;32mI (106632) main: Temperature: 24.0°C[0m
+[0;32mI (106632) main: Humidity:    40.0%[0m
+[0;32mI (106632) main: Lightness:   55.0%[0m
+[0;32mI (106632) main: ------------------------------------------[0m
+[0;32mI (108652) main: Temperature: 24.0°C[0m
+[0;32mI (108652) main: Humidity:    40.0%[0m
+[0;32mI (108652) main: Lightness:   55.0%[0m
+[0;32mI (108652) main: ------------------------------------------[0m
+[0;32mI (110672) main: Temperature: 24.0°C[0m
+[0;32mI (110672) main: Humidity:    40.0%[0m
+[0;32mI (110672) main: Lightness:   55.0%[0m
+[0;32mI (110672) main: ------------------------------------------[0m
+[0;32mI (112692) main: Temperature: 24.0°C[0m
+[0;32mI (112692) main: Humidity:    40.0%[0m
+[0;32mI (112692) main: Lightness:   55.0%[0m
+[0;32mI (112692) main: ------------------------------------------[0m
+[0;32mI (114712) main: Temperature: 24.0°C[0m
+[0;32mI (114712) main: Humidity:    40.0%[0m
+[0;32mI (114712) main: Lightness:   40.0%[0m
+[0;32mI (114712) main: ------------------------------------------[0m
+[0;32mI (116732) main: Temperature: 24.0°C[0m
+[0;32mI (116732) main: Humidity:    40.0%[0m
+[0;32mI (116732) main: Lightness:   6.0%[0m
+[0;32mI (116732) main: ------------------------------------------[0m
+[0;32mI (118752) main: Temperature: 24.0°C[0m
+[0;32mI (118752) main: Humidity:    40.0%[0m
+[0;32mI (118752) main: Lightness:   45.0%[0m
+[0;32mI (118752) main: ------------------------------------------[0m
+[0;32mI (120772) main: Temperature: 24.0°C[0m
+[0;32mI (120772) main: Humidity:    40.0%[0m
+[0;32mI (120772) main: Lightness:   45.0%[0m
+[0;32mI (120772) main: ------------------------------------------[0m
+[0;32mI (122792) main: Temperature: 24.0°C[0m
+[0;32mI (122792) main: Humidity:    40.0%[0m
+[0;32mI (122792) main: Lightness:   46.0%[0m
+[0;32mI (122792) main: ------------------------------------------[0m
+[0;32mI (124812) main: Temperature: 24.0°C[0m
+[0;32mI (124812) main: Humidity:    40.0%[0m
+[0;32mI (124812) main: Lightness:   45.0%[0m
+[0;32mI (124812) main: ------------------------------------------[0m
+[0;32mI (126832) main: Temperature: 24.0°C[0m
+[0;32mI (126832) main: Humidity:    40.0%[0m
+[0;32mI (126832) main: Lightness:   45.0%[0m
+[0;32mI (126832) main: ------------------------------------------[0m
+[0;32mI (128852) main: Temperature: 24.0°C[0m
+[0;32mI (128852) main: Humidity:    40.0%[0m
+[0;32mI (128852) main: Lightness:   45.0%[0m
+[0;32mI (128852) main: ------------------------------------------[0m
+[0;32mI (130872) main: Temperature: 24.0°C[0m
+[0;32mI (130872) main: Humidity:    40.0%[0m
+[0;32mI (130872) main: Lightness:   45.0%[0m
+[0;32mI (130872) main: ------------------------------------------[0m
+[0;32mI (132892) main: Temperature: 24.0°C[0m
+[0;32mI (132892) main: Humidity:    40.0%[0m
+[0;32mI (132892) main: Lightness:   45.0%[0m
+[0;32mI (132892) main: ------------------------------------------[0m
+[0;32mI (134912) main: Temperature: 24.0°C[0m
+[0;32mI (134912) main: Humidity:    40.0%[0m
+[0;32mI (134912) main: Lightness:   44.0%[0m
+[0;32mI (134912) main: ------------------------------------------[0m
+[0;32mI (136932) main: Temperature: 24.0°C[0m
+[0;32mI (136932) main: Humidity:    41.0%[0m
+[0;32mI (136932) main: Lightness:   44.0%[0m
+[0;32mI (136932) main: ------------------------------------------[0m
+[0;32mI (138952) main: Temperature: 24.0°C[0m
+[0;32mI (138952) main: Humidity:    41.0%[0m
+[0;32mI (138952) main: Lightness:   44.0%[0m
+[0;32mI (138952) main: ------------------------------------------[0m
+[0;32mI (140972) main: Temperature: 24.0°C[0m
+[0;32mI (140972) main: Humidity:    41.0%[0m
+[0;32mI (140972) main: Lightness:   44.0%[0m
+[0;32mI (140972) main: ------------------------------------------[0m
+[0;32mI (142992) main: Temperature: 24.0°C[0m
+[0;32mI (142992) main: Humidity:    41.0%[0m
+[0;32mI (142992) main: Lightness:   44.0%[0m
+[0;32mI (142992) main: ------------------------------------------[0m
+[0;32mI (145012) main: Temperature: 24.0°C[0m
+[0;32mI (145012) main: Humidity:    41.0%[0m
+[0;32mI (145012) main: Lightness:   44.0%[0m
+[0;32mI (145012) main: ------------------------------------------[0m
+[0;32mI (147032) main: Temperature: 24.0°C[0m
+[0;32mI (147032) main: Humidity:    41.0%[0m
+[0;32mI (147032) main: Lightness:   44.0%[0m
+[0;32mI (147032) main: ------------------------------------------[0m
+[0;32mI (149052) main: Temperature: 24.0°C[0m
+[0;32mI (149052) main: Humidity:    41.0%[0m
+[0;32mI (149052) main: Lightness:   44.0%[0m
+[0;32mI (149052) main: ------------------------------------------[0m
+[0;32mI (151072) main: Temperature: 24.0°C[0m
+[0;32mI (151072) main: Humidity:    41.0%[0m
+[0;32mI (151072) main: Lightness:   44.0%[0m
+[0;32mI (151072) main: ------------------------------------------[0m
+[0;32mI (153092) main: Temperature: 24.0°C[0m
+[0;32mI (153092) main: Humidity:    41.0%[0m
+[0;32mI (153092) main: Lightness:   44.0%[0m
+[0;32mI (153092) main: ------------------------------------------[0m
+[0;32mI (155112) main: Temperature: 24.0°C[0m
+[0;32mI (155112) main: Humidity:    41.0%[0m
+[0;32mI (155112) main: Lightness:   44.0%[0m
+[0;32mI (155112) main: ------------------------------------------[0m
+[0;32mI (157132) main: Temperature: 24.0°C[0m
+[0;32mI (157132) main: Humidity:    42.0%[0m
+[0;32mI (157132) main: Lightness:   44.0%[0m
+[0;32mI (157132) main: ------------------------------------------[0m
+[0;32mI (159152) main: Temperature: 24.0°C[0m
+[0;32mI (159152) main: Humidity:    41.0%[0m
+[0;32mI (159152) main: Lightness:   44.0%[0m
+[0;32mI (159152) main: ------------------------------------------[0m
+[0;32mI (161172) main: Temperature: 24.0°C[0m
+[0;32mI (161172) main: Humidity:    41.0%[0m
+[0;32mI (161172) main: Lightness:   44.0%[0m
+[0;32mI (161172) main: ------------------------------------------[0m
+[0;32mI (163192) main: Temperature: 24.0°C[0m
+[0;32mI (163192) main: Humidity:    41.0%[0m
+[0;32mI (163192) main: Lightness:   45.0%[0m
+[0;32mI (163192) main: ------------------------------------------[0m
+[0;32mI (165212) main: Temperature: 24.0°C[0m
+[0;32mI (165212) main: Humidity:    41.0%[0m
+[0;32mI (165212) main: Lightness:   47.0%[0m
+[0;32mI (165212) main: ------------------------------------------[0m
+[0;32mI (167232) main: Temperature: 24.0°C[0m
+[0;32mI (167232) main: Humidity:    41.0%[0m
+[0;32mI (167232) main: Lightness:   19.0%[0m
+[0;32mI (167232) main: ------------------------------------------[0m
+[0;32mI (169252) main: Temperature: 24.0°C[0m
+[0;32mI (169252) main: Humidity:    41.0%[0m
+[0;32mI (169252) main: Lightness:   39.0%[0m
+[0;32mI (169252) main: ------------------------------------------[0m
+[0;32mI (171272) main: Temperature: 24.0°C[0m
+[0;32mI (171272) main: Humidity:    41.0%[0m
+[0;32mI (171272) main: Lightness:   48.0%[0m
+[0;32mI (171272) main: ------------------------------------------[0m
+[0;32mI (173292) main: Temperature: 24.0°C[0m
+[0;32mI (173292) main: Humidity:    41.0%[0m
+[0;32mI (173292) main: Lightness:   48.0%[0m
+[0;32mI (173292) main: ------------------------------------------[0m
+[0;32mI (175312) main: Temperature: 24.0°C[0m
+[0;32mI (175312) main: Humidity:    41.0%[0m
+[0;32mI (175312) main: Lightness:   49.0%[0m
+[0;32mI (175312) main: ------------------------------------------[0m
+[0;32mI (177332) main: Temperature: 24.0°C[0m
+[0;32mI (177332) main: Humidity:    41.0%[0m
+[0;32mI (177332) main: Lightness:   46.0%[0m
+[0;32mI (177332) main: ------------------------------------------[0m
+[0;32mI (179352) main: Temperature: 24.0°C[0m
+[0;32mI (179352) main: Humidity:    41.0%[0m
+[0;32mI (179352) main: Lightness:   15.0%[0m
+[0;32mI (179352) main: ------------------------------------------[0m
+[0;32mI (181372) main: Temperature: 24.0°C[0m
+[0;32mI (181372) main: Humidity:    41.0%[0m
+[0;32mI (181372) main: Lightness:   45.0%[0m
+[0;32mI (181372) main: ------------------------------------------[0m
+[0;32mI (183392) main: Temperature: 24.0°C[0m
+[0;32mI (183392) main: Humidity:    41.0%[0m
+[0;32mI (183392) main: Lightness:   17.0%[0m
+[0;32mI (183392) main: ------------------------------------------[0m
+[0;32mI (185412) main: Temperature: 24.0°C[0m
+[0;32mI (185412) main: Humidity:    41.0%[0m
+[0;32mI (185412) main: Lightness:   7.0%[0m
+[0;32mI (185412) main: ------------------------------------------[0m
+[0;32mI (187432) main: Temperature: 24.0°C[0m
+[0;32mI (187432) main: Humidity:    41.0%[0m
+[0;32mI (187432) main: Lightness:   43.0%[0m
+[0;32mI (187432) main: ------------------------------------------[0m
+[0;32mI (189452) main: Temperature: 24.0°C[0m
+[0;32mI (189452) main: Humidity:    42.0%[0m
+[0;32mI (189452) main: Lightness:   21.0%[0m
+[0;32mI (189452) main: ------------------------------------------[0m
+I BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=254c0h (152768) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000354e8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000354f4 vaddr=3ffb0000 size=03d18h ( 15640) load[0m
+[0;32mI (170) esp_image: segment 3: paddr=00039214 vaddr=40080000 size=06e04h ( 28164) load[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=8cd80h (576896) map[0m
+[0;32mI (381) esp_image: segment 5: paddr=000ccda8 vaddr=40086e04 size=0fc58h ( 64600) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (430) cpu_start: Multicore app[0m
+[0;32m[0;32mI (439) cpu_start: Pro cpu start user code[0m[0m
+[0;32mI (439) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (439) cpu_start: Application information:[0m
+[0;32mI (442) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (447) cpu_start: App version:      1[0m
+[0;32mI (452) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (458) cpu_start: ELF file SHA256:  ce042fc90...[0m
+[0;32mI (463) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (470) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (474) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (479) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (484) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (491) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFB7EC8 len 00028138 (160 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (516) heap_init: At 40096A5C len 000095A4 (37 KiB): IRAM[0m
+[0;32mI (524) spi_flash: detected chip: generic[0m
+[0;32mI (527) spi_flash: flash io: dio[0m
+[0;33mW (531) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (545) main_task: Started on CPU0[0m
+[0;32mI (555) main_task: Calling app_main()[0m
+[0;32mI (595) wifi:wifi driver task: 3ffc3264, prio:23, stack:6656, core=0[0m
+[0;32mI (605) wifi:wifi firmware version: 3865d68[0m
+[0;32mI (605) wifi:wifi certification version: v7.0[0m
+[0;32mI (605) wifi:config NVS flash: enabled[0m
+[0;32mI (605) wifi:config nano formating: disabled[0m
+[0;32mI (605) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (615) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (615) wifi:Init management short buffer num: 32[0m
+[0;32mI (625) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (625) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (625) wifi:Init static rx buffer num: 10[0m
+[0;32mI (635) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (635) wifi_init: rx ba win: 6[0m
+[0;32mI (635) wifi_init: accept mbox: 6[0m
+[0;32mI (645) wifi_init: tcpip mbox: 32[0m
+[0;32mI (645) wifi_init: udp mbox: 6[0m
+[0;32mI (655) wifi_init: tcp mbox: 6[0m
+[0;32mI (655) wifi_init: tcp tx win: 5760[0m
+[0;32mI (655) wifi_init: tcp rx win: 5760[0m
+[0;32mI (665) wifi_init: tcp mss: 1440[0m
+[0;32mI (665) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (675) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (685) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (765) wifi:mode : sta (30:c6:f7:04:86:20) + softAP (30:c6:f7:04:86:21)[0m
+[0;32mI (765) wifi:enable tsf[0m
+[0;32mI (765) wifi:Total power save buffer number: 16[0m
+[0;32mI (765) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (765) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (775) WIFI_HANDLER: Wi-Fi AP Mode Initialized[0m
+[0;32mI (775) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (795) WEB_HANDLER: STARTED HTTP[0m
+[0;32mI (2595) main: Temperature: 24.0°C[0m
+[0;32mI (2595) main: Humidity:    42.0%[0m
+[0;32mI (2595) main: Lightness:   1.0%[0m
+[0;32mI (2595) main: ------------------------------------------[0m
+[0;32mI (4595) main: Temperature: 24.0°C[0m
+[0;32mI (4595) main: Humidity:    42.0%[0m
+[0;32mI (4595) main: Lightness:   36.0%[0m
+[0;32mI (4595) main: ------------------------------------------[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=254c0h (152768) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000354e8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=000354f4 vaddr=3ffb0000 size=03d18h ( 15640) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00039214 vaddr=40080000 size=06e04h ( 28164) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=8cd80h (576896) map[0m
+[0;32mI (380) esp_image: segment 5: paddr=000ccda8 vaddr=40086e04 size=0fc58h ( 64600) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (446) cpu_start: App version:      1[0m
+[0;32mI (451) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  ce042fc90...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (469) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (473) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (478) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (490) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 3FFB7EC8 len 00028138 (160 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 40096A5C len 000095A4 (37 KiB): IRAM[0m
+[0;32mI (523) spi_flash: detected chip: generic[0m
+[0;32mI (526) spi_flash: flash io: dio[0m
+[0;33mW (530) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (594) wifi:wifi driver task: 3ffc3264, prio:23, stack:6656, core=0[0m
+[0;32mI (604) wifi:wifi firmware version: 3865d68[0m
+[0;32mI (604) wifi:wifi certification version: v7.0[0m
+[0;32mI (604) wifi:config NVS flash: enabled[0m
+[0;32mI (604) wifi:config nano formating: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (614) wifi:Init management short buffer num: 32[0m
+[0;32mI (624) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (624) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (634) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (634) wifi_init: accept mbox: 6[0m
+[0;32mI (644) wifi_init: tcpip mbox: 32[0m
+[0;32mI (644) wifi_init: udp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp tx win: 5760[0m
+[0;32mI (654) wifi_init: tcp rx win: 5760[0m
+[0;32mI (664) wifi_init: tcp mss: 1440[0m
+[0;32mI (664) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (674) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (684) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (764) wifi:mode : sta (30:c6:f7:04:86:20) + softAP (30:c6:f7:04:86:21)[0m
+[0;32mI (764) wifi:enable tsf[0m
+[0;32mI (764) wifi:Total power save buffer number: 16[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (774) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (774) WIFI_HANDLER: Wi-Fi AP Mode Initialized[0m
+[0;32mI (774) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (794) WEB_HANDLER: STARTED HTTP[0m
+[0;31mE (1574) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1574) DHT: Could not read data from sensor[0m
+[0;32mI (2594) main: Temperature: 2.0°C[0m
+[0;32mI (2594) main: Humidity:    -0.0%[0m
+[0;32mI (2594) main: Lightness:   11.0%[0m
+[0;32mI (2594) main: ------------------------------------------[0m
+[0;32mI (4594) main: Temperature: 24.0°C[0m
+[0;32mI (4594) main: Humidity:    42.0%[0m
+[0;32mI (4594) main: Lightness:   15.0%[0m
+[0;32mI (4594) main: ------------------------------------------[0m
+[0;32mI (6594) main: Temperature: 24.0°C[0m
+[0;32mI (6594) main: Humidity:    42.0%[0m
+[0;32mI (6594) main: Lightness:   35.0%[0m
+[0;32mI (6594) main: ------------------------------------------[0m
+[0;32mI (8594) main: Temperature: 24.0°C[0m
+[0;32mI (8594) main: Humidity:    42.0%[0m
+[0;32mI (8594) main: Lightness:   47.0%[0m
+[0;32mI (8594) main: ------------------------------------------[0m
+[0;32mI (10594) main: Temperature: 24.0°C[0m
+[0;32mI (10594) main: Humidity:    42.0%[0m
+[0;32mI (10594) main: Lightness:   47.0%[0m
+[0;32mI (10594) main: ------------------------------------------[0m
+[0;32mI (12594) main: Temperature: 24.0°C[0m
+[0;32mI (12594) main: Humidity:    42.0%[0m
+[0;32mI (12594) main: Lightness:   47.0%[0m
+[0;32mI (12594) main: ------------------------------------------[0m
+[0;32mI (14594) main: Temperature: 24.0°C[0m
+[0;32mI (14594) main: Humidity:    42.0%[0m
+[0;32mI (14594) main: Lightness:   42.0%[0m
+[0;32mI (14594) main: ------------------------------------------[0m
+[0;32mI (16594) main: Temperature: 24.0°C[0m
+[0;32mI (16594) main: Humidity:    41.0%[0m
+[0;32mI (16594) main: Lightness:   39.0%[0m
+[0;32mI (16594) main: ------------------------------------------[0m
+[0;32mI (18594) main: Temperature: 24.0°C[0m
+[0;32mI (18594) main: Humidity:    41.0%[0m
+[0;32mI (18594) main: Lightness:   44.0%[0m
+[0;32mI (18594) main: ------------------------------------------[0m
+[0;32mI (20594) main: Temperature: 24.0°C[0m
+[0;32mI (20594) main: Humidity:    41.0%[0m
+[0;32mI (20594) main: Lightness:   45.0%[0m
+[0;32mI (20594) main: ------------------------------------------[0m

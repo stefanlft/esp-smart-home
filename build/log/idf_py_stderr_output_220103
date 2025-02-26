@@ -1,0 +1,63 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000d099: __udivdi3 in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000d096: __udivdi3 in ROM
+0x400d9211: ledc_calculate_divisor at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:351
+ (inlined by) ledc_set_timer_div at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:515
+0x400d9bc9: ledc_set_freq at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:852
+0x400d61ee: piezo_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:46
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000d099: __udivdi3 in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000d096: __udivdi3 in ROM
+0x400d9211: ledc_calculate_divisor at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:351
+ (inlined by) ledc_set_timer_div at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:515
+0x400d9bc9: ledc_set_freq at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:852
+0x400d61ee: piezo_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:46
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000d099: __udivdi3 in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000d096: __udivdi3 in ROM
+0x400d9211: ledc_calculate_divisor at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:351
+ (inlined by) ledc_set_timer_div at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:515
+0x400d9bc9: ledc_set_freq at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:852
+0x400d61ee: piezo_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:46
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000d099: __udivdi3 in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000d096: __udivdi3 in ROM
+0x400d9211: ledc_calculate_divisor at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:351
+ (inlined by) ledc_set_timer_div at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:515
+0x400d9bc9: ledc_set_freq at /home/stefan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c:852
+0x400d61ee: piezo_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:46
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

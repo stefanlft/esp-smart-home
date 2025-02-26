@@ -1,0 +1,983 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25500h (152832) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00035528 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00035534 vaddr=3ffb0000 size=03d18h ( 15640) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00039254 vaddr=40080000 size=06dc4h ( 28100) load[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=8ce20h (577056) map[0m
+[0;32mI (381) esp_image: segment 5: paddr=000cce48 vaddr=40086dc4 size=0fc98h ( 64664) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (447) cpu_start: App version:      1[0m
+[0;32mI (451) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  85c249a7a...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (469) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (474) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (478) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (491) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 3FFB7F08 len 000280F8 (160 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (516) heap_init: At 40096A5C len 000095A4 (37 KiB): IRAM[0m
+[0;32mI (523) spi_flash: detected chip: generic[0m
+[0;32mI (526) spi_flash: flash io: dio[0m
+[0;33mW (530) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (594) wifi:wifi driver task: 3ffc4b9c, prio:23, stack:6656, core=0[0m
+[0;32mI (604) wifi:wifi firmware version: 3865d68[0m
+[0;32mI (604) wifi:wifi certification version: v7.0[0m
+[0;32mI (604) wifi:config NVS flash: enabled[0m
+[0;32mI (604) wifi:config nano formating: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (614) wifi:Init management short buffer num: 32[0m
+[0;32mI (624) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (624) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (634) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (644) wifi_init: accept mbox: 6[0m
+[0;32mI (644) wifi_init: tcpip mbox: 32[0m
+[0;32mI (644) wifi_init: udp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp tx win: 5760[0m
+[0;32mI (654) wifi_init: tcp rx win: 5760[0m
+[0;32mI (664) wifi_init: tcp mss: 1440[0m
+[0;32mI (664) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (674) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (684) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (764) wifi:mode : sta (30:c6:f7:04:86:20) + softAP (30:c6:f7:04:86:21)[0m
+[0;32mI (764) wifi:enable tsf[0m
+[0;32mI (764) wifi:Total power save buffer number: 16[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (774) WIFI_HANDLER: Wi-Fi AP Mode Initialized[0m
+[0;32mI (774) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (794) WEB_HANDLER: STARTED HTTP[0m
+[0;31mE (1574) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1574) DHT: Could not read data from sensor[0m
+[0;32mI (2594) main: Temperature: 0.0°C[0m
+[0;32mI (2594) main: Humidity:    0.0%[0m
+[0;32mI (2594) main: Lightness:   30.0%[0m
+[0;32mI (2594) main: ------------------------------------------[0m
+[0;32mI (4594) main: Temperature: 24.0°C[0m
+[0;32mI (4594) main: Humidity:    41.0%[0m
+[0;32mI (4594) main: Lightness:   30.0%[0m
+[0;32mI (4594) main: ------------------------------------------[0m
+[0;32mI (6594) main: Temperature: 24.0°C[0m
+[0;32mI (6594) main: Humidity:    41.0%[0m
+[0;32mI (6594) main: Lightness:   29.0%[0m
+[0;32mI (6594) main: ------------------------------------------[0m
+[0;32mI (8594) main: Temperature: 24.0°C[0m
+[0;32mI (8594) main: Humidity:    41.0%[0m
+[0;32mI (8594) main: Lightness:   30.0%[0m
+[0;32mI (8594) main: ------------------------------------------[0m
+[0;32mI (10594) main: Temperature: 24.0°C[0m
+[0;32mI (10594) main: Humidity:    41.0%[0m
+[0;32mI (10594) main: Lightness:   30.0%[0m
+[0;32mI (10594) main: ------------------------------------------[0m
+[0;32mI (12594) main: Temperature: 24.0°C[0m
+[0;32mI (12594) main: Humidity:    41.0%[0m
+[0;32mI (12594) main: Lightness:   29.0%[0m
+[0;32mI (12594) main: ------------------------------------------[0m
+[0;32mI (14594) main: Temperature: 24.0°C[0m
+[0;32mI (14594) main: Humidity:    41.0%[0m
+[0;32mI (14594) main: Lightness:   29.0%[0m
+[0;32mI (14594) main: ------------------------------------------[0m
+[0;32mI (16594) main: Temperature: 24.0°C[0m
+[0;32mI (16594) main: Humidity:    41.0%[0m
+[0;32mI (16594) main: Lightness:   30.0%[0m
+[0;32mI (16594) main: ------------------------------------------[0m
+[0;32mI (18594) main: Temperature: 24.0°C[0m
+[0;32mI (18594) main: Humidity:    41.0%[0m
+[0;32mI (18594) main: Lightness:   30.0%[0m
+[0;32mI (18594) main: ------------------------------------------[0m
+[0;32mI (20594) main: Temperature: 24.0°C[0m
+[0;32mI (20594) main: Humidity:    41.0%[0m
+[0;32mI (20594) main: Lightness:   30.0%[0m
+[0;32mI (20594) main: ------------------------------------------[0m
+[0;32mI (21554) PIR: Motion detected![0m
+[0;32mI (21554) main: Movement started![0m
+[0;32mI (22594) main: Temperature: 24.0°C[0m
+[0;32mI (22594) main: Humidity:    41.0%[0m
+[0;32mI (22594) main: Lightness:   30.0%[0m
+[0;32mI (22594) main: ------------------------------------------[0m
+[0;32mI (24594) main: Temperature: 24.0°C[0m
+[0;32mI (24594) main: Humidity:    41.0%[0m
+[0;32mI (24594) main: Lightness:   30.0%[0m
+[0;32mI (24594) main: ------------------------------------------[0m
+[0;32mI (26594) main: Temperature: 24.0°C[0m
+[0;32mI (26594) main: Humidity:    41.0%[0m
+[0;32mI (26594) main: Lightness:   30.0%[0m
+[0;32mI (26594) main: ------------------------------------------[0m
+[0;32mI (27654) PIR: Motion stopped![0m
+[0;32mI (28034) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1[0m
+[0;32mI (28034) wifi:station: 3a:5a:52:ba:8a:59 join, AID=1, bgn, 40U[0m
+[0;32mI (28074) WIFI_HANDLER: Client connected! MAC: 3A:5A:52:BA:8A:59[0m
+[0;32mI (28294) wifi:<ba-add>idx:2 (ifx:1, 3a:5a:52:ba:8a:59), tid:7, ssn:0, winSize:64[0m
+[0;32mI (28304) wifi:<ba-add>idx:3 (ifx:1, 3a:5a:52:ba:8a:59), tid:0, ssn:0, winSize:64[0m
+[0;32mI (28324) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (28594) main: Temperature: 24.0°C[0m
+[0;32mI (28594) main: Humidity:    41.0%[0m
+[0;32mI (28594) main: Lightness:   30.0%[0m
+[0;32mI (28594) main: ------------------------------------------[0m
+[0;33mW (28694) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (28694) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (30594) main: Temperature: 24.0°C[0m
+[0;32mI (30594) main: Humidity:    41.0%[0m
+[0;32mI (30594) main: Lightness:   30.0%[0m
+[0;32mI (30594) main: ------------------------------------------[0m
+[0;32mI (32594) main: Temperature: 24.0°C[0m
+[0;32mI (32594) main: Humidity:    41.0%[0m
+[0;32mI (32594) main: Lightness:   29.0%[0m
+[0;32mI (32594) main: ------------------------------------------[0m
+[0;32mI (33654) PIR: Motion detected![0m
+[0;32mI (33654) main: Movement started![0m
+[0;32mI (34594) main: Temperature: 24.0°C[0m
+[0;32mI (34594) main: Humidity:    41.0%[0m
+[0;32mI (34594) main: Lightness:   30.0%[0m
+[0;32mI (34594) main: ------------------------------------------[0m
+[0;32mI (36594) main: Temperature: 24.0°C[0m
+[0;32mI (36594) main: Humidity:    40.0%[0m
+[0;32mI (36594) main: Lightness:   30.0%[0m
+[0;32mI (36594) main: ------------------------------------------[0m
+[0;32mI (36754) PIR: Motion stopped![0m
+[0;32mI (38594) main: Temperature: 24.0°C[0m
+[0;32mI (38594) main: Humidity:    40.0%[0m
+[0;32mI (38594) main: Lightness:   30.0%[0m
+[0;32mI (38594) main: ------------------------------------------[0m
+[0;32mI (40594) main: Temperature: 24.0°C[0m
+[0;32mI (40594) main: Humidity:    40.0%[0m
+[0;32mI (40594) main: Lightness:   30.0%[0m
+[0;32mI (40594) main: ------------------------------------------[0m
+[0;32mI (40614) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (42594) main: Temperature: 24.0°C[0m
+[0;32mI (42594) main: Humidity:    40.0%[0m
+[0;32mI (42594) main: Lightness:   30.0%[0m
+[0;32mI (42594) main: ------------------------------------------[0m
+[0;32mI (42754) PIR: Motion detected![0m
+[0;32mI (42754) main: Movement started![0m
+[0;32mI (44594) main: Temperature: 24.0°C[0m
+[0;32mI (44594) main: Humidity:    40.0%[0m
+[0;32mI (44594) main: Lightness:   30.0%[0m
+[0;32mI (44594) main: ------------------------------------------[0m
+[0;32mI (45854) PIR: Motion stopped![0m
+[0;32mI (46594) main: Temperature: 24.0°C[0m
+[0;32mI (46594) main: Humidity:    40.0%[0m
+[0;32mI (46594) main: Lightness:   30.0%[0m
+[0;32mI (46594) main: ------------------------------------------[0m
+[0;32mI (48594) main: Temperature: 24.0°C[0m
+[0;32mI (48594) main: Humidity:    40.0%[0m
+[0;32mI (48594) main: Lightness:   30.0%[0m
+[0;32mI (48594) main: ------------------------------------------[0m
+[0;32mI (50594) main: Temperature: 24.0°C[0m
+[0;32mI (50594) main: Humidity:    40.0%[0m
+[0;32mI (50594) main: Lightness:   30.0%[0m
+[0;32mI (50594) main: ------------------------------------------[0m
+[0;32mI (51854) PIR: Motion detected![0m
+[0;32mI (51854) main: Movement started![0m
+[0;32mI (52594) main: Temperature: 24.0°C[0m
+[0;32mI (52594) main: Humidity:    40.0%[0m
+[0;32mI (52594) main: Lightness:   30.0%[0m
+[0;32mI (52594) main: ------------------------------------------[0m
+[0;32mI (54594) main: Temperature: 24.0°C[0m
+[0;32mI (54594) main: Humidity:    40.0%[0m
+[0;32mI (54594) main: Lightness:   30.0%[0m
+[0;32mI (54594) main: ------------------------------------------[0m
+[0;32mI (54954) PIR: Motion stopped![0m
+[0;32mI (56594) main: Temperature: 24.0°C[0m
+[0;32mI (56594) main: Humidity:    40.0%[0m
+[0;32mI (56594) main: Lightness:   30.0%[0m
+[0;32mI (56594) main: ------------------------------------------[0m
+[0;32mI (57954) PIR: Motion detected![0m
+[0;32mI (57954) main: Movement started![0m
+[0;32mI (58594) main: Temperature: 24.0°C[0m
+[0;32mI (58594) main: Humidity:    40.0%[0m
+[0;32mI (58594) main: Lightness:   30.0%[0m
+[0;32mI (58594) main: ------------------------------------------[0m
+[0;32mI (60594) main: Temperature: 24.0°C[0m
+[0;32mI (60594) main: Humidity:    40.0%[0m
+[0;32mI (60594) main: Lightness:   30.0%[0m
+[0;32mI (60594) main: ------------------------------------------[0m
+[0;32mI (61054) PIR: Motion stopped![0m
+[0;32mI (62594) main: Temperature: 24.0°C[0m
+[0;32mI (62594) main: Humidity:    40.0%[0m
+[0;32mI (62594) main: Lightness:   30.0%[0m
+[0;32mI (62594) main: ------------------------------------------[0m
+[0;32mI (64054) PIR: Motion detected![0m
+[0;32mI (64054) main: Movement started![0m
+[0;32mI (64594) main: Temperature: 24.0°C[0m
+[0;32mI (64594) main: Humidity:    40.0%[0m
+[0;32mI (64594) main: Lightness:   30.0%[0m
+[0;32mI (64594) main: ------------------------------------------[0m
+[0;32mI (66594) main: Temperature: 24.0°C[0m
+[0;32mI (66594) main: Humidity:    40.0%[0m
+[0;32mI (66594) main: Lightness:   32.0%[0m
+[0;32mI (66594) main: ------------------------------------------[0m
+[0;32mI (67154) PIR: Motion stopped![0m
+[0;32mI (68594) main: Temperature: 24.0°C[0m
+[0;32mI (68594) main: Humidity:    40.0%[0m
+[0;32mI (68594) main: Lightness:   32.0%[0m
+[0;32mI (68594) main: ------------------------------------------[0m
+[0;32mI (70594) main: Temperature: 24.0°C[0m
+[0;32mI (70594) main: Humidity:    40.0%[0m
+[0;32mI (70594) main: Lightness:   32.0%[0m
+[0;32mI (70594) main: ------------------------------------------[0m
+[0;32mI (72594) main: Temperature: 24.0°C[0m
+[0;32mI (72594) main: Humidity:    40.0%[0m
+[0;32mI (72594) main: Lightness:   32.0%[0m
+[0;32mI (72594) main: ------------------------------------------[0m
+[0;32mI (73154) PIR: Motion detected![0m
+[0;32mI (73154) main: Movement started![0m
+[0;32mI (74594) main: Temperature: 24.0°C[0m
+[0;32mI (74594) main: Humidity:    40.0%[0m
+[0;32mI (74594) main: Lightness:   32.0%[0m
+[0;32mI (74594) main: ------------------------------------------[0m
+[0;32mI (76594) main: Temperature: 24.0°C[0m
+[0;32mI (76594) main: Humidity:    40.0%[0m
+[0;32mI (76594) main: Lightness:   32.0%[0m
+[0;32mI (76594) main: ------------------------------------------[0m
+[0;32mI (78594) main: Temperature: 24.0°C[0m
+[0;32mI (78594) main: Humidity:    40.0%[0m
+[0;32mI (78594) main: Lightness:   32.0%[0m
+[0;32mI (78594) main: ------------------------------------------[0m
+[0;32mI (79254) PIR: Motion stopped![0m
+[0;32mI (80594) main: Temperature: 24.0°C[0m
+[0;32mI (80594) main: Humidity:    40.0%[0m
+[0;32mI (80594) main: Lightness:   29.0%[0m
+[0;32mI (80594) main: ------------------------------------------[0m
+[0;32mI (82254) PIR: Motion detected![0m
+[0;32mI (82254) main: Movement started![0m
+[0;32mI (82594) main: Temperature: 24.0°C[0m
+[0;32mI (82594) main: Humidity:    40.0%[0m
+[0;32mI (82594) main: Lightness:   30.0%[0m
+[0;32mI (82594) main: ------------------------------------------[0m
+[0;32mI (84594) main: Temperature: 24.0°C[0m
+[0;32mI (84594) main: Humidity:    40.0%[0m
+[0;32mI (84594) main: Lightness:   30.0%[0m
+[0;32mI (84594) main: ------------------------------------------[0m
+[0;32mI (85354) PIR: Motion stopped![0m
+[0;32mI (86594) main: Temperature: 24.0°C[0m
+[0;32mI (86594) main: Humidity:    40.0%[0m
+[0;32mI (86594) main: Lightness:   30.0%[0m
+[0;32mI (86594) main: ------------------------------------------[0m
+[0;32mI (88594) main: Temperature: 24.0°C[0m
+[0;32mI (88594) main: Humidity:    40.0%[0m
+[0;32mI (88594) main: Lightness:   30.0%[0m
+[0;32mI (88594) main: ------------------------------------------[0m
+[0;32mI (90594) main: Temperature: 24.0°C[0m
+[0;32mI (90594) main: Humidity:    40.0%[0m
+[0;32mI (90594) main: Lightness:   32.0%[0m
+[0;32mI (90594) main: ------------------------------------------[0m
+[0;32mI (91354) PIR: Motion detected![0m
+[0;32mI (91354) main: Movement started![0m
+[0;32mI (92594) main: Temperature: 24.0°C[0m
+[0;32mI (92594) main: Humidity:    40.0%[0m
+[0;32mI (92594) main: Lightness:   33.0%[0m
+[0;32mI (92594) main: ------------------------------------------[0m
+[0;32mI (94454) PIR: Motion stopped![0m
+[0;32mI (94594) main: Temperature: 24.0°C[0m
+[0;32mI (94594) main: Humidity:    40.0%[0m
+[0;32mI (94594) main: Lightness:   33.0%[0m
+[0;32mI (94594) main: ------------------------------------------[0m
+[0;32mI (96594) main: Temperature: 24.0°C[0m
+[0;32mI (96594) main: Humidity:    40.0%[0m
+[0;32mI (96594) main: Lightness:   32.0%[0m
+[0;32mI (96594) main: ------------------------------------------[0m
+[0;32mI (98594) main: Temperature: 24.0°C[0m
+[0;32mI (98594) main: Humidity:    40.0%[0m
+[0;32mI (98594) main: Lightness:   32.0%[0m
+[0;32mI (98594) main: ------------------------------------------[0m
+[0;32mI (100594) main: Temperature: 24.0°C[0m
+[0;32mI (100594) main: Humidity:    40.0%[0m
+[0;32mI (100594) main: Lightness:   33.0%[0m
+[0;32mI (100594) main: ------------------------------------------[0m
+[0;32mI (102594) main: Temperature: 24.0°C[0m
+[0;32mI (102594) main: Humidity:    40.0%[0m
+[0;32mI (102594) main: Lightness:   32.0%[0m
+[0;32mI (102594) main: ------------------------------------------[0m
+[0;32mI (104594) main: Temperature: 24.0°C[0m
+[0;32mI (104594) main: Humidity:    41.0%[0m
+[0;32mI (104594) main: Lightness:   32.0%[0m
+[0;32mI (104594) main: ------------------------------------------[0m
+[0;32mI (106454) PIR: Motion detected![0m
+[0;32mI (106454) main: Movement started![0m
+[0;32mI (106614) main: Temperature: 24.0°C[0m
+[0;32mI (106614) main: Humidity:    41.0%[0m
+[0;32mI (106614) main: Lightness:   33.0%[0m
+[0;32mI (106614) main: ------------------------------------------[0m
+[0;32mI (108634) main: Temperature: 24.0°C[0m
+[0;32mI (108634) main: Humidity:    41.0%[0m
+[0;32mI (108634) main: Lightness:   34.0%[0m
+[0;32mI (108634) main: ------------------------------------------[0m
+[0;32mI (109554) PIR: Motion stopped![0m
+[0;32mI (110654) main: Temperature: 24.0°C[0m
+[0;32mI (110654) main: Humidity:    41.0%[0m
+[0;32mI (110654) main: Lightness:   33.0%[0m
+[0;32mI (110654) main: ------------------------------------------[0m
+[0;32mI (112674) main: Temperature: 24.0°C[0m
+[0;32mI (112674) main: Humidity:    41.0%[0m
+[0;32mI (112674) main: Lightness:   10.0%[0m
+[0;32mI (112674) main: ------------------------------------------[0m
+[0;32mI (114694) main: Temperature: 24.0°C[0m
+[0;32mI (114694) main: Humidity:    41.0%[0m
+[0;32mI (114694) main: Lightness:   33.0%[0m
+[0;32mI (114694) main: ------------------------------------------[0m
+[0;32mI (116714) main: Temperature: 24.0°C[0m
+[0;32mI (116714) main: Humidity:    41.0%[0m
+[0;32mI (116714) main: Lightness:   24.0%[0m
+[0;32mI (116714) main: ------------------------------------------[0m
+[0;32mI (118734) main: Temperature: 24.0°C[0m
+[0;32mI (118734) main: Humidity:    41.0%[0m
+[0;32mI (118734) main: Lightness:   32.0%[0m
+[0;32mI (118734) main: ------------------------------------------[0m
+[0;32mI (120754) main: Temperature: 24.0°C[0m
+[0;32mI (120754) main: Humidity:    41.0%[0m
+[0;32mI (120754) main: Lightness:   33.0%[0m
+[0;32mI (120754) main: ------------------------------------------[0m
+[0;32mI (121554) PIR: Motion detected![0m
+[0;32mI (121554) main: Movement started![0m
+[0;32mI (122774) main: Temperature: 24.0°C[0m
+[0;32mI (122774) main: Humidity:    41.0%[0m
+[0;32mI (122774) main: Lightness:   29.0%[0m
+[0;32mI (122774) main: ------------------------------------------[0m
+[0;32mI (124794) main: Temperature: 24.0°C[0m
+[0;32mI (124794) main: Humidity:    41.0%[0m
+[0;32mI (124794) main: Lightness:   29.0%[0m
+[0;32mI (124794) main: ------------------------------------------[0m
+[0;32mI (126814) main: Temperature: 24.0°C[0m
+[0;32mI (126814) main: Humidity:    41.0%[0m
+[0;32mI (126814) main: Lightness:   29.0%[0m
+[0;32mI (126814) main: ------------------------------------------[0m
+[0;32mI (127654) PIR: Motion stopped![0m
+[0;32mI (128834) main: Temperature: 24.0°C[0m
+[0;32mI (128834) main: Humidity:    41.0%[0m
+[0;32mI (128834) main: Lightness:   29.0%[0m
+[0;32mI (128834) main: ------------------------------------------[0m
+[0;32mI (130854) main: Temperature: 24.0°C[0m
+[0;32mI (130854) main: Humidity:    41.0%[0m
+[0;32mI (130854) main: Lightness:   33.0%[0m
+[0;32mI (130854) main: ------------------------------------------[0m
+[0;32mI (132874) main: Temperature: 24.0°C[0m
+[0;32mI (132874) main: Humidity:    41.0%[0m
+[0;32mI (132874) main: Lightness:   32.0%[0m
+[0;32mI (132874) main: ------------------------------------------[0m
+[0;32mI (134894) main: Temperature: 24.0°C[0m
+[0;32mI (134894) main: Humidity:    41.0%[0m
+[0;32mI (134894) main: Lightness:   32.0%[0m
+[0;32mI (134894) main: ------------------------------------------[0m
+[0;32mI (136914) main: Temperature: 24.0°C[0m
+[0;32mI (136914) main: Humidity:    41.0%[0m
+[0;32mI (136914) main: Lightness:   32.0%[0m
+[0;32mI (136914) main: ------------------------------------------[0m
+[0;32mI (138934) main: Temperature: 24.0°C[0m
+[0;32mI (138934) main: Humidity:    41.0%[0m
+[0;32mI (138934) main: Lightness:   29.0%[0m
+[0;32mI (138934) main: ------------------------------------------[0m
+[0;32mI (139654) PIR: Motion detected![0m
+[0;32mI (139654) main: Movement started![0m
+[0;32mI (140954) main: Temperature: 24.0°C[0m
+[0;32mI (140954) main: Humidity:    41.0%[0m
+[0;32mI (140954) main: Lightness:   29.0%[0m
+[0;32mI (140954) main: ------------------------------------------[0m
+[0;32mI (142974) main: Temperature: 24.0°C[0m
+[0;32mI (142974) main: Humidity:    41.0%[0m
+[0;32mI (142974) main: Lightness:   29.0%[0m
+[0;32mI (142974) main: ------------------------------------------[0m
+[0;32mI (144994) main: Temperature: 24.0°C[0m
+[0;32mI (144994) main: Humidity:    41.0%[0m
+[0;32mI (144994) main: Lightness:   30.0%[0m
+[0;32mI (144994) main: ------------------------------------------[0m
+[0;32mI (147014) main: Temperature: 24.0°C[0m
+[0;32mI (147014) main: Humidity:    41.0%[0m
+[0;32mI (147014) main: Lightness:   32.0%[0m
+[0;32mI (147014) main: ------------------------------------------[0m
+[0;32mI (148754) PIR: Motion stopped![0m
+[0;32mI (149034) main: Temperature: 24.0°C[0m
+[0;32mI (149034) main: Humidity:    41.0%[0m
+[0;32mI (149034) main: Lightness:   32.0%[0m
+[0;32mI (149034) main: ------------------------------------------[0m
+[0;32mI (151054) main: Temperature: 24.0°C[0m
+[0;32mI (151054) main: Humidity:    40.0%[0m
+[0;32mI (151054) main: Lightness:   33.0%[0m
+[0;32mI (151054) main: ------------------------------------------[0m
+[0;32mI (153074) main: Temperature: 24.0°C[0m
+[0;32mI (153074) main: Humidity:    41.0%[0m
+[0;32mI (153074) main: Lightness:   32.0%[0m
+[0;32mI (153074) main: ------------------------------------------[0m
+[0;32mI (155094) main: Temperature: 24.0°C[0m
+[0;32mI (155094) main: Humidity:    41.0%[0m
+[0;32mI (155094) main: Lightness:   32.0%[0m
+[0;32mI (155094) main: ------------------------------------------[0m
+[0;32mI (157114) main: Temperature: 24.0°C[0m
+[0;32mI (157114) main: Humidity:    41.0%[0m
+[0;32mI (157114) main: Lightness:   31.0%[0m
+[0;32mI (157114) main: ------------------------------------------[0m
+[0;32mI (157754) PIR: Motion detected![0m
+[0;32mI (157754) main: Movement started![0m
+[0;32mI (159134) main: Temperature: 24.0°C[0m
+[0;32mI (159134) main: Humidity:    42.0%[0m
+[0;32mI (159134) main: Lightness:   32.0%[0m
+[0;32mI (159134) main: ------------------------------------------[0m
+[0;32mI (160854) PIR: Motion stopped![0m
+[0;32mI (161154) main: Temperature: 24.0°C[0m
+[0;32mI (161154) main: Humidity:    42.0%[0m
+[0;32mI (161154) main: Lightness:   32.0%[0m
+[0;32mI (161154) main: ------------------------------------------[0m
+[0;32mI (163174) main: Temperature: 24.0°C[0m
+[0;32mI (163174) main: Humidity:    42.0%[0m
+[0;32mI (163174) main: Lightness:   30.0%[0m
+[0;32mI (163174) main: ------------------------------------------[0m
+[0;32mI (165194) main: Temperature: 24.0°C[0m
+[0;32mI (165194) main: Humidity:    42.0%[0m
+[0;32mI (165194) main: Lightness:   30.0%[0m
+[0;32mI (165194) main: ------------------------------------------[0m
+[0;32mI (167214) main: Temperature: 24.0°C[0m
+[0;32mI (167214) main: Humidity:    42.0%[0m
+[0;32mI (167214) main: Lightness:   33.0%[0m
+[0;32mI (167214) main: ------------------------------------------[0m
+[0;32mI (169234) main: Temperature: 24.0°C[0m
+[0;32mI (169234) main: Humidity:    42.0%[0m
+[0;32mI (169234) main: Lightness:   33.0%[0m
+[0;32mI (169234) main: ------------------------------------------[0m
+[0;32mI (171254) main: Temperature: 24.0°C[0m
+[0;32mI (171254) main: Humidity:    42.0%[0m
+[0;32mI (171254) main: Lightness:   32.0%[0m
+[0;32mI (171254) main: ------------------------------------------[0m
+[0;32mI (173274) main: Temperature: 24.0°C[0m
+[0;32mI (173274) main: Humidity:    42.0%[0m
+[0;32mI (173274) main: Lightness:   32.0%[0m
+[0;32mI (173274) main: ------------------------------------------[0m
+[0;32mI (175294) main: Temperature: 24.0°C[0m
+[0;32mI (175294) main: Humidity:    42.0%[0m
+[0;32mI (175294) main: Lightness:   32.0%[0m
+[0;32mI (175294) main: ------------------------------------------[0m
+[0;32mI (177314) main: Temperature: 24.0°C[0m
+[0;32mI (177314) main: Humidity:    42.0%[0m
+[0;32mI (177314) main: Lightness:   33.0%[0m
+[0;32mI (177314) main: ------------------------------------------[0m
+[0;32mI (178854) PIR: Motion detected![0m
+[0;32mI (178854) main: Movement started![0m
+[0;32mI (179334) main: Temperature: 24.0°C[0m
+[0;32mI (179334) main: Humidity:    42.0%[0m
+[0;32mI (179334) main: Lightness:   33.0%[0m
+[0;32mI (179334) main: ------------------------------------------[0m
+[0;32mI (181354) main: Temperature: 24.0°C[0m
+[0;32mI (181354) main: Humidity:    42.0%[0m
+[0;32mI (181354) main: Lightness:   33.0%[0m
+[0;32mI (181354) main: ------------------------------------------[0m
+[0;32mI (183374) main: Temperature: 24.0°C[0m
+[0;32mI (183374) main: Humidity:    42.0%[0m
+[0;32mI (183374) main: Lightness:   33.0%[0m
+[0;32mI (183374) main: ------------------------------------------[0m
+[0;32mI (184954) PIR: Motion stopped![0m
+[0;32mI (185394) main: Temperature: 24.0°C[0m
+[0;32mI (185394) main: Humidity:    41.0%[0m
+[0;32mI (185394) main: Lightness:   33.0%[0m
+[0;32mI (185394) main: ------------------------------------------[0m
+[0;32mI (187414) main: Temperature: 24.0°C[0m
+[0;32mI (187414) main: Humidity:    41.0%[0m
+[0;32mI (187414) main: Lightness:   33.0%[0m
+[0;32mI (187414) main: ------------------------------------------[0m
+[0;32mI (189434) main: Temperature: 24.0°C[0m
+[0;32mI (189434) main: Humidity:    41.0%[0m
+[0;32mI (189434) main: Lightness:   33.0%[0m
+[0;32mI (189434) main: ------------------------------------------[0m
+[0;32mI (191454) main: Temperature: 24.0°C[0m
+[0;32mI (191454) main: Humidity:    41.0%[0m
+[0;32mI (191454) main: Lightness:   33.0%[0m
+[0;32mI (191454) main: ------------------------------------------[0m
+[0;32mI (193474) main: Temperature: 24.0°C[0m
+[0;32mI (193474) main: Humidity:    41.0%[0m
+[0;32mI (193474) main: Lightness:   32.0%[0m
+[0;32mI (193474) main: ------------------------------------------[0m
+[0;32mI (193954) PIR: Motion detected![0m
+[0;32mI (193954) main: Movement started![0m
+[0;32mI (195494) main: Temperature: 24.0°C[0m
+[0;32mI (195494) main: Humidity:    42.0%[0m
+[0;32mI (195494) main: Lightness:   32.0%[0m
+[0;32mI (195494) main: ------------------------------------------[0m
+[0;32mI (197054) PIR: Motion stopped![0m
+[0;32mI (197514) main: Temperature: 24.0°C[0m
+[0;32mI (197514) main: Humidity:    42.0%[0m
+[0;32mI (197514) main: Lightness:   33.0%[0m
+[0;32mI (197514) main: ------------------------------------------[0m
+[0;32mI (199534) main: Temperature: 24.0°C[0m
+[0;32mI (199534) main: Humidity:    42.0%[0m
+[0;32mI (199534) main: Lightness:   33.0%[0m
+[0;32mI (199534) main: ------------------------------------------[0m
+[0;32mI (201554) main: Temperature: 24.0°C[0m
+[0;32mI (201554) main: Humidity:    42.0%[0m
+[0;32mI (201554) main: Lightness:   33.0%[0m
+[0;32mI (201554) main: ------------------------------------------[0m
+[0;32mI (203574) main: Temperature: 24.0°C[0m
+[0;32mI (203574) main: Humidity:    42.0%[0m
+[0;32mI (203574) main: Lightness:   33.0%[0m
+[0;32mI (203574) main: ------------------------------------------[0m
+[0;32mI (205594) main: Temperature: 24.0°C[0m
+[0;32mI (205594) main: Humidity:    42.0%[0m
+[0;32mI (205594) main: Lightness:   33.0%[0m
+[0;32mI (205594) main: ------------------------------------------[0m
+[0;32mI (207614) main: Temperature: 24.0°C[0m
+[0;32mI (207614) main: Humidity:    42.0%[0m
+[0;32mI (207614) main: Lightness:   33.0%[0m
+[0;32mI (207614) main: ------------------------------------------[0m
+[0;32mI (209054) PIR: Motion detected![0m
+[0;32mI (209054) main: Movement started![0m
+[0;32mI (209634) main: Temperature: 24.0°C[0m
+[0;32mI (209634) main: Humidity:    42.0%[0m
+[0;32mI (209634) main: Lightness:   33.0%[0m
+[0;32mI (209634) main: ------------------------------------------[0m
+[0;32mI (211654) main: Temperature: 24.0°C[0m
+[0;32mI (211654) main: Humidity:    42.0%[0m
+[0;32mI (211654) main: Lightness:   33.0%[0m
+[0;32mI (211654) main: ------------------------------------------[0m
+[0;32mI (213674) main: Temperature: 24.0°C[0m
+[0;32mI (213674) main: Humidity:    42.0%[0m
+[0;32mI (213674) main: Lightness:   32.0%[0m
+[0;32mI (213674) main: ------------------------------------------[0m
+[0;32mI (215694) main: Temperature: 24.0°C[0m
+[0;32mI (215694) main: Humidity:    42.0%[0m
+[0;32mI (215694) main: Lightness:   32.0%[0m
+[0;32mI (215694) main: ------------------------------------------[0m
+[0;32mI (217714) main: Temperature: 24.0°C[0m
+[0;32mI (217714) main: Humidity:    42.0%[0m
+[0;32mI (217714) main: Lightness:   33.0%[0m
+[0;32mI (217714) main: ------------------------------------------[0m
+[0;32mI (218154) PIR: Motion stopped![0m
+[0;32mI (219734) main: Temperature: 24.0°C[0m
+[0;32mI (219734) main: Humidity:    42.0%[0m
+[0;32mI (219734) main: Lightness:   33.0%[0m
+[0;32mI (219734) main: ------------------------------------------[0m
+[0;32mI (221154) PIR: Motion detected![0m
+[0;32mI (221154) main: Movement started![0m
+[0;32mI (221754) main: Temperature: 24.0°C[0m
+[0;32mI (221754) main: Humidity:    42.0%[0m
+[0;32mI (221754) main: Lightness:   30.0%[0m
+[0;32mI (221754) main: ------------------------------------------[0m
+[0;32mI (223774) main: Temperature: 24.0°C[0m
+[0;32mI (223774) main: Humidity:    42.0%[0m
+[0;32mI (223774) main: Lightness:   30.0%[0m
+[0;32mI (223774) main: ------------------------------------------[0m
+[0;32mI (224254) PIR: Motion stopped![0m
+[0;32mI (225794) main: Temperature: 24.0°C[0m
+[0;32mI (225794) main: Humidity:    42.0%[0m
+[0;32mI (225794) main: Lightness:   33.0%[0m
+[0;32mI (225794) main: ------------------------------------------[0m
+[0;32mI (227814) main: Temperature: 24.0°C[0m
+[0;32mI (227814) main: Humidity:    42.0%[0m
+[0;32mI (227814) main: Lightness:   33.0%[0m
+[0;32mI (227814) main: ------------------------------------------[0m
+[0;32mI (229834) main: Temperature: 24.0°C[0m
+[0;32mI (229834) main: Humidity:    42.0%[0m
+[0;32mI (229834) main: Lightness:   33.0%[0m
+[0;32mI (229834) main: ------------------------------------------[0m
+[0;32mI (230254) PIR: Motion detected![0m
+[0;32mI (230254) main: Movement started![0m
+[0;32mI (231854) main: Temperature: 24.0°C[0m
+[0;32mI (231854) main: Humidity:    42.0%[0m
+[0;32mI (231854) main: Lightness:   30.0%[0m
+[0;32mI (231854) main: ------------------------------------------[0m
+[0;32mI (233354) PIR: Motion stopped![0m
+[0;32mI (233874) main: Temperature: 24.0°C[0m
+[0;32mI (233874) main: Humidity:    42.0%[0m
+[0;32mI (233874) main: Lightness:   30.0%[0m
+[0;32mI (233874) main: ------------------------------------------[0m
+[0;32mI (235894) main: Temperature: 24.0°C[0m
+[0;32mI (235894) main: Humidity:    42.0%[0m
+[0;32mI (235894) main: Lightness:   30.0%[0m
+[0;32mI (235894) main: ------------------------------------------[0m
+[0;32mI (236354) PIR: Motion detected![0m
+[0;32mI (236354) main: Movement started![0m
+[0;32mI (237914) main: Temperature: 24.0°C[0m
+[0;32mI (237914) main: Humidity:    42.0%[0m
+[0;32mI (237914) main: Lightness:   32.0%[0m
+[0;32mI (237914) main: ------------------------------------------[0m
+[0;32mI (239454) PIR: Motion stopped![0m
+[0;32mI (239934) main: Temperature: 24.0°C[0m
+[0;32mI (239934) main: Humidity:    41.0%[0m
+[0;32mI (239934) main: Lightness:   33.0%[0m
+[0;32mI (239934) main: ------------------------------------------[0m
+[0;32mI (241954) main: Temperature: 24.0°C[0m
+[0;32mI (241954) main: Humidity:    42.0%[0m
+[0;32mI (241954) main: Lightness:   32.0%[0m
+[0;32mI (241954) main: ------------------------------------------[0m
+[0;32mI (242454) PIR: Motion detected![0m
+[0;32mI (242454) main: Movement started![0m
+[0;32mI (243974) main: Temperature: 24.0°C[0m
+[0;32mI (243974) main: Humidity:    42.0%[0m
+[0;32mI (243974) main: Lightness:   33.0%[0m
+[0;32mI (243974) main: ------------------------------------------[0m
+[0;32mI (245994) main: Temperature: 24.0°C[0m
+[0;32mI (245994) main: Humidity:    42.0%[0m
+[0;32mI (245994) main: Lightness:   33.0%[0m
+[0;32mI (245994) main: ------------------------------------------[0m
+[0;32mI (248014) main: Temperature: 24.0°C[0m
+[0;32mI (248014) main: Humidity:    42.0%[0m
+[0;32mI (248014) main: Lightness:   33.0%[0m
+[0;32mI (248014) main: ------------------------------------------[0m
+[0;32mI (250034) main: Temperature: 24.0°C[0m
+[0;32mI (250034) main: Humidity:    42.0%[0m
+[0;32mI (250034) main: Lightness:   33.0%[0m
+[0;32mI (250034) main: ------------------------------------------[0m
+[0;32mI (251554) PIR: Motion stopped![0m
+[0;32mI (252054) main: Temperature: 24.0°C[0m
+[0;32mI (252054) main: Humidity:    42.0%[0m
+[0;32mI (252054) main: Lightness:   33.0%[0m
+[0;32mI (252054) main: ------------------------------------------[0m
+[0;32mI (254074) main: Temperature: 24.0°C[0m
+[0;32mI (254074) main: Humidity:    41.0%[0m
+[0;32mI (254074) main: Lightness:   33.0%[0m
+[0;32mI (254074) main: ------------------------------------------[0m
+[0;32mI (254554) PIR: Motion detected![0m
+[0;32mI (254554) main: Movement started![0m
+[0;32mI (256094) main: Temperature: 24.0°C[0m
+[0;32mI (256094) main: Humidity:    41.0%[0m
+[0;32mI (256094) main: Lightness:   32.0%[0m
+[0;32mI (256094) main: ------------------------------------------[0m
+[0;32mI (257654) PIR: Motion stopped![0m
+[0;32mI (258114) main: Temperature: 24.0°C[0m
+[0;32mI (258114) main: Humidity:    42.0%[0m
+[0;32mI (258114) main: Lightness:   30.0%[0m
+[0;32mI (258114) main: ------------------------------------------[0m
+[0;32mI (260134) main: Temperature: 24.0°C[0m
+[0;32mI (260134) main: Humidity:    42.0%[0m
+[0;32mI (260134) main: Lightness:   30.0%[0m
+[0;32mI (260134) main: ------------------------------------------[0m
+[0;32mI (262154) main: Temperature: 24.0°C[0m
+[0;32mI (262154) main: Humidity:    42.0%[0m
+[0;32mI (262154) main: Lightness:   30.0%[0m
+[0;32mI (262154) main: ------------------------------------------[0m
+[0;32mI (263654) PIR: Motion detected![0m
+[0;32mI (263654) main: Movement started![0m
+[0;32mI (264174) main: Temperature: 24.0°C[0m
+[0;32mI (264174) main: Humidity:    42.0%[0m
+[0;32mI (264174) main: Lightness:   30.0%[0m
+[0;32mI (264174) main: ------------------------------------------[0m
+[0;32mI (266194) main: Temperature: 24.0°C[0m
+[0;32mI (266194) main: Humidity:    42.0%[0m
+[0;32mI (266194) main: Lightness:   30.0%[0m
+[0;32mI (266194) main: ------------------------------------------[0m
+[0;32mI (268214) main: Temperature: 24.0°C[0m
+[0;32mI (268214) main: Humidity:    41.0%[0m
+[0;32mI (268214) main: Lightness:   30.0%[0m
+[0;32mI (268214) main: ------------------------------------------[0m
+[0;32mI (270164) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (270234) main: Temperature: 24.0°C[0m
+[0;32mI (270234) main: Humidity:    41.0%[0m
+[0;32mI (270234) main: Lightness:   30.0%[0m
+[0;32mI (270234) main: ------------------------------------------[0m
+[0;32mI (272254) main: Temperature: 24.0°C[0m
+[0;32mI (272254) main: Humidity:    41.0%[0m
+[0;32mI (272254) main: Lightness:   30.0%[0m
+[0;32mI (272254) main: ------------------------------------------[0m
+[0;32mI (274274) main: Temperature: 24.0°C[0m
+[0;32mI (274274) main: Humidity:    41.0%[0m
+[0;32mI (274274) main: Lightness:   29.0%[0m
+[0;32mI (274274) main: ------------------------------------------[0m
+[0;32mI (275754) PIR: Motion stopped![0m
+[0;32mI (276294) main: Temperature: 24.0°C[0m
+[0;32mI (276294) main: Humidity:    41.0%[0m
+[0;32mI (276294) main: Lightness:   30.0%[0m
+[0;32mI (276294) main: ------------------------------------------[0m
+[0;32mI (276334) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (277084) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (277624) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (278314) main: Temperature: 24.0°C[0m
+[0;32mI (278314) main: Humidity:    41.0%[0m
+[0;32mI (278314) main: Lightness:   29.0%[0m
+[0;32mI (278314) main: ------------------------------------------[0m
+[0;32mI (280334) main: Temperature: 24.0°C[0m
+[0;32mI (280334) main: Humidity:    41.0%[0m
+[0;32mI (280334) main: Lightness:   29.0%[0m
+[0;32mI (280334) main: ------------------------------------------[0m
+[0;32mI (282354) main: Temperature: 24.0°C[0m
+[0;32mI (282354) main: Humidity:    41.0%[0m
+[0;32mI (282354) main: Lightness:   30.0%[0m
+[0;32mI (282354) main: ------------------------------------------[0m
+[0;32mI (283834) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (284374) main: Temperature: 24.0°C[0m
+[0;32mI (284374) main: Humidity:    41.0%[0m
+[0;32mI (284374) main: Lightness:   30.0%[0m
+[0;32mI (284374) main: ------------------------------------------[0m
+[0;32mI (284754) PIR: Motion detected![0m
+[0;32mI (284754) main: Movement started![0m
+[0;32mI (286394) main: Temperature: 24.0°C[0m
+[0;32mI (286394) main: Humidity:    41.0%[0m
+[0;32mI (286394) main: Lightness:   29.0%[0m
+[0;32mI (286394) main: ------------------------------------------[0m
+[0;32mI (288414) main: Temperature: 24.0°C[0m
+[0;32mI (288414) main: Humidity:    41.0%[0m
+[0;32mI (288414) main: Lightness:   29.0%[0m
+[0;32mI (288414) main: ------------------------------------------[0m
+[0;32mI (290434) main: Temperature: 24.0°C[0m
+[0;32mI (290434) main: Humidity:    41.0%[0m
+[0;32mI (290434) main: Lightness:   29.0%[0m
+[0;32mI (290434) main: ------------------------------------------[0m
+[0;32mI (291804) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (292454) main: Temperature: 24.0°C[0m
+[0;32mI (292454) main: Humidity:    41.0%[0m
+[0;32mI (292454) main: Lightness:   29.0%[0m
+[0;32mI (292454) main: ------------------------------------------[0m
+[0;32mI (293854) PIR: Motion stopped![0m
+[0;32mI (294474) main: Temperature: 24.0°C[0m
+[0;32mI (294474) main: Humidity:    41.0%[0m
+[0;32mI (294474) main: Lightness:   29.0%[0m
+[0;32mI (294474) main: ------------------------------------------[0m
+[0;32mI (296494) main: Temperature: 24.0°C[0m
+[0;32mI (296494) main: Humidity:    41.0%[0m
+[0;32mI (296494) main: Lightness:   29.0%[0m
+[0;32mI (296494) main: ------------------------------------------[0m
+[0;32mI (298514) main: Temperature: 24.0°C[0m
+[0;32mI (298514) main: Humidity:    41.0%[0m
+[0;32mI (298514) main: Lightness:   30.0%[0m
+[0;32mI (298514) main: ------------------------------------------[0m
+[0;32mI (299854) PIR: Motion detected![0m
+[0;32mI (299854) main: Movement started![0m
+[0;32mI (300534) main: Temperature: 24.0°C[0m
+[0;32mI (300534) main: Humidity:    41.0%[0m
+[0;32mI (300534) main: Lightness:   30.0%[0m
+[0;32mI (300534) main: ------------------------------------------[0m
+[0;32mI (302554) main: Temperature: 24.0°C[0m
+[0;32mI (302554) main: Humidity:    41.0%[0m
+[0;32mI (302554) main: Lightness:   30.0%[0m
+[0;32mI (302554) main: ------------------------------------------[0m
+[0;32mI (304574) main: Temperature: 24.0°C[0m
+[0;32mI (304574) main: Humidity:    41.0%[0m
+[0;32mI (304574) main: Lightness:   30.0%[0m
+[0;32mI (304574) main: ------------------------------------------[0m
+[0;32mI (305954) PIR: Motion stopped![0m
+[0;32mI (306594) main: Temperature: 24.0°C[0m
+[0;32mI (306594) main: Humidity:    41.0%[0m
+[0;32mI (306594) main: Lightness:   30.0%[0m
+[0;32mI (306594) main: ------------------------------------------[0m
+[0;32mI (308614) main: Temperature: 24.0°C[0m
+[0;32mI (308614) main: Humidity:    41.0%[0m
+[0;32mI (308614) main: Lightness:   30.0%[0m
+[0;32mI (308614) main: ------------------------------------------[0m
+[0;32mI (308954) PIR: Motion detected![0m
+[0;32mI (308954) main: Movement started![0m
+[0;32mI (310634) main: Temperature: 24.0°C[0m
+[0;32mI (310634) main: Humidity:    41.0%[0m
+[0;32mI (310634) main: Lightness:   30.0%[0m
+[0;32mI (310634) main: ------------------------------------------[0m
+[0;32mI (312054) PIR: Motion stopped![0m
+[0;32mI (312654) main: Temperature: 24.0°C[0m
+[0;32mI (312654) main: Humidity:    41.0%[0m
+[0;32mI (312654) main: Lightness:   30.0%[0m
+[0;32mI (312654) main: ------------------------------------------[0m
+[0;32mI (314674) main: Temperature: 24.0°C[0m
+[0;32mI (314674) main: Humidity:    40.0%[0m
+[0;32mI (314674) main: Lightness:   30.0%[0m
+[0;32mI (314674) main: ------------------------------------------[0m
+[0;32mI (315054) PIR: Motion detected![0m
+[0;32mI (315054) main: Movement started![0m
+[0;32mI (316694) main: Temperature: 24.0°C[0m
+[0;32mI (316694) main: Humidity:    40.0%[0m
+[0;32mI (316694) main: Lightness:   30.0%[0m
+[0;32mI (316694) main: ------------------------------------------[0m
+[0;32mI (318154) PIR: Motion stopped![0m
+[0;32mI (318714) main: Temperature: 24.0°C[0m
+[0;32mI (318714) main: Humidity:    40.0%[0m
+[0;32mI (318714) main: Lightness:   30.0%[0m
+[0;32mI (318714) main: ------------------------------------------[0m
+[0;32mI (320734) main: Temperature: 24.0°C[0m
+[0;32mI (320734) main: Humidity:    40.0%[0m
+[0;32mI (320734) main: Lightness:   30.0%[0m
+[0;32mI (320734) main: ------------------------------------------[0m
+[0;32mI (322754) main: Temperature: 24.0°C[0m
+[0;32mI (322754) main: Humidity:    40.0%[0m
+[0;32mI (322754) main: Lightness:   33.0%[0m
+[0;32mI (322754) main: ------------------------------------------[0m
+[0;32mI (324774) main: Temperature: 24.0°C[0m
+[0;32mI (324774) main: Humidity:    41.0%[0m
+[0;32mI (324774) main: Lightness:   33.0%[0m
+[0;32mI (324774) main: ------------------------------------------[0m
+[0;32mI (326794) main: Temperature: 24.0°C[0m
+[0;32mI (326794) main: Humidity:    41.0%[0m
+[0;32mI (326794) main: Lightness:   33.0%[0m
+[0;32mI (326794) main: ------------------------------------------[0m
+[0;32mI (328814) main: Temperature: 24.0°C[0m
+[0;32mI (328814) main: Humidity:    41.0%[0m
+[0;32mI (328814) main: Lightness:   33.0%[0m
+[0;32mI (328814) main: ------------------------------------------[0m
+[0;32mI (330154) PIR: Motion detected![0m
+[0;32mI (330154) main: Movement started![0m
+[0;32mI (330834) main: Temperature: 24.0°C[0m
+[0;32mI (330834) main: Humidity:    41.0%[0m
+[0;32mI (330834) main: Lightness:   32.0%[0m
+[0;32mI (330834) main: ------------------------------------------[0m
+[0;32mI (332854) main: Temperature: 24.0°C[0m
+[0;32mI (332854) main: Humidity:    41.0%[0m
+[0;32mI (332854) main: Lightness:   32.0%[0m
+[0;32mI (332854) main: ------------------------------------------[0m
+[0;32mI (334874) main: Temperature: 24.0°C[0m
+[0;32mI (334874) main: Humidity:    41.0%[0m
+[0;32mI (334874) main: Lightness:   32.0%[0m
+[0;32mI (334874) main: ------------------------------------------[0m
+[0;32mI (336894) main: Temperature: 24.0°C[0m
+[0;32mI (336894) main: Humidity:    42.0%[0m
+[0;32mI (336894) main: Lightness:   32.0%[0m
+[0;32mI (336894) main: ------------------------------------------[0m
+[0;32mI (338914) main: Temperature: 24.0°C[0m
+[0;32mI (338914) main: Humidity:    42.0%[0m
+[0;32mI (338914) main: Lightness:   32.0%[0m
+[0;32mI (338914) main: ------------------------------------------[0m
+[0;32mI (340934) main: Temperature: 24.0°C[0m
+[0;32mI (340934) main: Humidity:    42.0%[0m
+[0;32mI (340934) main: Lightness:   32.0%[0m
+[0;32mI (340934) main: ------------------------------------------[0m
+[0;32mI (342954) main: Temperature: 24.0°C[0m
+[0;32mI (342954) main: Humidity:    42.0%[0m
+[0;32mI (342954) main: Lightness:   32.0%[0m
+[0;32mI (342954) main: ------------------------------------------[0m
+[0;32mI (344974) main: Temperature: 24.0°C[0m
+[0;32mI (344974) main: Humidity:    42.0%[0m
+[0;32mI (344974) main: Lightness:   32.0%[0m
+[0;32mI (344974) main: ------------------------------------------[0m
+[0;32mI (346994) main: Temperature: 24.0°C[0m
+[0;32mI (346994) main: Humidity:    42.0%[0m
+[0;32mI (346994) main: Lightness:   33.0%[0m
+[0;32mI (346994) main: ------------------------------------------[0m
+[0;32mI (348254) PIR: Motion stopped![0m
+[0;32mI (349014) main: Temperature: 24.0°C[0m
+[0;32mI (349014) main: Humidity:    42.0%[0m
+[0;32mI (349014) main: Lightness:   33.0%[0m
+[0;32mI (349014) main: ------------------------------------------[0m
+[0;32mI (351034) main: Temperature: 24.0°C[0m
+[0;32mI (351034) main: Humidity:    42.0%[0m
+[0;32mI (351034) main: Lightness:   32.0%[0m
+[0;32mI (351034) main: ------------------------------------------[0m
+[0;32mI (353054) main: Temperature: 24.0°C[0m
+[0;32mI (353054) main: Humidity:    43.0%[0m
+[0;32mI (353054) main: Lightness:   33.0%[0m
+[0;32mI (353054) main: ------------------------------------------[0m
+[0;32mI (355074) main: Temperature: 24.0°C[0m
+[0;32mI (355074) main: Humidity:    43.0%[0m
+[0;32mI (355074) main: Lightness:   33.0%[0m
+[0;32mI (355074) main: ------------------------------------------[0m
+[0;32mI (357094) main: Temperature: 24.0°C[0m
+[0;32mI (357094) main: Humidity:    43.0%[0m
+[0;32mI (357094) main: Lightness:   33.0%[0m
+[0;32mI (357094) main: ------------------------------------------[0m
+[0;32mI (359114) main: Temperature: 24.0°C[0m
+[0;32mI (359114) main: Humidity:    43.0%[0m
+[0;32mI (359114) main: Lightness:   33.0%[0m
+[0;32mI (359114) main: ------------------------------------------[0m
+[0;32mI (361134) main: Temperature: 24.0°C[0m
+[0;32mI (361134) main: Humidity:    43.0%[0m
+[0;32mI (361134) main: Lightness:   33.0%[0m
+[0;32mI (361134) main: ------------------------------------------[0m
+[0;32mI (363154) main: Temperature: 24.0°C[0m
+[0;32mI (363154) main: Humidity:    43.0%[0m
+[0;32mI (363154) main: Lightness:   33.0%[0m
+[0;32mI (363154) main: ------------------------------------------[0m
+[0;32mI (363254) PIR: Motion detected![0m
+[0;32mI (363254) main: Movement started![0m
+[0;32mI (365174) main: Temperature: 24.0°C[0m
+[0;32mI (365174) main: Humidity:    42.0%[0m
+[0;32mI (365174) main: Lightness:   33.0%[0m
+[0;32mI (365174) main: ------------------------------------------[0m
+[0;32mI (366354) PIR: Motion stopped![0m
+[0;32mI (367194) main: Temperature: 24.0°C[0m
+[0;32mI (367194) main: Humidity:    42.0%[0m
+[0;32mI (367194) main: Lightness:   33.0%[0m
+[0;32mI (367194) main: ------------------------------------------[0m
+[0;32mI (369214) main: Temperature: 24.0°C[0m
+[0;32mI (369214) main: Humidity:    42.0%[0m
+[0;32mI (369214) main: Lightness:   33.0%[0m
+[0;32mI (369214) main: ------------------------------------------[0m
+[0;32mI (371234) main: Temperature: 24.0°C[0m
+[0;32mI (371234) main: Humidity:    42.0%[0m
+[0;32mI (371234) main: Lightness:   33.0%[0m
+[0;32mI (371234) main: ------------------------------------------[0m
+[0;32mI (372354) PIR: Motion detected![0m
+[0;32mI (372354) main: Movement started![0m
+[0;32mI (373254) main: Temperature: 24.0°C[0m
+[0;32mI (373254) main: Humidity:    42.0%[0m
+[0;32mI (373254) main: Lightness:   33.0%[0m
+[0;32mI (373254) main: ------------------------------------------[0m
+[0;32mI (375274) main: Temperature: 24.0°C[0m
+[0;32mI (375274) main: Humidity:    42.0%[0m
+[0;32mI (375274) main: Lightness:   32.0%[0m
+[0;32mI (375274) main: ------------------------------------------[0m
+[0;32mI (375454) PIR: Motion stopped![0m
+[0;32mI (377294) main: Temperature: 24.0°C[0m
+[0;32mI (377294) main: Humidity:    42.0%[0m
+[0;32mI (377294) main: Lightness:   33.0%[0m
+[0;32mI (377294) main: ------------------------------------------[0m
+[0;32mI (379314) main: Temperature: 24.0°C[0m
+[0;32mI (379314) main: Humidity:    42.0%[0m
+[0;32mI (379314) main: Lightness:   33.0%[0m
+[0;32mI (379314) main: ------------------------------------------[0m
+[0;32mI (381334) main: Temperature: 24.0°C[0m
+[0;32mI (381334) main: Humidity:    42.0%[0m
+[0;32mI (381334) main: Lightness:   33.0%[0m
+[0;32mI (381334) main: ------------------------------------------[0m
+[0;32mI (383354) main: Temperature: 24.0°C[0m
+[0;32mI (383354) main: Humidity:    43.0%[0m
+[0;32mI (383354) main: Lightness:   31.0%[0m
+[0;32mI (383354) main: ------------------------------------------[0m
+[0;32mI (385374) main: Temperature: 24.0°C[0m
+[0;32mI (385374) main: Humidity:    43.0%[0m
+[0;32mI (385374) main: Lightness:   33.0%[0m
+[0;32mI (385374) main: ------------------------------------------[0m
+[0;32mI (387394) main: Temperature: 24.0°C[0m
+[0;32mI (387394) main: Humidity:    43.0%[0m
+[0;32mI (387394) main: Lightness:   32.0%[0m
+[0;32mI (387394) main: ------------------------------------------[0m
+[0;32mI (387454) PIR: Motion detected![0m
+[0;32mI (387454) main: Movement started![0m
+[0;32mI (389414) main: Temperature: 24.0°C[0m
+[0;32mI (389414) main: Humidity:    43.0%[0m
+[0;32mI (389414) main: Lightness:   33.0%[0m
+[0;32mI (389414) main: ------------------------------------------[0m
+[0;32mI (391434) main: Temperature: 24.0°C[0m
+[0;32mI (391434) main: Humidity:    43.0%[0m
+[0;32mI (391434) main: Lightness:   32.0%[0m
+[0;32mI (391434) main: ------------------------------------------[0m
+[0;32mI (393454) main: Temperature: 24.0°C[0m
+[0;32mI (393454) main: Humidity:    43.0%[0m
+[0;32mI (393454) main: Lightness:   33.0%[0m
+[0;32mI (393454) main: ------------------------------------------[0m
+[0;32mI (395474) main: Temperature: 24.0°C[0m
+[0;32mI (395474) main: Humidity:    43.0%[0m
+[0;32mI (395474) main: Lightness:   33.0%[0m
+[0;32mI (395474) main: ------------------------------------------[0m
+[0;32mI (396554) PIR: Motion stopped![0m
+[0;32mI (397494) main: Temperature: 24.0°C[0m
+[0;32mI (397494) main: Humidity:    43.0%[0m
+[0;32mI (397494) main: Lightness:   32.0%[0m
+[0;32mI (397494) main: ------------------------------------------[0m

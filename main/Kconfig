@@ -1,0 +1,34 @@
+menu "ESP Smart Home Alpha"
+
+    config DHT_GPIO
+        int "DHT Sensor GPIO"
+        default 17
+        help
+            The GPIO pin used for the DHT sensor.
+    
+    config PIR_GPIO
+        int "PIR Sensor GPIO"
+        default 16
+        help
+            The GPIO pin used for the PIR sensor.
+    
+    config PIEZO_GPIO
+        int "Piezo Buzzer GPIO"
+        default 18
+        help
+            The GPIO pin used for the Piezo buzzer.
+    
+    config LED_GPIO
+        int "LED GPIO"
+        default 23
+        help
+            The GPIO pin used for the LED.
+    
+    config LDR_GPIO
+        int "LDR Sensor GPIO"
+        default 34
+        help
+            The GPIO pin used for the LDR sensor.
+    
+    endmenu
+    

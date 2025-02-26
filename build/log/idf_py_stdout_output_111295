@@ -1,0 +1,55 @@
+[1/94] Linking C static library esp-idf/lm75/liblm75.a
+[2/94] Linking C static library esp-idf/max1704x/libmax1704x.a
+[3/94] Linking C static library esp-idf/max31725/libmax31725.a
+[4/94] Linking C static library esp-idf/max31855/libmax31855.a
+[5/94] Linking C static library esp-idf/mhz19b/libmhz19b.a
+[6/94] Linking C static library esp-idf/ls7366r/libls7366r.a
+[7/94] Linking C static library esp-idf/lsm303/liblsm303.a
+[8/94] Linking C static library esp-idf/max31865/libmax31865.a
+[9/94] Linking C static library esp-idf/mcp23008/libmcp23008.a
+[10/94] Linking C static library esp-idf/mcp23x17/libmcp23x17.a
+[11/94] Linking C static library esp-idf/mcp342x/libmcp342x.a
+[12/94] Linking C static library esp-idf/mcp4725/libmcp4725.a
+[13/94] Linking C static library esp-idf/ms5611/libms5611.a
+[14/94] Linking C static library esp-idf/max7219/libmax7219.a
+[15/94] Linking C static library esp-idf/mcp960x/libmcp960x.a
+[16/94] Linking C static library esp-idf/mcp9808/libmcp9808.a
+[17/94] Linking C static library esp-idf/mp2660/libmp2660.a
+[18/94] Linking C static library esp-idf/mpu6050/libmpu6050.a
+[19/94] Linking C static library esp-idf/noise/libnoise.a
+[20/94] Building C object esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj
+FAILED: esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj 
+/home/stefan/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3-dev-1724-ga5b261f699\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/stefan/esp/esp-smart-home/include -I/home/stefan/esp/esp-smart-home/build/config -I/home/stefan/esp/esp-smart-home/components/smart-home-alpha/includes -I/home/stefan/esp/esp-idf/components/newlib/platform_include -I/home/stefan/esp/esp-idf/components/freertos/config/include -I/home/stefan/esp/esp-idf/components/freertos/config/include/freertos -I/home/stefan/esp/esp-idf/components/freertos/config/xtensa/include -I/home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/stefan/esp/esp-idf/components/freertos/esp_additions/include -I/home/stefan/esp/esp-idf/components/esp_hw_support/include -I/home/stefan/esp/esp-idf/components/esp_hw_support/include/soc -I/home/stefan/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/stefan/esp/esp-idf/components/esp_hw_support/dma/include -I/home/stefan/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/stefan/esp/esp-idf/components/heap/include -I/home/stefan/esp/esp-idf/components/log/include -I/home/stefan/esp/esp-idf/components/soc/include -I/home/stefan/esp/esp-idf/components/soc/esp32 -I/home/stefan/esp/esp-idf/components/soc/esp32/include -I/home/stefan/esp/esp-idf/components/hal/platform_port/include -I/home/stefan/esp/esp-idf/components/hal/esp32/include -I/home/stefan/esp/esp-idf/components/hal/include -I/home/stefan/esp/esp-idf/components/esp_rom/include -I/home/stefan/esp/esp-idf/components/esp_rom/include/esp32 -I/home/stefan/esp/esp-idf/components/esp_rom/esp32 -I/home/stefan/esp/esp-idf/components/esp_common/include -I/home/stefan/esp/esp-idf/components/esp_system/include -I/home/stefan/esp/esp-idf/components/esp_system/port/soc -I/home/stefan/esp/esp-idf/components/esp_system/port/include/private -I/home/stefan/esp/esp-idf/components/xtensa/esp32/include -I/home/stefan/esp/esp-idf/components/xtensa/include -I/home/stefan/esp/esp-idf/components/xtensa/deprecated_include -I/home/stefan/esp/esp-idf/components/lwip/include -I/home/stefan/esp/esp-idf/components/lwip/include/apps -I/home/stefan/esp/esp-idf/components/lwip/include/apps/sntp -I/home/stefan/esp/esp-idf/components/lwip/lwip/src/include -I/home/stefan/esp/esp-idf/components/lwip/port/include -I/home/stefan/esp/esp-idf/components/lwip/port/freertos/include -I/home/stefan/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/stefan/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/stefan/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/stefan/esp/esp-idf/components/driver/deprecated -I/home/stefan/esp/esp-idf/components/driver/i2c/include -I/home/stefan/esp/esp-idf/components/driver/touch_sensor/include -I/home/stefan/esp/esp-idf/components/driver/twai/include -I/home/stefan/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/stefan/esp/esp-idf/components/esp_pm/include -I/home/stefan/esp/esp-idf/components/esp_ringbuf/include -I/home/stefan/esp/esp-idf/components/esp_driver_gpio/include -I/home/stefan/esp/esp-idf/components/esp_driver_pcnt/include -I/home/stefan/esp/esp-idf/components/esp_driver_gptimer/include -I/home/stefan/esp/esp-idf/components/esp_driver_spi/include -I/home/stefan/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/stefan/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/stefan/esp/esp-idf/components/esp_driver_i2s/include -I/home/stefan/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/stefan/esp/esp-idf/components/sdmmc/include -I/home/stefan/esp/esp-idf/components/esp_driver_sdspi/include -I/home/stefan/esp/esp-idf/components/esp_driver_sdio/include -I/home/stefan/esp/esp-idf/components/esp_driver_dac/include -I/home/stefan/esp/esp-idf/components/esp_driver_rmt/include -I/home/stefan/esp/esp-idf/components/esp_driver_tsens/include -I/home/stefan/esp/esp-idf/components/esp_driver_sdm/include -I/home/stefan/esp/esp-idf/components/esp_driver_i2c/include -I/home/stefan/esp/esp-idf/components/esp_driver_uart/include -I/home/stefan/esp/esp-idf/components/vfs/include -I/home/stefan/esp/esp-idf/components/esp_driver_ledc/include -I/home/stefan/esp/esp-idf/components/esp_driver_parlio/include -I/home/stefan/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/stefan/esp/esp-smart-home/components/esp-idf-lib/components/dht -I/home/stefan/esp/esp-smart-home/components/esp-idf-lib/components/esp_idf_lib_helpers -I/home/stefan/esp/esp-idf/components/esp_adc/include -I/home/stefan/esp/esp-idf/components/esp_adc/interface -I/home/stefan/esp/esp-idf/components/esp_adc/esp32/include -I/home/stefan/esp/esp-idf/components/esp_adc/deprecated/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/stefan/esp/esp-smart-home=. -fmacro-prefix-map=/home/stefan/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj -MF esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj.d -o esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj -c /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c
+/home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c: In function 'piezo_play_song_task':
+/home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:113:74: error: incompatible type for argument 2 of 'piezo_wrapper_play_note'
+  113 |         piezo_wrapper_play_note(wrapper_song->wrapper, wrapper_song->song[i]);
+      |                                                        ~~~~~~~~~~~~~~~~~~^~~
+      |                                                                          |
+      |                                                                          struct piezo_note_t
+/home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:86:90: note: expected 'struct piezo_note_t *' but argument is of type 'struct piezo_note_t'
+   86 | void piezo_wrapper_play_note(struct piezo_wrapper_t *piezo_wrapper, struct piezo_note_t *note) {
+      |                                                                     ~~~~~~~~~~~~~~~~~~~~~^~~~
+[21/94] Performing build step for 'bootloader'
+[1/1] cd /home/stefan/esp/esp-smart-home/build/bootloader/esp-idf/esptool_py && /home/stefan/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/stefan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/stefan/esp/esp-smart-home/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[22/94] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[23/94] Building C object esp-idf/pcf8574/CMakeFiles/__idf_pcf8574.dir/pcf8574.c.obj
+[24/94] Building C object esp-idf/pcf8591/CMakeFiles/__idf_pcf8591.dir/pcf8591.c.obj
+[25/94] Building C object esp-idf/pcf8575/CMakeFiles/__idf_pcf8575.dir/pcf8575.c.obj
+[26/94] Building C object esp-idf/qmc5883l/CMakeFiles/__idf_qmc5883l.dir/qmc5883l.c.obj
+[27/94] Building C object esp-idf/sfa3x/CMakeFiles/__idf_sfa3x.dir/sfa3x.c.obj
+[28/94] Building C object esp-idf/sgp40/CMakeFiles/__idf_sgp40.dir/sensirion_voc_algorithm.c.obj
+[29/94] Building C object esp-idf/pca9557/CMakeFiles/__idf_pca9557.dir/pca9557.c.obj
+[30/94] Building C object esp-idf/sgp40/CMakeFiles/__idf_sgp40.dir/sgp40.c.obj
+[31/94] Building C object esp-idf/scd4x/CMakeFiles/__idf_scd4x.dir/scd4x.c.obj
+[32/94] Building C object esp-idf/qmp6988/CMakeFiles/__idf_qmp6988.dir/qmp6988.c.obj
+[33/94] Building C object esp-idf/sts21/CMakeFiles/__idf_sts21.dir/sts21.c.obj
+[34/94] Building C object esp-idf/sht3x/CMakeFiles/__idf_sht3x.dir/sht3x.c.obj
+[35/94] Building C object esp-idf/pca9685/CMakeFiles/__idf_pca9685.dir/pca9685.c.obj
+[36/94] Building C object esp-idf/scd30/CMakeFiles/__idf_scd30.dir/scd30.c.obj
+[37/94] Building C object esp-idf/sgm58031/CMakeFiles/__idf_sgm58031.dir/sgm58031.c.obj
+[38/94] Building C object esp-idf/pcf8563/CMakeFiles/__idf_pcf8563.dir/pcf8563.c.obj
+[39/94] Building C object esp-idf/si7021/CMakeFiles/__idf_si7021.dir/si7021.c.obj
+[40/94] Building C object esp-idf/rda5807m/CMakeFiles/__idf_rda5807m.dir/rda5807m.c.obj
+[41/94] Building C object esp-idf/sht4x/CMakeFiles/__idf_sht4x.dir/sht4x.c.obj
+ninja: build stopped: subcommand failed.

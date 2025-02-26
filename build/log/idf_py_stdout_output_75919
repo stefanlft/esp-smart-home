@@ -1,0 +1,2295 @@
+ the binary image headets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2b0h ( 41648) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2d8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001a2e4 vaddr=3ffb0000 size=02268h (  8808) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=0001c554 vaddr=40080000 size=03ac4h ( 15044) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=154c8h ( 87240) map[0m
+[0;32mI (172) esp_image: segment 5: paddr=000354f0 vaddr=40083ac4 size=08ce0h ( 36064) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (217) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (222) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Feb 21 2025 15:29:49[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  56cb9d6bc...[0m
+[0;32mI (238) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (244) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (249) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (254) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (259) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FFB2B50 len 0002D4B0 (181 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 4008C7A4 len 0001385C (78 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (302) spi_flash: flash io: dio[0m
+[0;33mW (306) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (320) main_task: Started on CPU0[0m
+[0;32mI (330) main_task: Calling app_main()[0m
+[0;32mI (330) main: Temperature: 2.0°C[0m
+[0;32mI (330) main: Humidity:    0.0%[0m
+[0;32mI (330) main: Lightness:   0.8%[0m
+[0;32mI (330) main: ------------------------------------------[0m
+[0;31mE (1350) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1350) DHT: Could not read data from sensor[0m
+[0;32mI (2340) main: Temperature: 2.0°C[0m
+[0;32mI (2340) main: Humidity:    0.0%[0m
+[0;32mI (2340) main: Lightness:   45.0%[0m
+[0;32mI (2340) main: ------------------------------------------[0m
+[0;32mI (4340) main: Temperature: 23.0°C[0m
+[0;32mI (4340) main: Humidity:    95.0%[0m
+[0;32mI (4340) main: Lightness:   45.0%[0m
+[0;32mI (4340) main: ------------------------------------------[0m
+[0;32mI (6340) main: Temperature: 22.0°C[0m
+[0;32mI (6340) main: Humidity:    96.0%[0m
+[0;32mI (6340) main: Lightness:   45.0%[0m
+[0;32mI (6340) main: ------------------------------------------[0m
+[0;32mI (8340) main: Temperature: 22.0°C[0m
+[0;32mI (8340) main: Humidity:    95.0%[0m
+[0;32mI (8340) main: Lightness:   45.0%[0m
+[0;32mI (8340) main: ------------------------------------------[0m
+[0;32mI (10340) main: Temperature: 22.0°C[0m
+[0;32mI (10340) main: Humidity:    94.0%[0m
+[0;32mI (10340) main: Lightness:   45.0%[0m
+[0;32mI (10340) main: ------------------------------------------[0m
+[0;32mI (12340) main: Temperature: 22.0°C[0m
+[0;32mI (12340) main: Humidity:    94.0%[0m
+[0;32mI (12340) main: Lightness:   45.0%[0m
+[0;32mI (12340) main: ------------------------------------------[0m
+[0;32mI (14340) main: Temperature: 22.0°C[0m
+[0;32mI (14340) main: Humidity:    93.0%[0m
+[0;32mI (14340) main: Lightness:   45.0%[0m
+[0;32mI (14340) main: ------------------------------------------[0m
+[0;32mI (16340) main: Temperature: 22.0°C[0m
+[0;32mI (16340) main: Humidity:    93.0%[0m
+[0;32mI (16340) main: Lightness:   45.0%[0m
+[0;32mI (16340) main: ------------------------------------------[0m
+[0;32mI (18340) main: Temperature: 22.0°C[0m
+[0;32mI (18340) main: Humidity:    93.0%[0m
+[0;32mI (18340) main: Lightness:   45.0%[0m
+[0;32mI (18340) main: ------------------------------------------[0m
+[0;32mI (20340) main: Temperature: 22.0°C[0m
+[0;32mI (20340) main: Humidity:    92.0%[0m
+[0;32mI (20340) main: Lightness:   45.0%[0m
+[0;32mI (20340) main: ------------------------------------------[0m
+[0;32mI (22340) main: Temperature: 22.0°C[0m
+[0;32mI (22340) main: Humidity:    91.0%[0m
+[0;32mI (22340) main: Lightness:   45.0%[0m
+[0;32mI (22340) main: ------------------------------------------[0m
+[0;32mI (24340) main: Temperature: 22.0°C[0m
+[0;32mI (24340) main: Humidity:    90.0%[0m
+[0;32mI (24340) main: Lightness:   45.0%[0m
+[0;32mI (24340) main: ------------------------------------------[0m
+[0;32mI (26340) main: Temperature: 22.0°C[0m
+[0;32mI (26340) main: Humidity:    89.0%[0m
+[0;32mI (26340) main: Lightness:   45.0%[0m
+[0;32mI (26340) main: ------------------------------------------[0m
+[0;32mI (28340) main: Temperature: 22.0°C[0m
+[0;32mI (28340) main: Humidity:    88.0%[0m
+[0;32mI (28340) main: Lightness:   45.0%[0m
+[0;32mI (28340) main: ------------------------------------------[0m
+[0;32mI (30340) main: Temperature: 22.0°C[0m
+[0;32mI (30340) main: Humidity:    88.0%[0m
+[0;32mI (30340) main: Lightness:   45.0%[0m
+[0;32mI (30340) main: ------------------------------------------[0m
+[0;32mI (32340) main: Temperature: 22.0°C[0m
+[0;32mI (32340) main: Humidity:    86.0%[0m
+[0;32mI (32340) main: Lightness:   45.0%[0m
+[0;32mI (32340) main: ------------------------------------------[0m
+[0;32mI (34340) main: Temperature: 22.0°C[0m
+[0;32mI (34340) main: Humidity:    85.0%[0m
+[0;32mI (34340) main: Lightness:   45.0%[0m
+[0;32mI (34340) main: ------------------------------------------[0m
+[0;32mI (36340) main: Temperature: 22.0°C[0m
+[0;32mI (36340) main: Humidity:    85.0%[0m
+[0;32mI (36340) main: Lightness:   45.0%[0m
+[0;32mI (36340) main: ------------------------------------------[0m
+[0;32mI (38340) main: Temperature: 22.0°C[0m
+[0;32mI (38340) main: Humidity:    83.0%[0m
+[0;32mI (38340) main: Lightness:   45.0%[0m
+[0;32mI (38340) main: ------------------------------------------[0m
+[0;32mI (40340) main: Temperature: 22.0°C[0m
+[0;32mI (40340) main: Humidity:    82.0%[0m
+[0;32mI (40340) main: Lightness:   45.0%[0m
+[0;32mI (40340) main: ------------------------------------------[0m
+[0;32mI (42340) main: Temperature: 22.0°C[0m
+[0;32mI (42340) main: Humidity:    81.0%[0m
+[0;32mI (42340) main: Lightness:   45.0%[0m
+[0;32mI (42340) main: ------------------------------------------[0m
+[0;32mI (44340) main: Temperature: 22.0°C[0m
+[0;32mI (44340) main: Humidity:    81.0%[0m
+[0;32mI (44340) main: Lightness:   45.0%[0m
+[0;32mI (44340) main: ------------------------------------------[0m
+[0;32mI (46340) main: Temperature: 21.0°C[0m
+[0;32mI (46340) main: Humidity:    80.0%[0m
+[0;32mI (46340) main: Lightness:   45.0%[0m
+[0;32mI (46340) main: ------------------------------------------[0m
+[0;32mI (48340) main: Temperature: 21.0°C[0m
+[0;32mI (48340) main: Humidity:    80.0%[0m
+[0;32mI (48340) main: Lightness:   45.0%[0m
+[0;32mI (48340) main: ------------------------------------------[0m
+[0;32mI (50340) main: Temperature: 21.0°C[0m
+[0;32mI (50340) main: Humidity:    79.0%[0m
+[0;32mI (50340) main: Lightness:   45.0%[0m
+[0;32mI (50340) main: ------------------------------------------[0m
+[0;32mI (52340) main: Temperature: 21.0°C[0m
+[0;32mI (52340) main: Humidity:    78.0%[0m
+[0;32mI (52340) main: Lightness:   45.0%[0m
+[0;32mI (52340) main: ------------------------------------------[0m
+[0;32mI (54340) main: Temperature: 21.0°C[0m
+[0;32mI (54340) main: Humidity:    77.0%[0m
+[0;32mI (54340) main: Lightness:   45.0%[0m
+[0;32mI (54340) main: ------------------------------------------[0m
+[0;32mI (56340) main: Temperature: 21.0°C[0m
+[0;32mI (56340) main: Humidity:    77.0%[0m
+[0;32mI (56340) main: Lightness:   45.0%[0m
+[0;32mI (56340) main: ------------------------------------------[0m
+[0;32mI (58340) main: Temperature: 21.0°C[0m
+[0;32mI (58340) main: Humidity:    76.0%[0m
+[0;32mI (58340) main: Lightness:   44.0%[0m
+[0;32mI (58340) main: ------------------------------------------[0m
+[0;32mI (60340) main: Temperature: 21.0°C[0m
+[0;32mI (60340) main: Humidity:    75.0%[0m
+[0;32mI (60340) main: Lightness:   45.0%[0m
+[0;32mI (60340) main: ------------------------------------------[0m
+[0;32mI (62340) main: Temperature: 21.0°C[0m
+[0;32mI (62340) main: Humidity:    75.0%[0m
+[0;32mI (62340) main: Lightness:   45.0%[0m
+[0;32mI (62340) main: ------------------------------------------[0m
+[0;32mI (64340) main: Temperature: 21.0°C[0m
+[0;32mI (64340) main: Humidity:    74.0%[0m
+[0;32mI (64340) main: Lightness:   45.0%[0m
+[0;32mI (64340) main: ------------------------------------------[0m
+[0;32mI (66340) main: Temperature: 21.0°C[0m
+[0;32mI (66340) main: Humidity:    73.0%[0m
+[0;32mI (66340) main: Lightness:   45.0%[0m
+[0;32mI (66340) main: ------------------------------------------[0m
+[0;32mI (68340) main: Temperature: 21.0°C[0m
+[0;32mI (68340) main: Humidity:    73.0%[0m
+[0;32mI (68340) main: Lightness:   45.0%[0m
+[0;32mI (68340) main: ------------------------------------------[0m
+[0;32mI (70340) main: Temperature: 21.0°C[0m
+[0;32mI (70340) main: Humidity:    73.0%[0m
+[0;32mI (70340) main: Lightness:   45.0%[0m
+[0;32mI (70340) main: ------------------------------------------[0m
+[0;32mI (72340) main: Temperature: 21.0°C[0m
+[0;32mI (72340) main: Humidity:    72.0%[0m
+[0;32mI (72340) main: Lightness:   45.0%[0m
+[0;32mI (72340) main: ------------------------------------------[0m
+[0;32mI (74340) main: Temperature: 21.0°C[0m
+[0;32mI (74340) main: Humidity:    72.0%[0m
+[0;32mI (74340) main: Lightness:   45.0%[0m
+[0;32mI (74340) main: ------------------------------------------[0m
+[0;32mI (76340) main: Temperature: 21.0°C[0m
+[0;32mI (76340) main: Humidity:    72.0%[0m
+[0;32mI (76340) main: Lightness:   45.0%[0m
+[0;32mI (76340) main: ------------------------------------------[0m
+[0;32mI (78340) main: Temperature: 21.0°C[0m
+[0;32mI (78340) main: Humidity:    71.0%[0m
+[0;32mI (78340) main: Lightness:   45.0%[0m
+[0;32mI (78340) main: ------------------------------------------[0m
+[0;32mI (80340) main: Temperature: 21.0°C[0m
+[0;32mI (80340) main: Humidity:    71.0%[0m
+[0;32mI (80340) main: Lightness:   45.0%[0m
+[0;32mI (80340) main: ------------------------------------------[0m
+[0;32mI (82340) main: Temperature: 21.0°C[0m
+[0;32mI (82340) main: Humidity:    70.0%[0m
+[0;32mI (82340) main: Lightness:   45.0%[0m
+[0;32mI (82340) main: ------------------------------------------[0m
+[0;32mI (84340) main: Temperature: 21.0°C[0m
+[0;32mI (84340) main: Humidity:    70.0%[0m
+[0;32mI (84340) main: Lightness:   45.0%[0m
+[0;32mI (84340) main: ------------------------------------------[0m
+[0;32mI (86340) main: Temperature: 21.0°C[0m
+[0;32mI (86340) main: Humidity:    69.0%[0m
+[0;32mI (86340) main: Lightness:   45.0%[0m
+[0;32mI (86340) main: ------------------------------------------[0m
+[0;32mI (88340) main: Temperature: 21.0°C[0m
+[0;32mI (88340) main: Humidity:    69.0%[0m
+[0;32mI (88340) main: Lightness:   45.0%[0m
+[0;32mI (88340) main: ------------------------------------------[0m
+[0;32mI (90340) main: Temperature: 21.0°C[0m
+[0;32mI (90340) main: Humidity:    69.0%[0m
+[0;32mI (90340) main: Lightness:   45.0%[0m
+[0;32mI (90340) main: ------------------------------------------[0m
+[0;32mI (92340) main: Temperature: 21.0°C[0m
+[0;32mI (92340) main: Humidity:    69.0%[0m
+[0;32mI (92340) main: Lightness:   45.0%[0m
+[0;32mI (92340) main: ------------------------------------------[0m
+[0;32mI (94340) main: Temperature: 21.0°C[0m
+[0;32mI (94340) main: Humidity:    68.0%[0m
+[0;32mI (94340) main: Lightness:   45.0%[0m
+[0;32mI (94340) main: ------------------------------------------[0m
+[0;32mI (96340) main: Temperature: 21.0°C[0m
+[0;32mI (96340) main: Humidity:    68.0%[0m
+[0;32mI (96340) main: Lightness:   45.0%[0m
+[0;32mI (96340) main: ------------------------------------------[0m
+[0;32mI (98340) main: Temperature: 21.0°C[0m
+[0;32mI (98340) main: Humidity:    67.0%[0m
+[0;32mI (98340) main: Lightness:   45.0%[0m
+[0;32mI (98340) main: ------------------------------------------[0m
+[0;32mI (100340) main: Temperature: 21.0°C[0m
+[0;32mI (100340) main: Humidity:    67.0%[0m
+[0;32mI (100340) main: Lightness:   46.0%[0m
+[0;32mI (100340) main: ------------------------------------------[0m
+[0;32mI (102350) main: Temperature: 21.0°C[0m
+[0;32mI (102350) main: Humidity:    66.0%[0m
+[0;32mI (102350) main: Lightness:   45.0%[0m
+[0;32mI (102350) main: ------------------------------------------[0m
+[0;32mI (104370) main: Temperature: 21.0°C[0m
+[0;32mI (104370) main: Humidity:    66.0%[0m
+[0;32mI (104370) main: Lightness:   45.0%[0m
+[0;32mI (104370) main: ------------------------------------------[0m
+[0;32mI (106390) main: Temperature: 21.0°C[0m
+[0;32mI (106390) main: Humidity:    65.0%[0m
+[0;32mI (106390) main: Lightness:   45.0%[0m
+[0;32mI (106390) main: ------------------------------------------[0m
+[0;32mI (108410) main: Temperature: 21.0°C[0m
+[0;32mI (108410) main: Humidity:    65.0%[0m
+[0;32mI (108410) main: Lightness:   45.0%[0m
+[0;32mI (108410) main: ------------------------------------------[0m
+[0;32mI (110430) main: Temperature: 21.0°C[0m
+[0;32mI (110430) main: Humidity:    64.0%[0m
+[0;32mI (110430) main: Lightness:   45.0%[0m
+[0;32mI (110430) main: ------------------------------------------[0m
+[0;32mI (112450) main: Temperature: 21.0°C[0m
+[0;32mI (112450) main: Humidity:    64.0%[0m
+[0;32mI (112450) main: Lightness:   45.0%[0m
+[0;32mI (112450) main: ------------------------------------------[0m
+[0;32mI (114470) main: Temperature: 21.0°C[0m
+[0;32mI (114470) main: Humidity:    64.0%[0m
+[0;32mI (114470) main: Lightness:   45.0%[0m
+[0;32mI (114470) main: ------------------------------------------[0m
+[0;32mI (116490) main: Temperature: 21.0°C[0m
+[0;32mI (116490) main: Humidity:    63.0%[0m
+[0;32mI (116490) main: Lightness:   45.0%[0m
+[0;32mI (116490) main: ------------------------------------------[0m
+[0;32mI (118510) main: Temperature: 21.0°C[0m
+[0;32mI (118510) main: Humidity:    63.0%[0m
+[0;32mI (118510) main: Lightness:   45.0%[0m
+[0;32mI (118510) main: ------------------------------------------[0m
+[0;32mI (120530) main: Temperature: 21.0°C[0m
+[0;32mI (120530) main: Humidity:    63.0%[0m
+[0;32mI (120530) main: Lightness:   45.0%[0m
+[0;32mI (120530) main: ------------------------------------------[0m
+[0;32mI (122550) main: Temperature: 21.0°C[0m
+[0;32mI (122550) main: Humidity:    62.0%[0m
+[0;32mI (122550) main: Lightness:   45.0%[0m
+[0;32mI (122550) main: ------------------------------------------[0m
+[0;32mI (124570) main: Temperature: 21.0°C[0m
+[0;32mI (124570) main: Humidity:    62.0%[0m
+[0;32mI (124570) main: Lightness:   45.0%[0m
+[0;32mI (124570) main: ------------------------------------------[0m
+[0;32mI (126590) main: Temperature: 21.0°C[0m
+[0;32mI (126590) main: Humidity:    62.0%[0m
+[0;32mI (126590) main: Lightness:   45.0%[0m
+[0;32mI (126590) main: ------------------------------------------[0m
+[0;32mI (128610) main: Temperature: 21.0°C[0m
+[0;32mI (128610) main: Humidity:    61.0%[0m
+[0;32mI (128610) main: Lightness:   45.0%[0m
+[0;32mI (128610) main: ------------------------------------------[0m
+[0;32mI (130630) main: Temperature: 21.0°C[0m
+[0;32mI (130630) main: Humidity:    61.0%[0m
+[0;32mI (130630) main: Lightness:   45.0%[0m
+[0;32mI (130630) main: ------------------------------------------[0m
+[0;32mI (132650) main: Temperature: 21.0°C[0m
+[0;32mI (132650) main: Humidity:    61.0%[0m
+[0;32mI (132650) main: Lightness:   45.0%[0m
+[0;32mI (132650) main: ------------------------------------------[0m
+[0;32mI (134670) main: Temperature: 21.0°C[0m
+[0;32mI (134670) main: Humidity:    60.0%[0m
+[0;32mI (134670) main: Lightness:   45.0%[0m
+[0;32mI (134670) main: ------------------------------------------[0m
+[0;32mI (136690) main: Temperature: 21.0°C[0m
+[0;32mI (136690) main: Humidity:    60.0%[0m
+[0;32mI (136690) main: Lightness:   45.0%[0m
+[0;32mI (136690) main: ------------------------------------------[0m
+[0;32mI (138710) main: Temperature: 21.0°C[0m
+[0;32mI (138710) main: Humidity:    60.0%[0m
+[0;32mI (138710) main: Lightness:   45.0%[0m
+[0;32mI (138710) main: ------------------------------------------[0m
+[0;32mI (140730) main: Temperature: 21.0°C[0m
+[0;32mI (140730) main: Humidity:    59.0%[0m
+[0;32mI (140730) main: Lightness:   45.0%[0m
+[0;32mI (140730) main: ------------------------------------------[0m
+[0;32mI (142750) main: Temperature: 21.0°C[0m
+[0;32mI (142750) main: Humidity:    59.0%[0m
+[0;32mI (142750) main: Lightness:   45.0%[0m
+[0;32mI (142750) main: ------------------------------------------[0m
+[0;32mI (144770) main: Temperature: 21.0°C[0m
+[0;32mI (144770) main: Humidity:    59.0%[0m
+[0;32mI (144770) main: Lightness:   45.0%[0m
+[0;32mI (144770) main: ------------------------------------------[0m
+[0;32mI (146790) main: Temperature: 21.0°C[0m
+[0;32mI (146790) main: Humidity:    59.0%[0m
+[0;32mI (146790) main: Lightness:   45.0%[0m
+[0;32mI (146790) main: ------------------------------------------[0m
+[0;32mI (148810) main: Temperature: 21.0°C[0m
+[0;32mI (148810) main: Humidity:    58.0%[0m
+[0;32mI (148810) main: Lightness:   45.0%[0m
+[0;32mI (148810) main: ------------------------------------------[0m
+[0;32mI (150830) main: Temperature: 21.0°C[0m
+[0;32mI (150830) main: Humidity:    58.0%[0m
+[0;32mI (150830) main: Lightness:   45.0%[0m
+[0;32mI (150830) main: ------------------------------------------[0m
+[0;32mI (152850) main: Temperature: 21.0°C[0m
+[0;32mI (152850) main: Humidity:    58.0%[0m
+[0;32mI (152850) main: Lightness:   45.0%[0m
+[0;32mI (152850) main: ------------------------------------------[0m
+[0;32mI (154870) main: Temperature: 21.0°C[0m
+[0;32mI (154870) main: Humidity:    58.0%[0m
+[0;32mI (154870) main: Lightness:   45.0%[0m
+[0;32mI (154870) main: ------------------------------------------[0m
+[0;32mI (156890) main: Temperature: 21.0°C[0m
+[0;32mI (156890) main: Humidity:    58.0%[0m
+[0;32mI (156890) main: Lightness:   45.0%[0m
+[0;32mI (156890) main: ------------------------------------------[0m
+[0;32mI (158910) main: Temperature: 21.0°C[0m
+[0;32mI (158910) main: Humidity:    57.0%[0m
+[0;32mI (158910) main: Lightness:   45.0%[0m
+[0;32mI (158910) main: ------------------------------------------[0m
+[0;32mI (160930) main: Temperature: 21.0°C[0m
+[0;32mI (160930) main: Humidity:    57.0%[0m
+[0;32mI (160930) main: Lightness:   45.0%[0m
+[0;32mI (160930) main: ------------------------------------------[0m
+[0;32mI (162950) main: Temperature: 21.0°C[0m
+[0;32mI (162950) main: Humidity:    57.0%[0m
+[0;32mI (162950) main: Lightness:   45.0%[0m
+[0;32mI (162950) main: ------------------------------------------[0m
+[0;32mI (164970) main: Temperature: 21.0°C[0m
+[0;32mI (164970) main: Humidity:    57.0%[0m
+[0;32mI (164970) main: Lightness:   45.0%[0m
+[0;32mI (164970) main: ------------------------------------------[0m
+[0;32mI (166990) main: Temperature: 21.0°C[0m
+[0;32mI (166990) main: Humidity:    56.0%[0m
+[0;32mI (166990) main: Lightness:   45.0%[0m
+[0;32mI (166990) main: ------------------------------------------[0m
+[0;32mI (169010) main: Temperature: 21.0°C[0m
+[0;32mI (169010) main: Humidity:    56.0%[0m
+[0;32mI (169010) main: Lightness:   45.0%[0m
+[0;32mI (169010) main: ------------------------------------------[0m
+[0;32mI (171030) main: Temperature: 21.0°C[0m
+[0;32mI (171030) main: Humidity:    56.0%[0m
+[0;32mI (171030) main: Lightness:   45.0%[0m
+[0;32mI (171030) main: ------------------------------------------[0m
+[0;32mI (173050) main: Temperature: 21.0°C[0m
+[0;32mI (173050) main: Humidity:    56.0%[0m
+[0;32mI (173050) main: Lightness:   44.0%[0m
+[0;32mI (173050) main: ------------------------------------------[0m
+[0;32mI (175070) main: Temperature: 21.0°C[0m
+[0;32mI (175070) main: Humidity:    55.0%[0m
+[0;32mI (175070) main: Lightness:   44.0%[0m
+[0;32mI (175070) main: ------------------------------------------[0m
+[0;32mI (177090) main: Temperature: 21.0°C[0m
+[0;32mI (177090) main: Humidity:    55.0%[0m
+[0;32mI (177090) main: Lightness:   44.0%[0m
+[0;32mI (177090) main: ------------------------------------------[0m
+[0;32mI (179110) main: Temperature: 21.0°C[0m
+[0;32mI (179110) main: Humidity:    55.0%[0m
+[0;32mI (179110) main: Lightness:   45.0%[0m
+[0;32mI (179110) main: ------------------------------------------[0m
+[0;32mI (181130) main: Temperature: 21.0°C[0m
+[0;32mI (181130) main: Humidity:    54.0%[0m
+[0;32mI (181130) main: Lightness:   45.0%[0m
+[0;32mI (181130) main: ------------------------------------------[0m
+[0;32mI (183150) main: Temperature: 21.0°C[0m
+[0;32mI (183150) main: Humidity:    54.0%[0m
+[0;32mI (183150) main: Lightness:   45.0%[0m
+[0;32mI (183150) main: ------------------------------------------[0m
+[0;32mI (185170) main: Temperature: 21.0°C[0m
+[0;32mI (185170) main: Humidity:    54.0%[0m
+[0;32mI (185170) main: Lightness:   45.0%[0m
+[0;32mI (185170) main: ------------------------------------------[0m
+[0;32mI (187190) main: Temperature: 21.0°C[0m
+[0;32mI (187190) main: Humidity:    54.0%[0m
+[0;32mI (187190) main: Lightness:   45.0%[0m
+[0;32mI (187190) main: ------------------------------------------[0m
+[0;32mI (189210) main: Temperature: 21.0°C[0m
+[0;32mI (189210) main: Humidity:    54.0%[0m
+[0;32mI (189210) main: Lightness:   45.0%[0m
+[0;32mI (189210) main: ------------------------------------------[0m
+[0;32mI (191230) main: Temperature: 21.0°C[0m
+[0;32mI (191230) main: Humidity:    54.0%[0m
+[0;32mI (191230) main: Lightness:   45.0%[0m
+[0;32mI (191230) main: ------------------------------------------[0m
+[0;32mI (193250) main: Temperature: 21.0°C[0m
+[0;32mI (193250) main: Humidity:    53.0%[0m
+[0;32mI (193250) main: Lightness:   45.0%[0m
+[0;32mI (193250) main: ------------------------------------------[0m
+[0;32mI (195270) main: Temperature: 21.0°C[0m
+[0;32mI (195270) main: Humidity:    53.0%[0m
+[0;32mI (195270) main: Lightness:   45.0%[0m
+[0;32mI (195270) main: ------------------------------------------[0m
+[0;32mI (197290) main: Temperature: 21.0°C[0m
+[0;32mI (197290) main: Humidity:    53.0%[0m
+[0;32mI (197290) main: Lightness:   45.0%[0m
+[0;32mI (197290) main: ------------------------------------------[0m
+[0;32mI (199310) main: Temperature: 21.0°C[0m
+[0;32mI (199310) main: Humidity:    53.0%[0m
+[0;32mI (199310) main: Lightness:   45.0%[0m
+[0;32mI (199310) main: ------------------------------------------[0m
+[0;32mI (201330) main: Temperature: 21.0°C[0m
+[0;32mI (201330) main: Humidity:    53.0%[0m
+[0;32mI (201330) main: Lightness:   45.0%[0m
+[0;32mI (201330) main: ------------------------------------------[0m
+[0;32mI (203350) main: Temperature: 21.0°C[0m
+[0;32mI (203350) main: Humidity:    53.0%[0m
+[0;32mI (203350) main: Lightness:   45.0%[0m
+[0;32mI (203350) main: ------------------------------------------[0m
+[0;32mI (205370) main: Temperature: 21.0°C[0m
+[0;32mI (205370) main: Humidity:    52.0%[0m
+[0;32mI (205370) main: Lightness:   45.0%[0m
+[0;32mI (205370) main: ------------------------------------------[0m
+[0;32mI (207390) main: Temperature: 21.0°C[0m
+[0;32mI (207390) main: Humidity:    52.0%[0m
+[0;32mI (207390) main: Lightness:   45.0%[0m
+[0;32mI (207390) main: ------------------------------------------[0m
+[0;32mI (209410) main: Temperature: 21.0°C[0m
+[0;32mI (209410) main: Humidity:    52.0%[0m
+[0;32mI (209410) main: Lightness:   45.0%[0m
+[0;32mI (209410) main: ------------------------------------------[0m
+[0;32mI (211430) main: Temperature: 21.0°C[0m
+[0;32mI (211430) main: Humidity:    52.0%[0m
+[0;32mI (211430) main: Lightness:   45.0%[0m
+[0;32mI (211430) main: ------------------------------------------[0m
+[0;32mI (213450) main: Temperature: 21.0°C[0m
+[0;32mI (213450) main: Humidity:    52.0%[0m
+[0;32mI (213450) main: Lightness:   45.0%[0m
+[0;32mI (213450) main: ------------------------------------------[0m
+[0;32mI (215470) main: Temperature: 21.0°C[0m
+[0;32mI (215470) main: Humidity:    52.0%[0m
+[0;32mI (215470) main: Lightness:   45.0%[0m
+[0;32mI (215470) main: ------------------------------------------[0m
+[0;32mI (217490) main: Temperature: 21.0°C[0m
+[0;32mI (217490) main: Humidity:    51.0%[0m
+[0;32mI (217490) main: Lightness:   45.0%[0m
+[0;32mI (217490) main: ------------------------------------------[0m
+[0;32mI (219510) main: Temperature: 21.0°C[0m
+[0;32mI (219510) main: Humidity:    51.0%[0m
+[0;32mI (219510) main: Lightness:   45.0%[0m
+[0;32mI (219510) main: ------------------------------------------[0m
+[0;32mI (221530) main: Temperature: 21.0°C[0m
+[0;32mI (221530) main: Humidity:    51.0%[0m
+[0;32mI (221530) main: Lightness:   45.0%[0m
+[0;32mI (221530) main: ------------------------------------------[0m
+[0;32mI (223550) main: Temperature: 21.0°C[0m
+[0;32mI (223550) main: Humidity:    51.0%[0m
+[0;32mI (223550) main: Lightness:   45.0%[0m
+[0;32mI (223550) main: ------------------------------------------[0m
+[0;32mI (225570) main: Temperature: 21.0°C[0m
+[0;32mI (225570) main: Humidity:    51.0%[0m
+[0;32mI (225570) main: Lightness:   45.0%[0m
+[0;32mI (225570) main: ------------------------------------------[0m
+[0;32mI (227590) main: Temperature: 21.0°C[0m
+[0;32mI (227590) main: Humidity:    51.0%[0m
+[0;32mI (227590) main: Lightness:   45.0%[0m
+[0;32mI (227590) main: ------------------------------------------[0m
+[0;32mI (229610) main: Temperature: 21.0°C[0m
+[0;32mI (229610) main: Humidity:    50.0%[0m
+[0;32mI (229610) main: Lightness:   45.0%[0m
+[0;32mI (229610) main: ------------------------------------------[0m
+[0;32mI (231630) main: Temperature: 21.0°C[0m
+[0;32mI (231630) main: Humidity:    50.0%[0m
+[0;32mI (231630) main: Lightness:   45.0%[0m
+[0;32mI (231630) main: ------------------------------------------[0m
+[0;32mI (233650) main: Temperature: 21.0°C[0m
+[0;32mI (233650) main: Humidity:    50.0%[0m
+[0;32mI (233650) main: Lightness:   45.0%[0m
+[0;32mI (233650) main: ------------------------------------------[0m
+[0;32mI (235670) main: Temperature: 21.0°C[0m
+[0;32mI (235670) main: Humidity:    50.0%[0m
+[0;32mI (235670) main: Lightness:   45.0%[0m
+[0;32mI (235670) main: ------------------------------------------[0m
+[0;32mI (237690) main: Temperature: 21.0°C[0m
+[0;32mI (237690) main: Humidity:    50.0%[0m
+[0;32mI (237690) main: Lightness:   45.0%[0m
+[0;32mI (237690) main: ------------------------------------------[0m
+[0;32mI (239710) main: Temperature: 21.0°C[0m
+[0;32mI (239710) main: Humidity:    50.0%[0m
+[0;32mI (239710) main: Lightness:   45.0%[0m
+[0;32mI (239710) main: ------------------------------------------[0m
+[0;32mI (241730) main: Temperature: 21.0°C[0m
+[0;32mI (241730) main: Humidity:    50.0%[0m
+[0;32mI (241730) main: Lightness:   45.0%[0m
+[0;32mI (241730) main: ------------------------------------------[0m
+[0;32mI (243750) main: Temperature: 21.0°C[0m
+[0;32mI (243750) main: Humidity:    50.0%[0m
+[0;32mI (243750) main: Lightness:   45.0%[0m
+[0;32mI (243750) main: ------------------------------------------[0m
+[0;32mI (245770) main: Temperature: 21.0°C[0m
+[0;32mI (245770) main: Humidity:    49.0%[0m
+[0;32mI (245770) main: Lightness:   45.0%[0m
+[0;32mI (245770) main: ------------------------------------------[0m
+[0;32mI (247790) main: Temperature: 21.0°C[0m
+[0;32mI (247790) main: Humidity:    49.0%[0m
+[0;32mI (247790) main: Lightness:   45.0%[0m
+[0;32mI (247790) main: ------------------------------------------[0m
+[0;32mI (249810) main: Temperature: 21.0°C[0m
+[0;32mI (249810) main: Humidity:    49.0%[0m
+[0;32mI (249810) main: Lightness:   45.0%[0m
+[0;32mI (249810) main: ------------------------------------------[0m
+[0;32mI (251830) main: Temperature: 21.0°C[0m
+[0;32mI (251830) main: Humidity:    49.0%[0m
+[0;32mI (251830) main: Lightness:   45.0%[0m
+[0;32mI (251830) main: ------------------------------------------[0m
+[0;32mI (253850) main: Temperature: 21.0°C[0m
+[0;32mI (253850) main: Humidity:    49.0%[0m
+[0;32mI (253850) main: Lightness:   45.0%[0m
+[0;32mI (253850) main: ------------------------------------------[0m
+[0;32mI (255870) main: Temperature: 21.0°C[0m
+[0;32mI (255870) main: Humidity:    49.0%[0m
+[0;32mI (255870) main: Lightness:   45.0%[0m
+[0;32mI (255870) main: ------------------------------------------[0m
+[0;32mI (257890) main: Temperature: 21.0°C[0m
+[0;32mI (257890) main: Humidity:    49.0%[0m
+[0;32mI (257890) main: Lightness:   45.0%[0m
+[0;32mI (257890) main: ------------------------------------------[0m
+[0;32mI (259910) main: Temperature: 21.0°C[0m
+[0;32mI (259910) main: Humidity:    49.0%[0m
+[0;32mI (259910) main: Lightness:   45.0%[0m
+[0;32mI (259910) main: ------------------------------------------[0m
+[0;32mI (261930) main: Temperature: 21.0°C[0m
+[0;32mI (261930) main: Humidity:    49.0%[0m
+[0;32mI (261930) main: Lightness:   45.0%[0m
+[0;32mI (261930) main: ------------------------------------------[0m
+[0;32mI (263950) main: Temperature: 21.0°C[0m
+[0;32mI (263950) main: Humidity:    49.0%[0m
+[0;32mI (263950) main: Lightness:   45.0%[0m
+[0;32mI (263950) main: ------------------------------------------[0m
+[0;32mI (265970) main: Temperature: 21.0°C[0m
+[0;32mI (265970) main: Humidity:    49.0%[0m
+[0;32mI (265970) main: Lightness:   45.0%[0m
+[0;32mI (265970) main: ------------------------------------------[0m
+[0;32mI (267990) main: Temperature: 21.0°C[0m
+[0;32mI (267990) main: Humidity:    49.0%[0m
+[0;32mI (267990) main: Lightness:   46.0%[0m
+[0;32mI (267990) main: ------------------------------------------[0m
+[0;32mI (270010) main: Temperature: 21.0°C[0m
+[0;32mI (270010) main: Humidity:    49.0%[0m
+[0;32mI (270010) main: Lightness:   45.0%[0m
+[0;32mI (270010) main: ------------------------------------------[0m
+[0;32mI (272030) main: Temperature: 21.0°C[0m
+[0;32mI (272030) main: Humidity:    49.0%[0m
+[0;32mI (272030) main: Lightness:   45.0%[0m
+[0;32mI (272030) main: ------------------------------------------[0m
+[0;32mI (274050) main: Temperature: 21.0°C[0m
+[0;32mI (274050) main: Humidity:    49.0%[0m
+[0;32mI (274050) main: Lightness:   45.0%[0m
+[0;32mI (274050) main: ------------------------------------------[0m
+[0;32mI (276070) main: Temperature: 21.0°C[0m
+[0;32mI (276070) main: Humidity:    49.0%[0m
+[0;32mI (276070) main: Lightness:   45.0%[0m
+[0;32mI (276070) main: ------------------------------------------[0m
+[0;32mI (278090) main: Temperature: 21.0°C[0m
+[0;32mI (278090) main: Humidity:    49.0%[0m
+[0;32mI (278090) main: Lightness:   45.0%[0m
+[0;32mI (278090) main: ------------------------------------------[0m
+[0;32mI (280110) main: Temperature: 21.0°C[0m
+[0;32mI (280110) main: Humidity:    49.0%[0m
+[0;32mI (280110) main: Lightness:   45.0%[0m
+[0;32mI (280110) main: ------------------------------------------[0m
+[0;32mI (282130) main: Temperature: 21.0°C[0m
+[0;32mI (282130) main: Humidity:    49.0%[0m
+[0;32mI (282130) main: Lightness:   45.0%[0m
+[0;32mI (282130) main: ------------------------------------------[0m
+[0;32mI (284150) main: Temperature: 21.0°C[0m
+[0;32mI (284150) main: Humidity:    49.0%[0m
+[0;32mI (284150) main: Lightness:   45.0%[0m
+[0;32mI (284150) main: ------------------------------------------[0m
+[0;32mI (286170) main: Temperature: 21.0°C[0m
+[0;32mI (286170) main: Humidity:    49.0%[0m
+[0;32mI (286170) main: Lightness:   45.0%[0m
+[0;32mI (286170) main: ------------------------------------------[0m
+[0;32mI (288190) main: Temperature: 21.0°C[0m
+[0;32mI (288190) main: Humidity:    49.0%[0m
+[0;32mI (288190) main: Lightness:   45.0%[0m
+[0;32mI (288190) main: ------------------------------------------[0m
+[0;32mI (290210) main: Temperature: 21.0°C[0m
+[0;32mI (290210) main: Humidity:    49.0%[0m
+[0;32mI (290210) main: Lightness:   45.0%[0m
+[0;32mI (290210) main: ------------------------------------------[0m
+[0;32mI (292230) main: Temperature: 21.0°C[0m
+[0;32mI (292230) main: Humidity:    48.0%[0m
+[0;32mI (292230) main: Lightness:   45.0%[0m
+[0;32mI (292230) main: ------------------------------------------[0m
+[0;32mI (294250) main: Temperature: 21.0°C[0m
+[0;32mI (294250) main: Humidity:    48.0%[0m
+[0;32mI (294250) main: Lightness:   45.0%[0m
+[0;32mI (294250) main: ------------------------------------------[0m
+[0;32mI (296270) main: Temperature: 21.0°C[0m
+[0;32mI (296270) main: Humidity:    48.0%[0m
+[0;32mI (296270) main: Lightness:   45.0%[0m
+[0;32mI (296270) main: ------------------------------------------[0m
+[0;32mI (298290) main: Temperature: 21.0°C[0m
+[0;32mI (298290) main: Humidity:    48.0%[0m
+[0;32mI (298290) main: Lightness:   45.0%[0m
+[0;32mI (298290) main: ------------------------------------------[0m
+[0;32mI (300310) main: Temperature: 21.0°C[0m
+[0;32mI (300310) main: Humidity:    48.0%[0m
+[0;32mI (300310) main: Lightness:   45.0%[0m
+[0;32mI (300310) main: ------------------------------------------[0m
+[0;32mI (302330) main: Temperature: 21.0°C[0m
+[0;32mI (302330) main: Humidity:    48.0%[0m
+[0;32mI (302330) main: Lightness:   46.0%[0m
+[0;32mI (302330) main: ------------------------------------------[0m
+[0;32mI (304350) main: Temperature: 21.0°C[0m
+[0;32mI (304350) main: Humidity:    48.0%[0m
+[0;32mI (304350) main: Lightness:   46.0%[0m
+[0;32mI (304350) main: ------------------------------------------[0m
+[0;32mI (306370) main: Temperature: 21.0°C[0m
+[0;32mI (306370) main: Humidity:    48.0%[0m
+[0;32mI (306370) main: Lightness:   45.0%[0m
+[0;32mI (306370) main: ------------------------------------------[0m
+[0;32mI (308390) main: Temperature: 21.0°C[0m
+[0;32mI (308390) main: Humidity:    48.0%[0m
+[0;32mI (308390) main: Lightness:   45.0%[0m
+[0;32mI (308390) main: ------------------------------------------[0m
+[0;32mI (310410) main: Temperature: 21.0°C[0m
+[0;32mI (310410) main: Humidity:    48.0%[0m
+[0;32mI (310410) main: Lightness:   45.0%[0m
+[0;32mI (310410) main: ------------------------------------------[0m
+[0;32mI (312430) main: Temperature: 21.0°C[0m
+[0;32mI (312430) main: Humidity:    48.0%[0m
+[0;32mI (312430) main: Lightness:   45.0%[0m
+[0;32mI (312430) main: ------------------------------------------[0m
+[0;32mI (314450) main: Temperature: 21.0°C[0m
+[0;32mI (314450) main: Humidity:    48.0%[0m
+[0;32mI (314450) main: Lightness:   45.0%[0m
+[0;32mI (314450) main: ------------------------------------------[0m
+[0;32mI (316470) main: Temperature: 21.0°C[0m
+[0;32mI (316470) main: Humidity:    48.0%[0m
+[0;32mI (316470) main: Lightness:   45.0%[0m
+[0;32mI (316470) main: ------------------------------------------[0m
+[0;32mI (318490) main: Temperature: 21.0°C[0m
+[0;32mI (318490) main: Humidity:    48.0%[0m
+[0;32mI (318490) main: Lightness:   45.0%[0m
+[0;32mI (318490) main: ------------------------------------------[0m
+[0;32mI (320510) main: Temperature: 21.0°C[0m
+[0;32mI (320510) main: Humidity:    48.0%[0m
+[0;32mI (320510) main: Lightness:   45.0%[0m
+[0;32mI (320510) main: ------------------------------------------[0m
+[0;32mI (322530) main: Temperature: 21.0°C[0m
+[0;32mI (322530) main: Humidity:    48.0%[0m
+[0;32mI (322530) main: Lightness:   45.0%[0m
+[0;32mI (322530) main: ------------------------------------------[0m
+[0;32mI (324550) main: Temperature: 21.0°C[0m
+[0;32mI (324550) main: Humidity:    48.0%[0m
+[0;32mI (324550) main: Lightness:   45.0%[0m
+[0;32mI (324550) main: ------------------------------------------[0m
+[0;32mI (326570) main: Temperature: 21.0°C[0m
+[0;32mI (326570) main: Humidity:    48.0%[0m
+[0;32mI (326570) main: Lightness:   45.0%[0m
+[0;32mI (326570) main: ------------------------------------------[0m
+[0;32mI (328590) main: Temperature: 21.0°C[0m
+[0;32mI (328590) main: Humidity:    48.0%[0m
+[0;32mI (328590) main: Lightness:   45.0%[0m
+[0;32mI (328590) main: ------------------------------------------[0m
+[0;32mI (330610) main: Temperature: 21.0°C[0m
+[0;32mI (330610) main: Humidity:    48.0%[0m
+[0;32mI (330610) main: Lightness:   45.0%[0m
+[0;32mI (330610) main: ------------------------------------------[0m
+[0;32mI (332630) main: Temperature: 21.0°C[0m
+[0;32mI (332630) main: Humidity:    48.0%[0m
+[0;32mI (332630) main: Lightness:   45.0%[0m
+[0;32mI (332630) main: ------------------------------------------[0m
+[0;32mI (334650) main: Temperature: 21.0°C[0m
+[0;32mI (334650) main: Humidity:    48.0%[0m
+[0;32mI (334650) main: Lightness:   46.0%[0m
+[0;32mI (334650) main: ------------------------------------------[0m
+[0;32mI (336670) main: Temperature: 21.0°C[0m
+[0;32mI (336670) main: Humidity:    48.0%[0m
+[0;32mI (336670) main: Lightness:   46.0%[0m
+[0;32mI (336670) main: ------------------------------------------[0m
+[0;32mI (338690) main: Temperature: 21.0°C[0m
+[0;32mI (338690) main: Humidity:    48.0%[0m
+[0;32mI (338690) main: Lightness:   46.0%[0m
+[0;32mI (338690) main: ------------------------------------------[0m
+[0;32mI (340710) main: Temperature: 21.0°C[0m
+[0;32mI (340710) main: Humidity:    48.0%[0m
+[0;32mI (340710) main: Lightness:   45.0%[0m
+[0;32mI (340710) main: ------------------------------------------[0m
+[0;32mI (342730) main: Temperature: 21.0°C[0m
+[0;32mI (342730) main: Humidity:    48.0%[0m
+[0;32mI (342730) main: Lightness:   46.0%[0m
+[0;32mI (342730) main: ------------------------------------------[0m
+[0;32mI (344750) main: Temperature: 21.0°C[0m
+[0;32mI (344750) main: Humidity:    48.0%[0m
+[0;32mI (344750) main: Lightness:   46.0%[0m
+[0;32mI (344750) main: ------------------------------------------[0m
+[0;32mI (346770) main: Temperature: 21.0°C[0m
+[0;32mI (346770) main: Humidity:    48.0%[0m
+[0;32mI (346770) main: Lightness:   45.0%[0m
+[0;32mI (346770) main: ------------------------------------------[0m
+[0;32mI (348790) main: Temperature: 21.0°C[0m
+[0;32mI (348790) main: Humidity:    48.0%[0m
+[0;32mI (348790) main: Lightness:   46.0%[0m
+[0;32mI (348790) main: ------------------------------------------[0m
+[0;32mI (350810) main: Temperature: 21.0°C[0m
+[0;32mI (350810) main: Humidity:    48.0%[0m
+[0;32mI (350810) main: Lightness:   47.0%[0m
+[0;32mI (350810) main: ------------------------------------------[0m
+[0;32mI (352830) main: Temperature: 21.0°C[0m
+[0;32mI (352830) main: Humidity:    48.0%[0m
+[0;32mI (352830) main: Lightness:   47.0%[0m
+[0;32mI (352830) main: ------------------------------------------[0m
+[0;32mI (354850) main: Temperature: 21.0°C[0m
+[0;32mI (354850) main: Humidity:    48.0%[0m
+[0;32mI (354850) main: Lightness:   46.0%[0m
+[0;32mI (354850) main: ------------------------------------------[0m
+[0;32mI (356870) main: Temperature: 21.0°C[0m
+[0;32mI (356870) main: Humidity:    48.0%[0m
+[0;32mI (356870) main: Lightness:   46.0%[0m
+[0;32mI (356870) main: ------------------------------------------[0m
+[0;32mI (358890) main: Temperature: 21.0°C[0m
+[0;32mI (358890) main: Humidity:    48.0%[0m
+[0;32mI (358890) main: Lightness:   46.0%[0m
+[0;32mI (358890) main: ------------------------------------------[0m
+[0;32mI (360910) main: Temperature: 21.0°C[0m
+[0;32mI (360910) main: Humidity:    48.0%[0m
+[0;32mI (360910) main: Lightness:   46.0%[0m
+[0;32mI (360910) main: ------------------------------------------[0m
+[0;32mI (362930) main: Temperature: 21.0°C[0m
+[0;32mI (362930) main: Humidity:    48.0%[0m
+[0;32mI (362930) main: Lightness:   47.0%[0m
+[0;32mI (362930) main: ------------------------------------------[0m
+[0;32mI (364950) main: Temperature: 21.0°C[0m
+[0;32mI (364950) main: Humidity:    48.0%[0m
+[0;32mI (364950) main: Lightness:   47.0%[0m
+[0;32mI (364950) main: ------------------------------------------[0m
+[0;32mI (366970) main: Temperature: 21.0°C[0m
+[0;32mI (366970) main: Humidity:    48.0%[0m
+[0;32mI (366970) main: Lightness:   47.0%[0m
+[0;32mI (366970) main: ------------------------------------------[0m
+[0;32mI (368990) main: Temperature: 21.0°C[0m
+[0;32mI (368990) main: Humidity:    48.0%[0m
+[0;32mI (368990) main: Lightness:   47.0%[0m
+[0;32mI (368990) main: ------------------------------------------[0m
+[0;32mI (371010) main: Temperature: 21.0°C[0m
+[0;32mI (371010) main: Humidity:    48.0%[0m
+[0;32mI (371010) main: Lightness:   46.0%[0m
+[0;32mI (371010) main: ------------------------------------------[0m
+[0;32mI (373030) main: Temperature: 21.0°C[0m
+[0;32mI (373030) main: Humidity:    48.0%[0m
+[0;32mI (373030) main: Lightness:   45.0%[0m
+[0;32mI (373030) main: ------------------------------------------[0m
+[0;32mI (375050) main: Temperature: 21.0°C[0m
+[0;32mI (375050) main: Humidity:    47.0%[0m
+[0;32mI (375050) main: Lightness:   44.0%[0m
+[0;32mI (375050) main: ------------------------------------------[0m
+[0;32mI (377070) main: Temperature: 21.0°C[0m
+[0;32mI (377070) main: Humidity:    48.0%[0m
+[0;32mI (377070) main: Lightness:   44.0%[0m
+[0;32mI (377070) main: ------------------------------------------[0m
+[0;32mI (379090) main: Temperature: 21.0°C[0m
+[0;32mI (379090) main: Humidity:    47.0%[0m
+[0;32mI (379090) main: Lightness:   45.0%[0m
+[0;32mI (379090) main: ------------------------------------------[0m
+[0;32mI (381110) main: Temperature: 21.0°C[0m
+[0;32mI (381110) main: Humidity:    47.0%[0m
+[0;32mI (381110) main: Lightness:   45.0%[0m
+[0;32mI (381110) main: ------------------------------------------[0m
+[0;32mI (383130) main: Temperature: 21.0°C[0m
+[0;32mI (383130) main: Humidity:    47.0%[0m
+[0;32mI (383130) main: Lightness:   45.0%[0m
+[0;32mI (383130) main: ------------------------------------------[0m
+[0;32mI (385150) main: Temperature: 21.0°C[0m
+[0;32mI (385150) main: Humidity:    47.0%[0m
+[0;32mI (385150) main: Lightness:   45.0%[0m
+[0;32mI (385150) main: ------------------------------------------[0m
+[0;32mI (387170) main: Temperature: 21.0°C[0m
+[0;32mI (387170) main: Humidity:    47.0%[0m
+[0;32mI (387170) main: Lightness:   45.0%[0m
+[0;32mI (387170) main: ------------------------------------------[0m
+[0;32mI (389190) main: Temperature: 21.0°C[0m
+[0;32mI (389190) main: Humidity:    47.0%[0m
+[0;32mI (389190) main: Lightness:   45.0%[0m
+[0;32mI (389190) main: ------------------------------------------[0m
+[0;32mI (391210) main: Temperature: 21.0°C[0m
+[0;32mI (391210) main: Humidity:    47.0%[0m
+[0;32mI (391210) main: Lightness:   45.0%[0m
+[0;32mI (391210) main: ------------------------------------------[0m
+[0;32mI (393230) main: Temperature: 21.0°C[0m
+[0;32mI (393230) main: Humidity:    47.0%[0m
+[0;32mI (393230) main: Lightness:   45.0%[0m
+[0;32mI (393230) main: ------------------------------------------[0m
+[0;32mI (395250) main: Temperature: 21.0°C[0m
+[0;32mI (395250) main: Humidity:    47.0%[0m
+[0;32mI (395250) main: Lightness:   45.0%[0m
+[0;32mI (395250) main: ------------------------------------------[0m
+[0;32mI (397270) main: Temperature: 21.0°C[0m
+[0;32mI (397270) main: Humidity:    47.0%[0m
+[0;32mI (397270) main: Lightness:   45.0%[0m
+[0;32mI (397270) main: ------------------------------------------[0m
+[0;32mI (399290) main: Temperature: 21.0°C[0m
+[0;32mI (399290) main: Humidity:    47.0%[0m
+[0;32mI (399290) main: Lightness:   45.0%[0m
+[0;32mI (399290) main: ------------------------------------------[0m
+[0;32mI (401310) main: Temperature: 21.0°C[0m
+[0;32mI (401310) main: Humidity:    47.0%[0m
+[0;32mI (401310) main: Lightness:   45.0%[0m
+[0;32mI (401310) main: ------------------------------------------[0m
+[0;32mI (403330) main: Temperature: 21.0°C[0m
+[0;32mI (403330) main: Humidity:    47.0%[0m
+[0;32mI (403330) main: Lightness:   45.0%[0m
+[0;32mI (403330) main: ------------------------------------------[0m
+[0;32mI (405350) main: Temperature: 21.0°C[0m
+[0;32mI (405350) main: Humidity:    47.0%[0m
+[0;32mI (405350) main: Lightness:   45.0%[0m
+[0;32mI (405350) main: ------------------------------------------[0m
+[0;32mI (407370) main: Temperature: 21.0°C[0m
+[0;32mI (407370) main: Humidity:    47.0%[0m
+[0;32mI (407370) main: Lightness:   45.0%[0m
+[0;32mI (407370) main: ------------------------------------------[0m
+[0;32mI (409390) main: Temperature: 21.0°C[0m
+[0;32mI (409390) main: Humidity:    47.0%[0m
+[0;32mI (409390) main: Lightness:   45.0%[0m
+[0;32mI (409390) main: ------------------------------------------[0m
+[0;32mI (411410) main: Temperature: 21.0°C[0m
+[0;32mI (411410) main: Humidity:    47.0%[0m
+[0;32mI (411410) main: Lightness:   45.0%[0m
+[0;32mI (411410) main: ------------------------------------------[0m
+[0;32mI (413430) main: Temperature: 21.0°C[0m
+[0;32mI (413430) main: Humidity:    47.0%[0m
+[0;32mI (413430) main: Lightness:   45.0%[0m
+[0;32mI (413430) main: ------------------------------------------[0m
+[0;32mI (415450) main: Temperature: 21.0°C[0m
+[0;32mI (415450) main: Humidity:    47.0%[0m
+[0;32mI (415450) main: Lightness:   45.0%[0m
+[0;32mI (415450) main: ------------------------------------------[0m
+[0;32mI (417470) main: Temperature: 21.0°C[0m
+[0;32mI (417470) main: Humidity:    47.0%[0m
+[0;32mI (417470) main: Lightness:   45.0%[0m
+[0;32mI (417470) main: ------------------------------------------[0m
+[0;32mI (419490) main: Temperature: 21.0°C[0m
+[0;32mI (419490) main: Humidity:    47.0%[0m
+[0;32mI (419490) main: Lightness:   45.0%[0m
+[0;32mI (419490) main: ------------------------------------------[0m
+[0;32mI (421510) main: Temperature: 21.0°C[0m
+[0;32mI (421510) main: Humidity:    47.0%[0m
+[0;32mI (421510) main: Lightness:   45.0%[0m
+[0;32mI (421510) main: ------------------------------------------[0m
+[0;32mI (423530) main: Temperature: 21.0°C[0m
+[0;32mI (423530) main: Humidity:    47.0%[0m
+[0;32mI (423530) main: Lightness:   45.0%[0m
+[0;32mI (423530) main: ------------------------------------------[0m
+[0;32mI (425550) main: Temperature: 21.0°C[0m
+[0;32mI (425550) main: Humidity:    47.0%[0m
+[0;32mI (425550) main: Lightness:   45.0%[0m
+[0;32mI (425550) main: ------------------------------------------[0m
+[0;32mI (427570) main: Temperature: 21.0°C[0m
+[0;32mI (427570) main: Humidity:    47.0%[0m
+[0;32mI (427570) main: Lightness:   45.0%[0m
+[0;32mI (427570) main: ------------------------------------------[0m
+[0;32mI (429590) main: Temperature: 21.0°C[0m
+[0;32mI (429590) main: Humidity:    47.0%[0m
+[0;32mI (429590) main: Lightness:   45.0%[0m
+[0;32mI (429590) main: ------------------------------------------[0m
+[0;32mI (431610) main: Temperature: 21.0°C[0m
+[0;32mI (431610) main: Humidity:    47.0%[0m
+[0;32mI (431610) main: Lightness:   45.0%[0m
+[0;32mI (431610) main: ------------------------------------------[0m
+[0;32mI (433630) main: Temperature: 21.0°C[0m
+[0;32mI (433630) main: Humidity:    47.0%[0m
+[0;32mI (433630) main: Lightness:   45.0%[0m
+[0;32mI (433630) main: ------------------------------------------[0m
+[0;32mI (435650) main: Temperature: 21.0°C[0m
+[0;32mI (435650) main: Humidity:    47.0%[0m
+[0;32mI (435650) main: Lightness:   45.0%[0m
+[0;32mI (435650) main: ------------------------------------------[0m
+[0;32mI (437670) main: Temperature: 21.0°C[0m
+[0;32mI (437670) main: Humidity:    47.0%[0m
+[0;32mI (437670) main: Lightness:   45.0%[0m
+[0;32mI (437670) main: ------------------------------------------[0m
+[0;32mI (439690) main: Temperature: 21.0°C[0m
+[0;32mI (439690) main: Humidity:    47.0%[0m
+[0;32mI (439690) main: Lightness:   45.0%[0m
+[0;32mI (439690) main: ------------------------------------------[0m
+[0;32mI (441710) main: Temperature: 21.0°C[0m
+[0;32mI (441710) main: Humidity:    47.0%[0m
+[0;32mI (441710) main: Lightness:   45.0%[0m
+[0;32mI (441710) main: ------------------------------------------[0m
+[0;32mI (443730) main: Temperature: 21.0°C[0m
+[0;32mI (443730) main: Humidity:    47.0%[0m
+[0;32mI (443730) main: Lightness:   45.0%[0m
+[0;32mI (443730) main: ------------------------------------------[0m
+[0;32mI (445750) main: Temperature: 21.0°C[0m
+[0;32mI (445750) main: Humidity:    47.0%[0m
+[0;32mI (445750) main: Lightness:   45.0%[0m
+[0;32mI (445750) main: ------------------------------------------[0m
+[0;32mI (447770) main: Temperature: 21.0°C[0m
+[0;32mI (447770) main: Humidity:    47.0%[0m
+[0;32mI (447770) main: Lightness:   45.0%[0m
+[0;32mI (447770) main: ------------------------------------------[0m
+[0;32mI (449790) main: Temperature: 21.0°C[0m
+[0;32mI (449790) main: Humidity:    47.0%[0m
+[0;32mI (449790) main: Lightness:   45.0%[0m
+[0;32mI (449790) main: ------------------------------------------[0m
+[0;32mI (451810) main: Temperature: 21.0°C[0m
+[0;32mI (451810) main: Humidity:    47.0%[0m
+[0;32mI (451810) main: Lightness:   45.0%[0m
+[0;32mI (451810) main: ------------------------------------------[0m
+[0;32mI (453830) main: Temperature: 21.0°C[0m
+[0;32mI (453830) main: Humidity:    47.0%[0m
+[0;32mI (453830) main: Lightness:   45.0%[0m
+[0;32mI (453830) main: ------------------------------------------[0m
+[0;32mI (455850) main: Temperature: 21.0°C[0m
+[0;32mI (455850) main: Humidity:    47.0%[0m
+[0;32mI (455850) main: Lightness:   45.0%[0m
+[0;32mI (455850) main: ------------------------------------------[0m
+[0;32mI (457870) main: Temperature: 21.0°C[0m
+[0;32mI (457870) main: Humidity:    47.0%[0m
+[0;32mI (457870) main: Lightness:   45.0%[0m
+[0;32mI (457870) main: ------------------------------------------[0m
+[0;32mI (459890) main: Temperature: 21.0°C[0m
+[0;32mI (459890) main: Humidity:    47.0%[0m
+[0;32mI (459890) main: Lightness:   45.0%[0m
+[0;32mI (459890) main: ------------------------------------------[0m
+[0;32mI (461910) main: Temperature: 21.0°C[0m
+[0;32mI (461910) main: Humidity:    47.0%[0m
+[0;32mI (461910) main: Lightness:   45.0%[0m
+[0;32mI (461910) main: ------------------------------------------[0m
+[0;32mI (463930) main: Temperature: 21.0°C[0m
+[0;32mI (463930) main: Humidity:    47.0%[0m
+[0;32mI (463930) main: Lightness:   45.0%[0m
+[0;32mI (463930) main: ------------------------------------------[0m
+[0;32mI (465950) main: Temperature: 21.0°C[0m
+[0;32mI (465950) main: Humidity:    47.0%[0m
+[0;32mI (465950) main: Lightness:   45.0%[0m
+[0;32mI (465950) main: ------------------------------------------[0m
+[0;32mI (467970) main: Temperature: 21.0°C[0m
+[0;32mI (467970) main: Humidity:    47.0%[0m
+[0;32mI (467970) main: Lightness:   45.0%[0m
+[0;32mI (467970) main: ------------------------------------------[0m
+[0;32mI (469990) main: Temperature: 21.0°C[0m
+[0;32mI (469990) main: Humidity:    47.0%[0m
+[0;32mI (469990) main: Lightness:   45.0%[0m
+[0;32mI (469990) main: ------------------------------------------[0m
+[0;32mI (472010) main: Temperature: 21.0°C[0m
+[0;32mI (472010) main: Humidity:    47.0%[0m
+[0;32mI (472010) main: Lightness:   45.0%[0m
+[0;32mI (472010) main: ------------------------------------------[0m
+[0;32mI (474030) main: Temperature: 21.0°C[0m
+[0;32mI (474030) main: Humidity:    47.0%[0m
+[0;32mI (474030) main: Lightness:   45.0%[0m
+[0;32mI (474030) main: ------------------------------------------[0m
+[0;32mI (476050) main: Temperature: 21.0°C[0m
+[0;32mI (476050) main: Humidity:    47.0%[0m
+[0;32mI (476050) main: Lightness:   45.0%[0m
+[0;32mI (476050) main: ------------------------------------------[0m
+[0;32mI (478070) main: Temperature: 21.0°C[0m
+[0;32mI (478070) main: Humidity:    47.0%[0m
+[0;32mI (478070) main: Lightness:   45.0%[0m
+[0;32mI (478070) main: ------------------------------------------[0m
+[0;32mI (480090) main: Temperature: 21.0°C[0m
+[0;32mI (480090) main: Humidity:    47.0%[0m
+[0;32mI (480090) main: Lightness:   45.0%[0m
+[0;32mI (480090) main: ------------------------------------------[0m
+[0;32mI (482110) main: Temperature: 21.0°C[0m
+[0;32mI (482110) main: Humidity:    47.0%[0m
+[0;32mI (482110) main: Lightness:   45.0%[0m
+[0;32mI (482110) main: ------------------------------------------[0m
+[0;32mI (484130) main: Temperature: 21.0°C[0m
+[0;32mI (484130) main: Humidity:    47.0%[0m
+[0;32mI (484130) main: Lightness:   45.0%[0m
+[0;32mI (484130) main: ------------------------------------------[0m
+[0;32mI (486150) main: Temperature: 21.0°C[0m
+[0;32mI (486150) main: Humidity:    47.0%[0m
+[0;32mI (486150) main: Lightness:   45.0%[0m
+[0;32mI (486150) main: ------------------------------------------[0m
+[0;32mI (488170) main: Temperature: 21.0°C[0m
+[0;32mI (488170) main: Humidity:    47.0%[0m
+[0;32mI (488170) main: Lightness:   45.0%[0m
+[0;32mI (488170) main: ------------------------------------------[0m
+[0;32mI (490190) main: Temperature: 21.0°C[0m
+[0;32mI (490190) main: Humidity:    47.0%[0m
+[0;32mI (490190) main: Lightness:   45.0%[0m
+[0;32mI (490190) main: ------------------------------------------[0m
+[0;32mI (492210) main: Temperature: 21.0°C[0m
+[0;32mI (492210) main: Humidity:    47.0%[0m
+[0;32mI (492210) main: Lightness:   45.0%[0m
+[0;32mI (492210) main: ------------------------------------------[0m
+[0;32mI (494230) main: Temperature: 21.0°C[0m
+[0;32mI (494230) main: Humidity:    47.0%[0m
+[0;32mI (494230) main: Lightness:   45.0%[0m
+[0;32mI (494230) main: ------------------------------------------[0m
+[0;32mI (496250) main: Temperature: 21.0°C[0m
+[0;32mI (496250) main: Humidity:    47.0%[0m
+[0;32mI (496250) main: Lightness:   44.0%[0m
+[0;32mI (496250) main: ------------------------------------------[0m
+[0;32mI (498270) main: Temperature: 21.0°C[0m
+[0;32mI (498270) main: Humidity:    47.0%[0m
+[0;32mI (498270) main: Lightness:   44.0%[0m
+[0;32mI (498270) main: ------------------------------------------[0m
+[0;32mI (500290) main: Temperature: 21.0°C[0m
+[0;32mI (500290) main: Humidity:    47.0%[0m
+[0;32mI (500290) main: Lightness:   43.0%[0m
+[0;32mI (500290) main: ------------------------------------------[0m
+[0;32mI (502310) main: Temperature: 21.0°C[0m
+[0;32mI (502310) main: Humidity:    46.0%[0m
+[0;32mI (502310) main: Lightness:   43.0%[0m
+[0;32mI (502310) main: ------------------------------------------[0m
+[0;32mI (504330) main: Temperature: 21.0°C[0m
+[0;32mI (504330) main: Humidity:    46.0%[0m
+[0;32mI (504330) main: Lightness:   45.0%[0m
+[0;32mI (504330) main: ------------------------------------------[0m
+[0;32mI (506350) main: Temperature: 21.0°C[0m
+[0;32mI (506350) main: Humidity:    46.0%[0m
+[0;32mI (506350) main: Lightness:   41.0%[0m
+[0;32mI (506350) main: ------------------------------------------[0m
+[0;32mI (508370) main: Temperature: 21.0°C[0m
+[0;32mI (508370) main: Humidity:    46.0%[0m
+[0;32mI (508370) main: Lightness:   42.0%[0m
+[0;32mI (508370) main: ------------------------------------------[0m
+[0;32mI (510390) main: Temperature: 21.0°C[0m
+[0;32mI (510390) main: Humidity:    46.0%[0m
+[0;32mI (510390) main: Lightness:   42.0%[0m
+[0;32mI (510390) main: ------------------------------------------[0m
+[0;32mI (512410) main: Temperature: 21.0°C[0m
+[0;32mI (512410) main: Humidity:    46.0%[0m
+[0;32mI (512410) main: Lightness:   42.0%[0m
+[0;32mI (512410) main: ------------------------------------------[0m
+[0;32mI (514430) main: Temperature: 21.0°C[0m
+[0;32mI (514430) main: Humidity:    46.0%[0m
+[0;32mI (514430) main: Lightness:   42.0%[0m
+[0;32mI (514430) main: ------------------------------------------[0m
+[0;32mI (516450) main: Temperature: 21.0°C[0m
+[0;32mI (516450) main: Humidity:    46.0%[0m
+[0;32mI (516450) main: Lightness:   43.0%[0m
+[0;32mI (516450) main: ------------------------------------------[0m
+[0;32mI (518470) main: Temperature: 21.0°C[0m
+[0;32mI (518470) main: Humidity:    46.0%[0m
+[0;32mI (518470) main: Lightness:   42.0%[0m
+[0;32mI (518470) main: ------------------------------------------[0m
+[0;32mI (520490) main: Temperature: 21.0°C[0m
+[0;32mI (520490) main: Humidity:    46.0%[0m
+[0;32mI (520490) main: Lightness:   43.0%[0m
+[0;32mI (520490) main: ------------------------------------------[0m
+[0;32mI (522510) main: Temperature: 21.0°C[0m
+[0;32mI (522510) main: Humidity:    46.0%[0m
+[0;32mI (522510) main: Lightness:   42.0%[0m
+[0;32mI (522510) main: ------------------------------------------[0m
+[0;32mI (524530) main: Temperature: 21.0°C[0m
+[0;32mI (524530) main: Humidity:    46.0%[0m
+[0;32mI (524530) main: Lightness:   42.0%[0m
+[0;32mI (524530) main: ------------------------------------------[0m
+[0;32mI (526550) main: Temperature: 21.0°C[0m
+[0;32mI (526550) main: Humidity:    46.0%[0m
+[0;32mI (526550) main: Lightness:   42.0%[0m
+[0;32mI (526550) main: ------------------------------------------[0m
+[0;32mI (528570) main: Temperature: 21.0°C[0m
+[0;32mI (528570) main: Humidity:    46.0%[0m
+[0;32mI (528570) main: Lightness:   42.0%[0m
+[0;32mI (528570) main: ------------------------------------------[0m
+[0;32mI (530590) main: Temperature: 21.0°C[0m
+[0;32mI (530590) main: Humidity:    46.0%[0m
+[0;32mI (530590) main: Lightness:   43.0%[0m
+[0;32mI (530590) main: ------------------------------------------[0m
+[0;32mI (532610) main: Temperature: 21.0°C[0m
+[0;32mI (532610) main: Humidity:    46.0%[0m
+[0;32mI (532610) main: Lightness:   43.0%[0m
+[0;32mI (532610) main: ------------------------------------------[0m
+[0;32mI (534630) main: Temperature: 21.0°C[0m
+[0;32mI (534630) main: Humidity:    46.0%[0m
+[0;32mI (534630) main: Lightness:   41.0%[0m
+[0;32mI (534630) main: ------------------------------------------[0m
+[0;32mI (536650) main: Temperature: 21.0°C[0m
+[0;32mI (536650) main: Humidity:    46.0%[0m
+[0;32mI (536650) main: Lightness:   42.0%[0m
+[0;32mI (536650) main: ------------------------------------------[0m
+[0;32mI (538670) main: Temperature: 21.0°C[0m
+[0;32mI (538670) main: Humidity:    46.0%[0m
+[0;32mI (538670) main: Lightness:   43.0%[0m
+[0;32mI (538670) main: ------------------------------------------[0m
+[0;32mI (540690) main: Temperature: 21.0°C[0m
+[0;32mI (540690) main: Humidity:    46.0%[0m
+[0;32mI (540690) main: Lightness:   41.0%[0m
+[0;32mI (540690) main: ------------------------------------------[0m
+[0;32mI (542710) main: Temperature: 21.0°C[0m
+[0;32mI (542710) main: Humidity:    46.0%[0m
+[0;32mI (542710) main: Lightness:   41.0%[0m
+[0;32mI (542710) main: ------------------------------------------[0m
+[0;32mI (544730) main: Temperature: 21.0°C[0m
+[0;32mI (544730) main: Humidity:    46.0%[0m
+[0;32mI (544730) main: Lightness:   42.0%[0m
+[0;32mI (544730) main: ------------------------------------------[0m
+[0;32mI (546750) main: Temperature: 21.0°C[0m
+[0;32mI (546750) main: Humidity:    46.0%[0m
+[0;32mI (546750) main: Lightness:   42.0%[0m
+[0;32mI (546750) main: ------------------------------------------[0m
+[0;32mI (548770) main: Temperature: 21.0°C[0m
+[0;32mI (548770) main: Humidity:    46.0%[0m
+[0;32mI (548770) main: Lightness:   42.0%[0m
+[0;32mI (548770) main: ------------------------------------------[0m
+[0;32mI (550790) main: Temperature: 21.0°C[0m
+[0;32mI (550790) main: Humidity:    46.0%[0m
+[0;32mI (550790) main: Lightness:   42.0%[0m
+[0;32mI (550790) main: ------------------------------------------[0m
+[0;32mI (552810) main: Temperature: 21.0°C[0m
+[0;32mI (552810) main: Humidity:    46.0%[0m
+[0;32mI (552810) main: Lightness:   42.0%[0m
+[0;32mI (552810) main: ------------------------------------------[0m
+[0;32mI (554830) main: Temperature: 21.0°C[0m
+[0;32mI (554830) main: Humidity:    46.0%[0m
+[0;32mI (554830) main: Lightness:   42.0%[0m
+[0;32mI (554830) main: ------------------------------------------[0m
+[0;32mI (556850) main: Temperature: 21.0°C[0m
+[0;32mI (556850) main: Humidity:    46.0%[0m
+[0;32mI (556850) main: Lightness:   42.0%[0m
+[0;32mI (556850) main: ------------------------------------------[0m
+[0;32mI (558870) main: Temperature: 21.0°C[0m
+[0;32mI (558870) main: Humidity:    46.0%[0m
+[0;32mI (558870) main: Lightness:   42.0%[0m
+[0;32mI (558870) main: ------------------------------------------[0m
+[0;32mI (560890) main: Temperature: 21.0°C[0m
+[0;32mI (560890) main: Humidity:    46.0%[0m
+[0;32mI (560890) main: Lightness:   42.0%[0m
+[0;32mI (560890) main: ------------------------------------------[0m
+[0;32mI (562910) main: Temperature: 21.0°C[0m
+[0;32mI (562910) main: Humidity:    46.0%[0m
+[0;32mI (562910) main: Lightness:   41.0%[0m
+[0;32mI (562910) main: ------------------------------------------[0m
+[0;32mI (564930) main: Temperature: 21.0°C[0m
+[0;32mI (564930) main: Humidity:    46.0%[0m
+[0;32mI (564930) main: Lightness:   41.0%[0m
+[0;32mI (564930) main: ------------------------------------------[0m
+[0;32mI (566950) main: Temperature: 21.0°C[0m
+[0;32mI (566950) main: Humidity:    46.0%[0m
+[0;32mI (566950) main: Lightness:   41.0%[0m
+[0;32mI (566950) main: ------------------------------------------[0m
+[0;32mI (568970) main: Temperature: 21.0°C[0m
+[0;32mI (568970) main: Humidity:    46.0%[0m
+[0;32mI (568970) main: Lightness:   41.0%[0m
+[0;32mI (568970) main: ------------------------------------------[0m
+[0;32mI (570990) main: Temperature: 21.0°C[0m
+[0;32mI (570990) main: Humidity:    46.0%[0m
+[0;32mI (570990) main: Lightness:   41.0%[0m
+[0;32mI (570990) main: ------------------------------------------[0m
+[0;32mI (573010) main: Temperature: 21.0°C[0m
+[0;32mI (573010) main: Humidity:    46.0%[0m
+[0;32mI (573010) main: Lightness:   41.0%[0m
+[0;32mI (573010) main: ------------------------------------------[0m
+[0;32mI (575030) main: Temperature: 21.0°C[0m
+[0;32mI (575030) main: Humidity:    46.0%[0m
+[0;32mI (575030) main: Lightness:   41.0%[0m
+[0;32mI (575030) main: ------------------------------------------[0m
+[0;32mI (577050) main: Temperature: 21.0°C[0m
+[0;32mI (577050) main: Humidity:    46.0%[0m
+[0;32mI (577050) main: Lightness:   41.0%[0m
+[0;32mI (577050) main: ------------------------------------------[0m
+[0;32mI (579070) main: Temperature: 21.0°C[0m
+[0;32mI (579070) main: Humidity:    46.0%[0m
+[0;32mI (579070) main: Lightness:   41.0%[0m
+[0;32mI (579070) main: ------------------------------------------[0m
+[0;32mI (581090) main: Temperature: 21.0°C[0m
+[0;32mI (581090) main: Humidity:    46.0%[0m
+[0;32mI (581090) main: Lightness:   40.0%[0m
+[0;32mI (581090) main: ------------------------------------------[0m
+[0;32mI (583110) main: Temperature: 21.0°C[0m
+[0;32mI (583110) main: Humidity:    46.0%[0m
+[0;32mI (583110) main: Lightness:   40.0%[0m
+[0;32mI (583110) main: ------------------------------------------[0m
+[0;32mI (585130) main: Temperature: 21.0°C[0m
+[0;32mI (585130) main: Humidity:    46.0%[0m
+[0;32mI (585130) main: Lightness:   40.0%[0m
+[0;32mI (585130) main: ------------------------------------------[0m
+[0;32mI (587150) main: Temperature: 21.0°C[0m
+[0;32mI (587150) main: Humidity:    46.0%[0m
+[0;32mI (587150) main: Lightness:   40.0%[0m
+[0;32mI (587150) main: ------------------------------------------[0m
+[0;32mI (589170) main: Temperature: 21.0°C[0m
+[0;32mI (589170) main: Humidity:    46.0%[0m
+[0;32mI (589170) main: Lightness:   40.0%[0m
+[0;32mI (589170) main: ------------------------------------------[0m
+[0;32mI (591190) main: Temperature: 21.0°C[0m
+[0;32mI (591190) main: Humidity:    45.0%[0m
+[0;32mI (591190) main: Lightness:   39.0%[0m
+[0;32mI (591190) main: ------------------------------------------[0m
+[0;32mI (593210) main: Temperature: 21.0°C[0m
+[0;32mI (593210) main: Humidity:    45.0%[0m
+[0;32mI (593210) main: Lightness:   39.0%[0m
+[0;32mI (593210) main: ------------------------------------------[0m
+[0;32mI (595230) main: Temperature: 21.0°C[0m
+[0;32mI (595230) main: Humidity:    45.0%[0m
+[0;32mI (595230) main: Lightness:   39.0%[0m
+[0;32mI (595230) main: ------------------------------------------[0m
+[0;32mI (597250) main: Temperature: 21.0°C[0m
+[0;32mI (597250) main: Humidity:    45.0%[0m
+[0;32mI (597250) main: Lightness:   39.0%[0m
+[0;32mI (597250) main: ------------------------------------------[0m
+[0;32mI (599270) main: Temperature: 21.0°C[0m
+[0;32mI (599270) main: Humidity:    45.0%[0m
+[0;32mI (599270) main: Lightness:   38.0%[0m
+[0;32mI (599270) main: ------------------------------------------[0m
+[0;32mI (601290) main: Temperature: 21.0°C[0m
+[0;32mI (601290) main: Humidity:    45.0%[0m
+[0;32mI (601290) main: Lightness:   38.0%[0m
+[0;32mI (601290) main: ------------------------------------------[0m
+[0;32mI (603310) main: Temperature: 21.0°C[0m
+[0;32mI (603310) main: Humidity:    45.0%[0m
+[0;32mI (603310) main: Lightness:   37.0%[0m
+[0;32mI (603310) main: ------------------------------------------[0m
+[0;32mI (605330) main: Temperature: 21.0°C[0m
+[0;32mI (605330) main: Humidity:    45.0%[0m
+[0;32mI (605330) main: Lightness:   36.0%[0m
+[0;32mI (605330) main: ------------------------------------------[0m
+[0;32mI (607350) main: Temperature: 21.0°C[0m
+[0;32mI (607350) main: Humidity:    45.0%[0m
+[0;32mI (607350) main: Lightness:   35.0%[0m
+[0;32mI (607350) main: ------------------------------------------[0m
+[0;32mI (609370) main: Temperature: 21.0°C[0m
+[0;32mI (609370) main: Humidity:    45.0%[0m
+[0;32mI (609370) main: Lightness:   36.0%[0m
+[0;32mI (609370) main: ------------------------------------------[0m
+[0;32mI (611390) main: Temperature: 21.0°C[0m
+[0;32mI (611390) main: Humidity:    45.0%[0m
+[0;32mI (611390) main: Lightness:   37.0%[0m
+[0;32mI (611390) main: ------------------------------------------[0m
+[0;32mI (613410) main: Temperature: 21.0°C[0m
+[0;32mI (613410) main: Humidity:    45.0%[0m
+[0;32mI (613410) main: Lightness:   37.0%[0m
+[0;32mI (613410) main: ------------------------------------------[0m
+[0;32mI (615430) main: Temperature: 21.0°C[0m
+[0;32mI (615430) main: Humidity:    45.0%[0m
+[0;32mI (615430) main: Lightness:   36.0%[0m
+[0;32mI (615430) main: ------------------------------------------[0m
+[0;32mI (617450) main: Temperature: 21.0°C[0m
+[0;32mI (617450) main: Humidity:    45.0%[0m
+[0;32mI (617450) main: Lightness:   37.0%[0m
+[0;32mI (617450) main: ------------------------------------------[0m
+[0;32mI (619470) main: Temperature: 21.0°C[0m
+[0;32mI (619470) main: Humidity:    45.0%[0m
+[0;32mI (619470) main: Lightness:   37.0%[0m
+[0;32mI (619470) main: ------------------------------------------[0m
+[0;32mI (621490) main: Temperature: 21.0°C[0m
+[0;32mI (621490) main: Humidity:    45.0%[0m
+[0;32mI (621490) main: Lightness:   38.0%[0m
+[0;32mI (621490) main: ------------------------------------------[0m
+[0;32mI (623510) main: Temperature: 21.0°C[0m
+[0;32mI (623510) main: Humidity:    45.0%[0m
+[0;32mI (623510) main: Lightness:   38.0%[0m
+[0;32mI (623510) main: ------------------------------------------[0m
+[0;32mI (625530) main: Temperature: 21.0°C[0m
+[0;32mI (625530) main: Humidity:    45.0%[0m
+[0;32mI (625530) main: Lightness:   37.0%[0m
+[0;32mI (625530) main: ------------------------------------------[0m
+[0;32mI (627550) main: Temperature: 21.0°C[0m
+[0;32mI (627550) main: Humidity:    45.0%[0m
+[0;32mI (627550) main: Lightness:   38.0%[0m
+[0;32mI (627550) main: ------------------------------------------[0m
+[0;32mI (629570) main: Temperature: 21.0°C[0m
+[0;32mI (629570) main: Humidity:    45.0%[0m
+[0;32mI (629570) main: Lightness:   38.0%[0m
+[0;32mI (629570) main: ------------------------------------------[0m
+[0;32mI (631590) main: Temperature: 21.0°C[0m
+[0;32mI (631590) main: Humidity:    45.0%[0m
+[0;32mI (631590) main: Lightness:   38.0%[0m
+[0;32mI (631590) main: ------------------------------------------[0m
+[0;32mI (633610) main: Temperature: 21.0°C[0m
+[0;32mI (633610) main: Humidity:    45.0%[0m
+[0;32mI (633610) main: Lightness:   37.0%[0m
+[0;32mI (633610) main: ------------------------------------------[0m
+[0;32mI (635630) main: Temperature: 21.0°C[0m
+[0;32mI (635630) main: Humidity:    45.0%[0m
+[0;32mI (635630) main: Lightness:   36.0%[0m
+[0;32mI (635630) main: ------------------------------------------[0m
+[0;32mI (637650) main: Temperature: 21.0°C[0m
+[0;32mI (637650) main: Humidity:    45.0%[0m
+[0;32mI (637650) main: Lightness:   37.0%[0m
+[0;32mI (637650) main: ------------------------------------------[0m
+[0;32mI (639670) main: Temperature: 21.0°C[0m
+[0;32mI (639670) main: Humidity:    45.0%[0m
+[0;32mI (639670) main: Lightness:   37.0%[0m
+[0;32mI (639670) main: ------------------------------------------[0m
+[0;32mI (641690) main: Temperature: 21.0°C[0m
+[0;32mI (641690) main: Humidity:    45.0%[0m
+[0;32mI (641690) main: Lightness:   38.0%[0m
+[0;32mI (641690) main: ------------------------------------------[0m
+[0;32mI (643710) main: Temperature: 21.0°C[0m
+[0;32mI (643710) main: Humidity:    45.0%[0m
+[0;32mI (643710) main: Lightness:   39.0%[0m
+[0;32mI (643710) main: ------------------------------------------[0m
+[0;32mI (645730) main: Temperature: 21.0°C[0m
+[0;32mI (645730) main: Humidity:    45.0%[0m
+[0;32mI (645730) main: Lightness:   38.0%[0m
+[0;32mI (645730) main: ------------------------------------------[0m
+[0;32mI (647750) main: Temperature: 21.0°C[0m
+[0;32mI (647750) main: Humidity:    45.0%[0m
+[0;32mI (647750) main: Lightness:   39.0%[0m
+[0;32mI (647750) main: ------------------------------------------[0m
+[0;32mI (649770) main: Temperature: 21.0°C[0m
+[0;32mI (649770) main: Humidity:    45.0%[0m
+[0;32mI (649770) main: Lightness:   39.0%[0m
+[0;32mI (649770) main: ------------------------------------------[0m
+[0;32mI (651790) main: Temperature: 21.0°C[0m
+[0;32mI (651790) main: Humidity:    45.0%[0m
+[0;32mI (651790) main: Lightness:   39.0%[0m
+[0;32mI (651790) main: ------------------------------------------[0m
+[0;32mI (653810) main: Temperature: 21.0°C[0m
+[0;32mI (653810) main: Humidity:    45.0%[0m
+[0;32mI (653810) main: Lightness:   40.0%[0m
+[0;32mI (653810) main: ------------------------------------------[0m
+[0;32mI (655830) main: Temperature: 21.0°C[0m
+[0;32mI (655830) main: Humidity:    45.0%[0m
+[0;32mI (655830) main: Lightness:   40.0%[0m
+[0;32mI (655830) main: ------------------------------------------[0m
+[0;32mI (657850) main: Temperature: 21.0°C[0m
+[0;32mI (657850) main: Humidity:    45.0%[0m
+[0;32mI (657850) main: Lightness:   40.0%[0m
+[0;32mI (657850) main: ------------------------------------------[0m
+[0;32mI (659870) main: Temperature: 21.0°C[0m
+[0;32mI (659870) main: Humidity:    45.0%[0m
+[0;32mI (659870) main: Lightness:   40.0%[0m
+[0;32mI (659870) main: ------------------------------------------[0m
+[0;32mI (661890) main: Temperature: 21.0°C[0m
+[0;32mI (661890) main: Humidity:    45.0%[0m
+[0;32mI (661890) main: Lightness:   40.0%[0m
+[0;32mI (661890) main: ------------------------------------------[0m
+[0;32mI (663910) main: Temperature: 21.0°C[0m
+[0;32mI (663910) main: Humidity:    45.0%[0m
+[0;32mI (663910) main: Lightness:   40.0%[0m
+[0;32mI (663910) main: ------------------------------------------[0m
+[0;32mI (665930) main: Temperature: 21.0°C[0m
+[0;32mI (665930) main: Humidity:    45.0%[0m
+[0;32mI (665930) main: Lightness:   40.0%[0m
+[0;32mI (665930) main: ------------------------------------------[0m
+[0;32mI (667950) main: Temperature: 21.0°C[0m
+[0;32mI (667950) main: Humidity:    45.0%[0m
+[0;32mI (667950) main: Lightness:   40.0%[0m
+[0;32mI (667950) main: ------------------------------------------[0m
+[0;32mI (669970) main: Temperature: 21.0°C[0m
+[0;32mI (669970) main: Humidity:    45.0%[0m
+[0;32mI (669970) main: Lightness:   40.0%[0m
+[0;32mI (669970) main: ------------------------------------------[0m
+[0;32mI (671990) main: Temperature: 21.0°C[0m
+[0;32mI (671990) main: Humidity:    45.0%[0m
+[0;32mI (671990) main: Lightness:   41.0%[0m
+[0;32mI (671990) main: ------------------------------------------[0m
+[0;32mI (674010) main: Temperature: 21.0°C[0m
+[0;32mI (674010) main: Humidity:    45.0%[0m
+[0;32mI (674010) main: Lightness:   41.0%[0m
+[0;32mI (674010) main: ------------------------------------------[0m
+[0;32mI (676030) main: Temperature: 21.0°C[0m
+[0;32mI (676030) main: Humidity:    45.0%[0m
+[0;32mI (676030) main: Lightness:   41.0%[0m
+[0;32mI (676030) main: ------------------------------------------[0m
+[0;32mI (678050) main: Temperature: 21.0°C[0m
+[0;32mI (678050) main: Humidity:    45.0%[0m
+[0;32mI (678050) main: Lightness:   40.0%[0m
+[0;32mI (678050) main: ------------------------------------------[0m
+[0;32mI (680070) main: Temperature: 21.0°C[0m
+[0;32mI (680070) main: Humidity:    45.0%[0m
+[0;32mI (680070) main: Lightness:   40.0%[0m
+[0;32mI (680070) main: ------------------------------------------[0m
+[0;32mI (682090) main: Temperature: 21.0°C[0m
+[0;32mI (682090) main: Humidity:    45.0%[0m
+[0;32mI (682090) main: Lightness:   41.0%[0m
+[0;32mI (682090) main: ------------------------------------------[0m
+[0;32mI (684110) main: Temperature: 21.0°C[0m
+[0;32mI (684110) main: Humidity:    45.0%[0m
+[0;32mI (684110) main: Lightness:   41.0%[0m
+[0;32mI (684110) main: ------------------------------------------[0m
+[0;32mI (686130) main: Temperature: 21.0°C[0m
+[0;32mI (686130) main: Humidity:    45.0%[0m
+[0;32mI (686130) main: Lightness:   41.0%[0m
+[0;32mI (686130) main: ------------------------------------------[0m
+[0;32mI (688150) main: Temperature: 21.0°C[0m
+[0;32mI (688150) main: Humidity:    45.0%[0m
+[0;32mI (688150) main: Lightness:   40.0%[0m
+[0;32mI (688150) main: ------------------------------------------[0m
+[0;32mI (690170) main: Temperature: 21.0°C[0m
+[0;32mI (690170) main: Humidity:    45.0%[0m
+[0;32mI (690170) main: Lightness:   40.0%[0m
+[0;32mI (690170) main: ------------------------------------------[0m
+[0;32mI (692190) main: Temperature: 21.0°C[0m
+[0;32mI (692190) main: Humidity:    45.0%[0m
+[0;32mI (692190) main: Lightness:   40.0%[0m
+[0;32mI (692190) main: ------------------------------------------[0m
+[0;32mI (694210) main: Temperature: 21.0°C[0m
+[0;32mI (694210) main: Humidity:    45.0%[0m
+[0;32mI (694210) main: Lightness:   41.0%[0m
+[0;32mI (694210) main: ------------------------------------------[0m
+[0;32mI (696230) main: Temperature: 21.0°C[0m
+[0;32mI (696230) main: Humidity:    45.0%[0m
+[0;32mI (696230) main: Lightness:   41.0%[0m
+[0;32mI (696230) main: ------------------------------------------[0m
+[0;32mI (698250) main: Temperature: 21.0°C[0m
+[0;32mI (698250) main: Humidity:    45.0%[0m
+[0;32mI (698250) main: Lightness:   41.0%[0m
+[0;32mI (698250) main: ------------------------------------------[0m
+[0;32mI (700270) main: Temperature: 21.0°C[0m
+[0;32mI (700270) main: Humidity:    45.0%[0m
+[0;32mI (700270) main: Lightness:   40.0%[0m
+[0;32mI (700270) main: ------------------------------------------[0m
+[0;32mI (702290) main: Temperature: 21.0°C[0m
+[0;32mI (702290) main: Humidity:    45.0%[0m
+[0;32mI (702290) main: Lightness:   40.0%[0m
+[0;32mI (702290) main: ------------------------------------------[0m
+[0;32mI (704310) main: Temperature: 21.0°C[0m
+[0;32mI (704310) main: Humidity:    45.0%[0m
+[0;32mI (704310) main: Lightness:   39.0%[0m
+[0;32mI (704310) main: ------------------------------------------[0m
+[0;32mI (706330) main: Temperature: 21.0°C[0m
+[0;32mI (706330) main: Humidity:    45.0%[0m
+[0;32mI (706330) main: Lightness:   39.0%[0m
+[0;32mI (706330) main: ------------------------------------------[0m
+[0;32mI (708350) main: Temperature: 21.0°C[0m
+[0;32mI (708350) main: Humidity:    45.0%[0m
+[0;32mI (708350) main: Lightness:   40.0%[0m
+[0;32mI (708350) main: ------------------------------------------[0m
+[0;32mI (710370) main: Temperature: 21.0°C[0m
+[0;32mI (710370) main: Humidity:    45.0%[0m
+[0;32mI (710370) main: Lightness:   39.0%[0m
+[0;32mI (710370) main: ------------------------------------------[0m
+[0;32mI (712390) main: Temperature: 21.0°C[0m
+[0;32mI (712390) main: Humidity:    45.0%[0m
+[0;32mI (712390) main: Lightness:   39.0%[0m
+[0;32mI (712390) main: ------------------------------------------[0m
+[0;32mI (714410) main: Temperature: 21.0°C[0m
+[0;32mI (714410) main: Humidity:    45.0%[0m
+[0;32mI (714410) main: Lightness:   39.0%[0m
+[0;32mI (714410) main: ------------------------------------------[0m
+[0;32mI (716430) main: Temperature: 21.0°C[0m
+[0;32mI (716430) main: Humidity:    45.0%[0m
+[0;32mI (716430) main: Lightness:   41.0%[0m
+[0;32mI (716430) main: ------------------------------------------[0m
+[0;32mI (718450) main: Temperature: 21.0°C[0m
+[0;32mI (718450) main: Humidity:    45.0%[0m
+[0;32mI (718450) main: Lightness:   41.0%[0m
+[0;32mI (718450) main: ------------------------------------------[0m
+[0;32mI (720470) main: Temperature: 21.0°C[0m
+[0;32mI (720470) main: Humidity:    45.0%[0m
+[0;32mI (720470) main: Lightness:   41.0%[0m
+[0;32mI (720470) main: ------------------------------------------[0m
+[0;32mI (722490) main: Temperature: 21.0°C[0m
+[0;32mI (722490) main: Humidity:    45.0%[0m
+[0;32mI (722490) main: Lightness:   41.0%[0m
+[0;32mI (722490) main: ------------------------------------------[0m
+[0;32mI (724510) main: Temperature: 21.0°C[0m
+[0;32mI (724510) main: Humidity:    45.0%[0m
+[0;32mI (724510) main: Lightness:   41.0%[0m
+[0;32mI (724510) main: ------------------------------------------[0m
+[0;32mI (726530) main: Temperature: 21.0°C[0m
+[0;32mI (726530) main: Humidity:    45.0%[0m
+[0;32mI (726530) main: Lightness:   42.0%[0m
+[0;32mI (726530) main: ------------------------------------------[0m
+[0;32mI (728550) main: Temperature: 21.0°C[0m
+[0;32mI (728550) main: Humidity:    45.0%[0m
+[0;32mI (728550) main: Lightness:   41.0%[0m
+[0;32mI (728550) main: ------------------------------------------[0m
+[0;32mI (730570) main: Temperature: 21.0°C[0m
+[0;32mI (730570) main: Humidity:    45.0%[0m
+[0;32mI (730570) main: Lightness:   42.0%[0m
+[0;32mI (730570) main: ------------------------------------------[0m
+[0;32mI (732590) main: Temperature: 21.0°C[0m
+[0;32mI (732590) main: Humidity:    45.0%[0m
+[0;32mI (732590) main: Lightness:   42.0%[0m
+[0;32mI (732590) main: ------------------------------------------[0m
+[0;32mI (734610) main: Temperature: 21.0°C[0m
+[0;32mI (734610) main: Humidity:    45.0%[0m
+[0;32mI (734610) main: Lightness:   42.0%[0m
+[0;32mI (734610) main: ------------------------------------------[0m
+[0;32mI (736630) main: Temperature: 21.0°C[0m
+[0;32mI (736630) main: Humidity:    45.0%[0m
+[0;32mI (736630) main: Lightness:   42.0%[0m
+[0;32mI (736630) main: ------------------------------------------[0m
+[0;32mI (738650) main: Temperature: 21.0°C[0m
+[0;32mI (738650) main: Humidity:    45.0%[0m
+[0;32mI (738650) main: Lightness:   42.0%[0m
+[0;32mI (738650) main: ------------------------------------------[0m
+[0;32mI (740670) main: Temperature: 21.0°C[0m
+[0;32mI (740670) main: Humidity:    45.0%[0m
+[0;32mI (740670) main: Lightness:   42.0%[0m
+[0;32mI (740670) main: ------------------------------------------[0m
+[0;32mI (742690) main: Temperature: 21.0°C[0m
+[0;32mI (742690) main: Humidity:    45.0%[0m
+[0;32mI (742690) main: Lightness:   44.0%[0m
+[0;32mI (742690) main: ------------------------------------------[0m
+[0;32mI (744710) main: Temperature: 21.0°C[0m
+[0;32mI (744710) main: Humidity:    45.0%[0m
+[0;32mI (744710) main: Lightness:   44.0%[0m
+[0;32mI (744710) main: ------------------------------------------[0m
+[0;32mI (746730) main: Temperature: 21.0°C[0m
+[0;32mI (746730) main: Humidity:    45.0%[0m
+[0;32mI (746730) main: Lightness:   44.0%[0m
+[0;32mI (746730) main: ------------------------------------------[0m
+[0;32mI (748750) main: Temperature: 21.0°C[0m
+[0;32mI (748750) main: Humidity:    45.0%[0m
+[0;32mI (748750) main: Lightness:   44.0%[0m
+[0;32mI (748750) main: ------------------------------------------[0m
+[0;32mI (750770) main: Temperature: 21.0°C[0m
+[0;32mI (750770) main: Humidity:    45.0%[0m
+[0;32mI (750770) main: Lightness:   45.0%[0m
+[0;32mI (750770) main: ------------------------------------------[0m
+[0;32mI (752790) main: Temperature: 21.0°C[0m
+[0;32mI (752790) main: Humidity:    45.0%[0m
+[0;32mI (752790) main: Lightness:   44.0%[0m
+[0;32mI (752790) main: ------------------------------------------[0m
+[0;32mI (754810) main: Temperature: 21.0°C[0m
+[0;32mI (754810) main: Humidity:    45.0%[0m
+[0;32mI (754810) main: Lightness:   45.0%[0m
+[0;32mI (754810) main: ------------------------------------------[0m
+[0;32mI (756830) main: Temperature: 21.0°C[0m
+[0;32mI (756830) main: Humidity:    45.0%[0m
+[0;32mI (756830) main: Lightness:   45.0%[0m
+[0;32mI (756830) main: ------------------------------------------[0m
+[0;32mI (758850) main: Temperature: 21.0°C[0m
+[0;32mI (758850) main: Humidity:    45.0%[0m
+[0;32mI (758850) main: Lightness:   45.0%[0m
+[0;32mI (758850) main: ------------------------------------------[0m
+[0;32mI (760870) main: Temperature: 21.0°C[0m
+[0;32mI (760870) main: Humidity:    45.0%[0m
+[0;32mI (760870) main: Lightness:   45.0%[0m
+[0;32mI (760870) main: ------------------------------------------[0m
+[0;32mI (762890) main: Temperature: 21.0°C[0m
+[0;32mI (762890) main: Humidity:    45.0%[0m
+[0;32mI (762890) main: Lightness:   45.0%[0m
+[0;32mI (762890) main: ------------------------------------------[0m
+[0;32mI (764910) main: Temperature: 21.0°C[0m
+[0;32mI (764910) main: Humidity:    45.0%[0m
+[0;32mI (764910) main: Lightness:   45.0%[0m
+[0;32mI (764910) main: ------------------------------------------[0m
+[0;32mI (766930) main: Temperature: 21.0°C[0m
+[0;32mI (766930) main: Humidity:    45.0%[0m
+[0;32mI (766930) main: Lightness:   45.0%[0m
+[0;32mI (766930) main: ------------------------------------------[0m
+[0;32mI (768950) main: Temperature: 21.0°C[0m
+[0;32mI (768950) main: Humidity:    45.0%[0m
+[0;32mI (768950) main: Lightness:   45.0%[0m
+[0;32mI (768950) main: ------------------------------------------[0m
+[0;32mI (770970) main: Temperature: 21.0°C[0m
+[0;32mI (770970) main: Humidity:    45.0%[0m
+[0;32mI (770970) main: Lightness:   45.0%[0m
+[0;32mI (770970) main: ------------------------------------------[0m
+[0;32mI (772990) main: Temperature: 21.0°C[0m
+[0;32mI (772990) main: Humidity:    45.0%[0m
+[0;32mI (772990) main: Lightness:   45.0%[0m
+[0;32mI (772990) main: ------------------------------------------[0m
+[0;32mI (775010) main: Temperature: 21.0°C[0m
+[0;32mI (775010) main: Humidity:    45.0%[0m
+[0;32mI (775010) main: Lightness:   45.0%[0m
+[0;32mI (775010) main: ------------------------------------------[0m
+[0;32mI (777030) main: Temperature: 21.0°C[0m
+[0;32mI (777030) main: Humidity:    45.0%[0m
+[0;32mI (777030) main: Lightness:   45.0%[0m
+[0;32mI (777030) main: ------------------------------------------[0m
+[0;32mI (779050) main: Temperature: 21.0°C[0m
+[0;32mI (779050) main: Humidity:    45.0%[0m
+[0;32mI (779050) main: Lightness:   45.0%[0m
+[0;32mI (779050) main: ------------------------------------------[0m
+[0;32mI (781070) main: Temperature: 21.0°C[0m
+[0;32mI (781070) main: Humidity:    45.0%[0m
+[0;32mI (781070) main: Lightness:   44.0%[0m
+[0;32mI (781070) main: ------------------------------------------[0m
+[0;32mI (783090) main: Temperature: 21.0°C[0m
+[0;32mI (783090) main: Humidity:    45.0%[0m
+[0;32mI (783090) main: Lightness:   44.0%[0m
+[0;32mI (783090) main: ------------------------------------------[0m
+[0;32mI (785110) main: Temperature: 21.0°C[0m
+[0;32mI (785110) main: Humidity:    44.0%[0m
+[0;32mI (785110) main: Lightness:   44.0%[0m
+[0;32mI (785110) main: ------------------------------------------[0m
+[0;32mI (787130) main: Temperature: 21.0°C[0m
+[0;32mI (787130) main: Humidity:    44.0%[0m
+[0;32mI (787130) main: Lightness:   44.0%[0m
+[0;32mI (787130) main: ------------------------------------------[0m
+[0;32mI (789150) main: Temperature: 21.0°C[0m
+[0;32mI (789150) main: Humidity:    44.0%[0m
+[0;32mI (789150) main: Lightness:   44.0%[0m
+[0;32mI (789150) main: ------------------------------------------[0m
+[0;32mI (791170) main: Temperature: 21.0°C[0m
+[0;32mI (791170) main: Humidity:    44.0%[0m
+[0;32mI (791170) main: Lightness:   44.0%[0m
+[0;32mI (791170) main: ------------------------------------------[0m
+[0;32mI (793190) main: Temperature: 21.0°C[0m
+[0;32mI (793190) main: Humidity:    44.0%[0m
+[0;32mI (793190) main: Lightness:   44.0%[0m
+[0;32mI (793190) main: ------------------------------------------[0m
+[0;32mI (795210) main: Temperature: 21.0°C[0m
+[0;32mI (795210) main: Humidity:    44.0%[0m
+[0;32mI (795210) main: Lightness:   44.0%[0m
+[0;32mI (795210) main: ------------------------------------------[0m
+[0;32mI (797230) main: Temperature: 21.0°C[0m
+[0;32mI (797230) main: Humidity:    44.0%[0m
+[0;32mI (797230) main: Lightness:   44.0%[0m
+[0;32mI (797230) main: ------------------------------------------[0m
+[0;32mI (799250) main: Temperature: 21.0°C[0m
+[0;32mI (799250) main: Humidity:    44.0%[0m
+[0;32mI (799250) main: Lightness:   43.0%[0m
+[0;32mI (799250) main: ------------------------------------------[0m
+[0;32mI (801270) main: Temperature: 21.0°C[0m
+[0;32mI (801270) main: Humidity:    44.0%[0m
+[0;32mI (801270) main: Lightness:   43.0%[0m
+[0;32mI (801270) main: ------------------------------------------[0m
+[0;32mI (803290) main: Temperature: 21.0°C[0m
+[0;32mI (803290) main: Humidity:    44.0%[0m
+[0;32mI (803290) main: Lightness:   43.0%[0m
+[0;32mI (803290) main: ------------------------------------------[0m
+[0;32mI (805310) main: Temperature: 21.0°C[0m
+[0;32mI (805310) main: Humidity:    44.0%[0m
+[0;32mI (805310) main: Lightness:   44.0%[0m
+[0;32mI (805310) main: ------------------------------------------[0m
+[0;32mI (807330) main: Temperature: 21.0°C[0m
+[0;32mI (807330) main: Humidity:    44.0%[0m
+[0;32mI (807330) main: Lightness:   44.0%[0m
+[0;32mI (807330) main: ------------------------------------------[0m
+[0;32mI (809350) main: Temperature: 21.0°C[0m
+[0;32mI (809350) main: Humidity:    44.0%[0m
+[0;32mI (809350) main: Lightness:   44.0%[0m
+[0;32mI (809350) main: ------------------------------------------[0m
+[0;32mI (811370) main: Temperature: 21.0°C[0m
+[0;32mI (811370) main: Humidity:    44.0%[0m
+[0;32mI (811370) main: Lightness:   43.0%[0m
+[0;32mI (811370) main: ------------------------------------------[0m
+[0;32mI (813390) main: Temperature: 21.0°C[0m
+[0;32mI (813390) main: Humidity:    44.0%[0m
+[0;32mI (813390) main: Lightness:   43.0%[0m
+[0;32mI (813390) main: ------------------------------------------[0m
+[0;32mI (815410) main: Temperature: 21.0°C[0m
+[0;32mI (815410) main: Humidity:    44.0%[0m
+[0;32mI (815410) main: Lightness:   44.0%[0m
+[0;32mI (815410) main: ------------------------------------------[0m
+[0;32mI (817430) main: Temperature: 21.0°C[0m
+[0;32mI (817430) main: Humidity:    44.0%[0m
+[0;32mI (817430) main: Lightness:   43.0%[0m
+[0;32mI (817430) main: ------------------------------------------[0m
+[0;32mI (819450) main: Temperature: 21.0°C[0m
+[0;32mI (819450) main: Humidity:    44.0%[0m
+[0;32mI (819450) main: Lightness:   43.0%[0m
+[0;32mI (819450) main: ------------------------------------------[0m
+[0;32mI (821470) main: Temperature: 21.0°C[0m
+[0;32mI (821470) main: Humidity:    44.0%[0m
+[0;32mI (821470) main: Lightness:   43.0%[0m
+[0;32mI (821470) main: ------------------------------------------[0m
+[0;32mI (823490) main: Temperature: 21.0°C[0m
+[0;32mI (823490) main: Humidity:    44.0%[0m
+[0;32mI (823490) main: Lightness:   44.0%[0m
+[0;32mI (823490) main: ------------------------------------------[0m
+[0;32mI (825510) main: Temperature: 21.0°C[0m
+[0;32mI (825510) main: Humidity:    44.0%[0m
+[0;32mI (825510) main: Lightness:   43.0%[0m
+[0;32mI (825510) main: ------------------------------------------[0m
+[0;32mI (827530) main: Temperature: 21.0°C[0m
+[0;32mI (827530) main: Humidity:    44.0%[0m
+[0;32mI (827530) main: Lightness:   43.0%[0m
+[0;32mI (827530) main: ------------------------------------------[0m
+[0;32mI (829550) main: Temperature: 21.0°C[0m
+[0;32mI (829550) main: Humidity:    44.0%[0m
+[0;32mI (829550) main: Lightness:   43.0%[0m
+[0;32mI (829550) main: ------------------------------------------[0m
+[0;32mI (831570) main: Temperature: 21.0°C[0m
+[0;32mI (831570) main: Humidity:    44.0%[0m
+[0;32mI (831570) main: Lightness:   43.0%[0m
+[0;32mI (831570) main: ------------------------------------------[0m
+[0;32mI (833590) main: Temperature: 21.0°C[0m
+[0;32mI (833590) main: Humidity:    44.0%[0m
+[0;32mI (833590) main: Lightness:   43.0%[0m
+[0;32mI (833590) main: ------------------------------------------[0m
+[0;32mI (835610) main: Temperature: 21.0°C[0m
+[0;32mI (835610) main: Humidity:    44.0%[0m
+[0;32mI (835610) main: Lightness:   43.0%[0m
+[0;32mI (835610) main: ------------------------------------------[0m
+[0;32mI (837630) main: Temperature: 21.0°C[0m
+[0;32mI (837630) main: Humidity:    44.0%[0m
+[0;32mI (837630) main: Lightness:   42.0%[0m
+[0;32mI (837630) main: ------------------------------------------[0m
+[0;32mI (839650) main: Temperature: 21.0°C[0m
+[0;32mI (839650) main: Humidity:    44.0%[0m
+[0;32mI (839650) main: Lightness:   43.0%[0m
+[0;32mI (839650) main: ------------------------------------------[0m
+[0;32mI (841670) main: Temperature: 21.0°C[0m
+[0;32mI (841670) main: Humidity:    44.0%[0m
+[0;32mI (841670) main: Lightness:   42.0%[0m
+[0;32mI (841670) main: ------------------------------------------[0m
+[0;32mI (843690) main: Temperature: 21.0°C[0m
+[0;32mI (843690) main: Humidity:    44.0%[0m
+[0;32mI (843690) main: Lightness:   42.0%[0m
+[0;32mI (843690) main: ------------------------------------------[0m
+[0;32mI (845710) main: Temperature: 21.0°C[0m
+[0;32mI (845710) main: Humidity:    44.0%[0m
+[0;32mI (845710) main: Lightness:   42.0%[0m
+[0;32mI (845710) main: ------------------------------------------[0m
+[0;32mI (847730) main: Temperature: 21.0°C[0m
+[0;32mI (847730) main: Humidity:    44.0%[0m
+[0;32mI (847730) main: Lightness:   41.0%[0m
+[0;32mI (847730) main: ------------------------------------------[0m
+[0;32mI (849750) main: Temperature: 21.0°C[0m
+[0;32mI (849750) main: Humidity:    44.0%[0m
+[0;32mI (849750) main: Lightness:   40.0%[0m
+[0;32mI (849750) main: ------------------------------------------[0m
+[0;32mI (851770) main: Temperature: 21.0°C[0m
+[0;32mI (851770) main: Humidity:    44.0%[0m
+[0;32mI (851770) main: Lightness:   38.0%[0m
+[0;32mI (851770) main: ------------------------------------------[0m
+[0;32mI (853790) main: Temperature: 21.0°C[0m
+[0;32mI (853790) main: Humidity:    44.0%[0m
+[0;32mI (853790) main: Lightness:   37.0%[0m
+[0;32mI (853790) main: ------------------------------------------[0m
+[0;32mI (855810) main: Temperature: 21.0°C[0m
+[0;32mI (855810) main: Humidity:    44.0%[0m
+[0;32mI (855810) main: Lightness:   36.0%[0m
+[0;32mI (855810) main: ------------------------------------------[0m
+[0;32mI (857830) main: Temperature: 21.0°C[0m
+[0;32mI (857830) main: Humidity:    44.0%[0m
+[0;32mI (857830) main: Lightness:   35.0%[0m
+[0;32mI (857830) main: ------------------------------------------[0m
+[0;32mI (859850) main: Temperature: 21.0°C[0m
+[0;32mI (859850) main: Humidity:    44.0%[0m
+[0;32mI (859850) main: Lightness:   34.0%[0m
+[0;32mI (859850) main: ------------------------------------------[0m
+[0;32mI (861870) main: Temperature: 21.0°C[0m
+[0;32mI (861870) main: Humidity:    44.0%[0m
+[0;32mI (861870) main: Lightness:   33.0%[0m
+[0;32mI (861870) main: ------------------------------------------[0m
+[0;32mI (863890) main: Temperature: 21.0°C[0m
+[0;32mI (863890) main: Humidity:    44.0%[0m
+[0;32mI (863890) main: Lightness:   33.0%[0m
+[0;32mI (863890) main: ------------------------------------------[0m
+[0;32mI (865910) main: Temperature: 21.0°C[0m
+[0;32mI (865910) main: Humidity:    44.0%[0m
+[0;32mI (865910) main: Lightness:   33.0%[0m
+[0;32mI (865910) main: ------------------------------------------[0m
+[0;32mI (867930) main: Temperature: 21.0°C[0m
+[0;32mI (867930) main: Humidity:    44.0%[0m
+[0;32mI (867930) main: Lightness:   33.0%[0m
+[0;32mI (867930) main: ------------------------------------------[0m
+[0;32mI (869950) main: Temperature: 21.0°C[0m
+[0;32mI (869950) main: Humidity:    44.0%[0m
+[0;32mI (869950) main: Lightness:   33.0%[0m
+[0;32mI (869950) main: ------------------------------------------[0m
+[0;32mI (871970) main: Temperature: 21.0°C[0m
+[0;32mI (871970) main: Humidity:    44.0%[0m
+[0;32mI (871970) main: Lightness:   33.0%[0m
+[0;32mI (871970) main: ------------------------------------------[0m
+[0;32mI (873990) main: Temperature: 21.0°C[0m
+[0;32mI (873990) main: Humidity:    44.0%[0m
+[0;32mI (873990) main: Lightness:   32.0%[0m
+[0;32mI (873990) main: ------------------------------------------[0m
+[0;32mI (876010) main: Temperature: 21.0°C[0m
+[0;32mI (876010) main: Humidity:    44.0%[0m
+[0;32mI (876010) main: Lightness:   31.0%[0m
+[0;32mI (876010) main: ------------------------------------------[0m
+[0;32mI (878030) main: Temperature: 21.0°C[0m
+[0;32mI (878030) main: Humidity:    44.0%[0m
+[0;32mI (878030) main: Lightness:   30.0%[0m
+[0;32mI (878030) main: ------------------------------------------[0m
+[0;32mI (880050) main: Temperature: 21.0°C[0m
+[0;32mI (880050) main: Humidity:    44.0%[0m
+[0;32mI (880050) main: Lightness:   29.0%[0m
+[0;32mI (880050) main: ------------------------------------------[0m
+[0;32mI (882070) main: Temperature: 21.0°C[0m
+[0;32mI (882070) main: Humidity:    44.0%[0m
+[0;32mI (882070) main: Lightness:   27.0%[0m
+[0;32mI (882070) main: ------------------------------------------[0m
+[0;32mI (884090) main: Temperature: 21.0°C[0m
+[0;32mI (884090) main: Humidity:    44.0%[0m
+[0;32mI (884090) main: Lightness:   26.0%[0m
+[0;32mI (884090) main: ------------------------------------------[0m
+[0;32mI (886110) main: Temperature: 21.0°C[0m
+[0;32mI (886110) main: Humidity:    44.0%[0m
+[0;32mI (886110) main: Lightness:   26.0%[0m
+[0;32mI (886110) main: ------------------------------------------[0m
+[0;32mI (888130) main: Temperature: 21.0°C[0m
+[0;32mI (888130) main: Humidity:    44.0%[0m
+[0;32mI (888130) main: Lightness:   24.0%[0m
+[0;32mI (888130) main: ------------------------------------------[0m
+[0;32mI (890150) main: Temperature: 21.0°C[0m
+[0;32mI (890150) main: Humidity:    44.0%[0m
+[0;32mI (890150) main: Lightness:   24.0%[0m
+[0;32mI (890150) main: ------------------------------------------[0m
+[0;32mI (892170) main: Temperature: 21.0°C[0m
+[0;32mI (892170) main: Humidity:    44.0%[0m
+[0;32mI (892170) main: Lightness:   23.0%[0m
+[0;32mI (892170) main: ------------------------------------------[0m
+[0;32mI (894190) main: Temperature: 21.0°C[0m
+[0;32mI (894190) main: Humidity:    44.0%[0m
+[0;32mI (894190) main: Lightness:   23.0%[0m
+[0;32mI (894190) main: ------------------------------------------[0m
+[0;32mI (896210) main: Temperature: 21.0°C[0m
+[0;32mI (896210) main: Humidity:    44.0%[0m
+[0;32mI (896210) main: Lightness:   24.0%[0m
+[0;32mI (896210) main: ------------------------------------------[0m
+[0;32mI (898230) main: Temperature: 21.0°C[0m
+[0;32mI (898230) main: Humidity:    44.0%[0m
+[0;32mI (898230) main: Lightness:   24.0%[0m
+[0;32mI (898230) main: ------------------------------------------[0m
+[0;32mI (900250) main: Temperature: 21.0°C[0m
+[0;32mI (900250) main: Humidity:    44.0%[0m
+[0;32mI (900250) main: Lightness:   24.0%[0m
+[0;32mI (900250) main: ------------------------------------------[0m
+[0;32mI (902270) main: Temperature: 21.0°C[0m
+[0;32mI (902270) main: Humidity:    44.0%[0m
+[0;32mI (902270) main: Lightness:   24.0%[0m
+[0;32mI (902270) main: ------------------------------------------[0m
+[0;32mI (904290) main: Temperature: 21.0°C[0m
+[0;32mI (904290) main: Humidity:    44.0%[0m
+[0;32mI (904290) main: Lightness:   23.0%[0m
+[0;32mI (904290) main: ------------------------------------------[0m
+[0;32mI (906310) main: Temperature: 21.0°C[0m
+[0;32mI (906310) main: Humidity:    44.0%[0m
+[0;32mI (906310) main: Lightness:   24.0%[0m
+[0;32mI (906310) main: ------------------------------------------[0m
+[0;32mI (908330) main: Temperature: 21.0°C[0m
+[0;32mI (908330) main: Humidity:    44.0%[0m
+[0;32mI (908330) main: Lightness:   23.0%[0m
+[0;32mI (908330) main: ------------------------------------------[0m
+[0;32mI (910350) main: Temperature: 21.0°C[0m
+[0;32mI (910350) main: Humidity:    44.0%[0m
+[0;32mI (910350) main: Lightness:   24.0%[0m
+[0;32mI (910350) main: ------------------------------------------[0m
+[0;32mI (912370) main: Temperature: 21.0°C[0m
+[0;32mI (912370) main: Humidity:    44.0%[0m
+[0;32mI (912370) main: Lightness:   24.0%[0m
+[0;32mI (912370) main: ------------------------------------------[0m
+[0;32mI (914390) main: Temperature: 21.0°C[0m
+[0;32mI (914390) main: Humidity:    44.0%[0m
+[0;32mI (914390) main: Lightness:   24.0%[0m
+[0;32mI (914390) main: ------------------------------------------[0m
+[0;32mI (916410) main: Temperature: 21.0°C[0m
+[0;32mI (916410) main: Humidity:    44.0%[0m
+[0;32mI (916410) main: Lightness:   24.0%[0m
+[0;32mI (916410) main: ------------------------------------------[0m
+[0;32mI (918430) main: Temperature: 21.0°C[0m
+[0;32mI (918430) main: Humidity:    44.0%[0m
+[0;32mI (918430) main: Lightness:   24.0%[0m
+[0;32mI (918430) main: ------------------------------------------[0m
+[0;32mI (920450) main: Temperature: 21.0°C[0m
+[0;32mI (920450) main: Humidity:    44.0%[0m
+[0;32mI (920450) main: Lightness:   24.0%[0m
+[0;32mI (920450) main: ------------------------------------------[0m
+[0;32mI (922470) main: Temperature: 21.0°C[0m
+[0;32mI (922470) main: Humidity:    44.0%[0m
+[0;32mI (922470) main: Lightness:   25.0%[0m
+[0;32mI (922470) main: ------------------------------------------[0m
+[0;32mI (924490) main: Temperature: 21.0°C[0m
+[0;32mI (924490) main: Humidity:    44.0%[0m
+[0;32mI (924490) main: Lightness:   25.0%[0m
+[0;32mI (924490) main: ------------------------------------------[0m
+[0;32mI (926510) main: Temperature: 21.0°C[0m
+[0;32mI (926510) main: Humidity:    44.0%[0m
+[0;32mI (926510) main: Lightness:   27.0%[0m
+[0;32mI (926510) main: ------------------------------------------[0m
+[0;32mI (928530) main: Temperature: 21.0°C[0m
+[0;32mI (928530) main: Humidity:    44.0%[0m
+[0;32mI (928530) main: Lightness:   28.0%[0m
+[0;32mI (928530) main: ------------------------------------------[0m
+[0;32mI (930550) main: Temperature: 21.0°C[0m
+[0;32mI (930550) main: Humidity:    44.0%[0m
+[0;32mI (930550) main: Lightness:   28.0%[0m
+[0;32mI (930550) main: ------------------------------------------[0m
+[0;32mI (932570) main: Temperature: 21.0°C[0m
+[0;32mI (932570) main: Humidity:    44.0%[0m
+[0;32mI (932570) main: Lightness:   27.0%[0m
+[0;32mI (932570) main: ------------------------------------------[0m
+[0;32mI (934590) main: Temperature: 21.0°C[0m
+[0;32mI (934590) main: Humidity:    44.0%[0m
+[0;32mI (934590) main: Lightness:   26.0%[0m
+[0;32mI (934590) main: ------------------------------------------[0m
+[0;32mI (936610) main: Temperature: 21.0°C[0m
+[0;32mI (936610) main: Humidity:    44.0%[0m
+[0;32mI (936610) main: Lightness:   24.0%[0m
+[0;32mI (936610) main: ------------------------------------------[0m
+[0;32mI (938630) main: Temperature: 21.0°C[0m
+[0;32mI (938630) main: Humidity:    44.0%[0m
+[0;32mI (938630) main: Lightness:   23.0%[0m
+[0;32mI (938630) main: ------------------------------------------[0m
+[0;32mI (940650) main: Temperature: 21.0°C[0m
+[0;32mI (940650) main: Humidity:    44.0%[0m
+[0;32mI (940650) main: Lightness:   23.0%[0m
+[0;32mI (940650) main: ------------------------------------------[0m
+[0;32mI (942670) main: Temperature: 21.0°C[0m
+[0;32mI (942670) main: Humidity:    44.0%[0m
+[0;32mI (942670) main: Lightness:   23.0%[0m
+[0;32mI (942670) main: ------------------------------------------[0m
+[0;32mI (944690) main: Temperature: 21.0°C[0m
+[0;32mI (944690) main: Humidity:    44.0%[0m
+[0;32mI (944690) main: Lightness:   24.0%[0m
+[0;32mI (944690) main: ------------------------------------------[0m
+[0;32mI (946710) main: Temperature: 21.0°C[0m
+[0;32mI (946710) main: Humidity:    44.0%[0m
+[0;32mI (946710) main: Lightness:   23.0%[0m
+[0;32mI (946710) main: ------------------------------------------[0m
+[0;32mI (948730) main: Temperature: 21.0°C[0m
+[0;32mI (948730) main: Humidity:    44.0%[0m
+[0;32mI (948730) main: Lightness:   22.0%[0m
+[0;32mI (948730) main: ------------------------------------------[0m
+[0;32mI (950750) main: Temperature: 21.0°C[0m
+[0;32mI (950750) main: Humidity:    44.0%[0m
+[0;32mI (950750) main: Lightness:   23.0%[0m
+[0;32mI (950750) main: ------------------------------------------[0m
+[0;32mI (952770) main: Temperature: 21.0°C[0m
+[0;32mI (952770) main: Humidity:    44.0%[0m
+[0;32mI (952770) main: Lightness:   23.0%[0m
+[0;32mI (952770) main: ------------------------------------------[0m
+[0;32mI (954790) main: Temperature: 21.0°C[0m
+[0;32mI (954790) main: Humidity:    44.0%[0m
+[0;32mI (954790) main: Lightness:   23.0%[0m
+[0;32mI (954790) main: ------------------------------------------[0m
+[0;32mI (956810) main: Temperature: 21.0°C[0m
+[0;32mI (956810) main: Humidity:    44.0%[0m
+[0;32mI (956810) main: Lightness:   23.0%[0m
+[0;32mI (956810) main: ------------------------------------------[0m
+[0;32mI (958830) main: Temperature: 21.0°C[0m
+[0;32mI (958830) main: Humidity:    44.0%[0m
+[0;32mI (958830) main: Lightness:   23.0%[0m
+[0;32mI (958830) main: ------------------------------------------[0m
+[0;32mI (960850) main: Temperature: 21.0°C[0m
+[0;32mI (960850) main: Humidity:    44.0%[0m
+[0;32mI (960850) main: Lightness:   24.0%[0m
+[0;32mI (960850) main: ------------------------------------------[0m
+[0;32mI (962870) main: Temperature: 21.0°C[0m
+[0;32mI (962870) main: Humidity:    44.0%[0m
+[0;32mI (962870) main: Lightness:   23.0%[0m
+[0;32mI (962870) main: ------------------------------------------[0m
+[0;32mI (964890) main: Temperature: 21.0°C[0m
+[0;32mI (964890) main: Humidity:    44.0%[0m
+[0;32mI (964890) main: Lightness:   24.0%[0m
+[0;32mI (964890) main: ------------------------------------------[0m
+[0;32mI (966910) main: Temperature: 21.0°C[0m
+[0;32mI (966910) main: Humidity:    44.0%[0m
+[0;32mI (966910) main: Lightness:   24.0%[0m
+[0;32mI (966910) main: ------------------------------------------[0m
+[0;32mI (968930) main: Temperature: 21.0°C[0m
+[0;32mI (968930) main: Humidity:    44.0%[0m
+[0;32mI (968930) main: Lightness:   23.0%[0m
+[0;32mI (968930) main: ------------------------------------------[0m
+[0;32mI (970950) main: Temperature: 21.0°C[0m
+[0;32mI (970950) main: Humidity:    44.0%[0m
+[0;32mI (970950) main: Lightness:   23.0%[0m
+[0;32mI (970950) main: ------------------------------------------[0m
+[0;32mI (972970) main: Temperature: 21.0°C[0m
+[0;32mI (972970) main: Humidity:    44.0%[0m
+[0;32mI (972970) main: Lightness:   23.0%[0m
+[0;32mI (972970) main: ------------------------------------------[0m
+[0;32mI (974990) main: Temperature: 21.0°C[0m
+[0;32mI (974990) main: Humidity:    44.0%[0m
+[0;32mI (974990) main: Lightness:   23.0%[0m
+[0;32mI (974990) main: ------------------------------------------[0m
+[0;32mI (977010) main: Temperature: 21.0°C[0m
+[0;32mI (977010) main: Humidity:    44.0%[0m
+[0;32mI (977010) main: Lightness:   21.0%[0m
+[0;32mI (977010) main: ------------------------------------------[0m
+[0;32mI (979030) main: Temperature: 21.0°C[0m
+[0;32mI (979030) main: Humidity:    44.0%[0m
+[0;32mI (979030) main: Lightness:   23.0%[0m
+[0;32mI (979030) main: ------------------------------------------[0m
+[0;32mI (981050) main: Temperature: 21.0°C[0m
+[0;32mI (981050) main: Humidity:    44.0%[0m
+[0;32mI (981050) main: Lightness:   23.0%[0m
+[0;32mI (981050) main: ------------------------------------------[0m
+[0;32mI (983070) main: Temperature: 21.0°C[0m
+[0;32mI (983070) main: Humidity:    44.0%[0m
+[0;32mI (983070) main: Lightness:   21.0%[0m
+[0;32mI (983070) main: ------------------------------------------[0m
+[0;32mI (985090) main: Temperature: 21.0°C[0m
+[0;32mI (985090) main: Humidity:    44.0%[0m
+[0;32mI (985090) main: Lightness:   21.0%[0m
+[0;32mI (985090) main: ------------------------------------------[0m
+[0;32mI (987110) main: Temperature: 21.0°C[0m
+[0;32mI (987110) main: Humidity:    44.0%[0m
+[0;32mI (987110) main: Lightness:   24.0%[0m
+[0;32mI (987110) main: ------------------------------------------[0m
+[0;32mI (989130) main: Temperature: 21.0°C[0m
+[0;32mI (989130) main: Humidity:    44.0%[0m
+[0;32mI (989130) main: Lightness:   24.0%[0m
+[0;32mI (989130) main: ------------------------------------------[0m
+[0;32mI (991150) main: Temperature: 21.0°C[0m
+[0;32mI (991150) main: Humidity:    44.0%[0m
+[0;32mI (991150) main: Lightness:   24.0%[0m
+[0;32mI (991150) main: ------------------------------------------[0m
+[0;32mI (993170) main: Temperature: 21.0°C[0m
+[0;32mI (993170) main: Humidity:    44.0%[0m
+[0;32mI (993170) main: Lightness:   24.0%[0m
+[0;32mI (993170) main: ------------------------------------------[0m
+[0;32mI (995190) main: Temperature: 21.0°C[0m
+[0;32mI (995190) main: Humidity:    44.0%[0m
+[0;32mI (995190) main: Lightness:   24.0%[0m
+[0;32mI (995190) main: ------------------------------------------[0m
+[0;32mI (997210) main: Temperature: 21.0°C[0m
+[0;32mI (997210) main: Humidity:    44.0%[0m
+[0;32mI (997210) main: Lightness:   24.0%[0m
+[0;32mI (997210) main: ------------------------------------------[0m
+[0;32mI (999230) main: Temperature: 21.0°C[0m
+[0;32mI (999230) main: Humidity:    44.0%[0m
+[0;32mI (999230) main: Lightness:   24.0%[0m
+[0;32mI (999230) main: ------------------------------------------[0m
+[0;32mI (1001250) main: Temperature: 21.0°C[0m
+[0;32mI (1001250) main: Humidity:    44.0%[0m
+[0;32mI (1001250) main: Lightness:   24.0%[0m
+[0;32mI (1001250) main: ------------------------------------------[0m
+[0;32mI (1003270) main: Temperature: 21.0°C[0m
+[0;32mI (1003270) main: Humidity:    44.0%[0m
+[0;32mI (1003270) main: Lightness:   24.0%[0m
+[0;32mI (1003270) main: ------------------------------------------[0m
+[0;32mI (1005290) main: Temperature: 21.0°C[0m
+[0;32mI (1005290) main: Humidity:    44.0%[0m
+[0;32mI (1005290) main: Lightness:   24.0%[0m
+[0;32mI (1005290) main: ------------------------------------------[0m
+[0;32mI (1007310) main: Temperature: 21.0°C[0m
+[0;32mI (1007310) main: Humidity:    44.0%[0m
+[0;32mI (1007310) main: Lightness:   24.0%[0m
+[0;32mI (1007310) main: ------------------------------------------[0m
+[0;32mI (1009330) main: Temperature: 21.0°C[0m
+[0;32mI (1009330) main: Humidity:    44.0%[0m
+[0;32mI (1009330) main: Lightness:   24.0%[0m
+[0;32mI (1009330) main: ------------------------------------------[0m
+[0;32mI (1011350) main: Temperature: 21.0°C[0m
+[0;32mI (1011350) main: Humidity:    44.0%[0m
+[0;32mI (1011350) main: Lightness:   22.0%[0m
+[0;32mI (1011350) main: ------------------------------------------[0m
+[0;32mI (1013370) main: Temperature: 21.0°C[0m
+[0;32mI (1013370) main: Humidity:    44.0%[0m
+[0;32mI (1013370) main: Lightness:   22.0%[0m
+[0;32mI (1013370) main: ------------------------------------------[0m
+[0;32mI (1015390) main: Temperature: 21.0°C[0m
+[0;32mI (1015390) main: Humidity:    44.0%[0m
+[0;32mI (1015390) main: Lightness:   23.0%[0m
+[0;32mI (1015390) main: ------------------------------------------[0m
+[0;32mI (1017410) main: Temperature: 21.0°C[0m
+[0;32mI (1017410) main: Humidity:    44.0%[0m
+[0;32mI (1017410) main: Lightness:   23.0%[0m
+[0;32mI (1017410) main: ------------------------------------------[0m
+[0;32mI (1019430) main: Temperature: 21.0°C[0m
+[0;32mI (1019430) main: Humidity:    44.0%[0m
+[0;32mI (1019430) main: Lightness:   23.0%[0m
+[0;32mI (1019430) main: ------------------------------------------[0m
+[0;32mI (1021450) main: Temperature: 21.0°C[0m
+[0;32mI (1021450) main: Humidity:    44.0%[0m
+[0;32mI (1021450) main: Lightness:   24.0%[0m
+[0;32mI (1021450) main: ------------------------------------------[0m
+[0;32mI (1023470) main: Temperature: 21.0°C[0m
+[0;32mI (1023470) main: Humidity:    44.0%[0m
+[0;32mI (1023470) main: Lightness:   24.0%[0m
+[0;32mI (1023470) main: ------------------------------------------[0m
+[0;32mI (1025490) main: Temperature: 21.0°C[0m
+[0;32mI (1025490) main: Humidity:    44.0%[0m
+[0;32mI (1025490) main: Lightness:   23.0%[0m
+[0;32mI (1025490) main: ------------------------------------------[0m
+[0;32mI (1027510) main: Temperature: 21.0°C[0m
+[0;32mI (1027510) main: Humidity:    44.0%[0m
+[0;32mI (1027510) main: Lightness:   24.0%[0m
+[0;32mI (1027510) main: ------------------------------------------[0m
+[0;32mI (1029530) main: Temperature: 21.0°C[0m
+[0;32mI (1029530) main: Humidity:    44.0%[0m
+[0;32mI (1029530) main: Lightness:   24.0%[0m
+[0;32mI (1029530) main: ------------------------------------------[0m
+[0;32mI (1031550) main: Temperature: 21.0°C[0m
+[0;32mI (1031550) main: Humidity:    44.0%[0m
+[0;32mI (1031550) main: Lightness:   24.0%[0m
+[0;32mI (1031550) main: ------------------------------------------[0m
+[0;32mI (1033570) main: Temperature: 21.0°C[0m
+[0;32mI (1033570) main: Humidity:    44.0%[0m
+[0;32mI (1033570) main: Lightness:   24.0%[0m
+[0;32mI (1033570) main: ------------------------------------------[0m
+[0;32mI (1035590) main: Temperature: 21.0°C[0m
+[0;32mI (1035590) main: Humidity:    44.0%[0m
+[0;32mI (1035590) main: Lightness:   24.0%[0m
+[0;32mI (1035590) main: ------------------------------------------[0m
+[0;32mI (1037610) main: Temperature: 21.0°C[0m
+[0;32mI (1037610) main: Humidity:    44.0%[0m
+[0;32mI (1037610) main: Lightness:   24.0%[0m
+[0;32mI (1037610) main: ------------------------------------------[0m
+[0;32mI (1039630) main: Temperature: 21.0°C[0m
+[0;32mI (1039630) main: Humidity:    44.0%[0m
+[0;32mI (1039630) main: Lightness:   24.0%[0m
+[0;32mI (1039630) main: ------------------------------------------[0m
+[0;32mI (1041650) main: Temperature: 21.0°C[0m
+[0;32mI (1041650) main: Humidity:    44.0%[0m
+[0;32mI (1041650) main: Lightness:   24.0%[0m
+[0;32mI (1041650) main: ------------------------------------------[0m
+[0;32mI (1043670) main: Temperature: 21.0°C[0m
+[0;32mI (1043670) main: Humidity:    44.0%[0m
+[0;32mI (1043670) main: Lightness:   24.0%[0m
+[0;32mI (1043670) main: ------------------------------------------[0m
+[0;32mI (1045690) main: Temperature: 21.0°C[0m
+[0;32mI (1045690) main: Humidity:    44.0%[0m
+[0;32mI (1045690) main: Lightness:   24.0%[0m
+[0;32mI (1045690) main: ------------------------------------------[0m
+[0;32mI (1047710) main: Temperature: 21.0°C[0m
+[0;32mI (1047710) main: Humidity:    44.0%[0m
+[0;32mI (1047710) main: Lightness:   25.0%[0m
+[0;32mI (1047710) main: ------------------------------------------[0m
+[0;32mI (1049730) main: Temperature: 21.0°C[0m
+[0;32mI (1049730) main: Humidity:    44.0%[0m
+[0;32mI (1049730) main: Lightness:   25.0%[0m
+[0;32mI (1049730) main: ------------------------------------------[0m
+[0;32mI (1051750) main: Temperature: 21.0°C[0m
+[0;32mI (1051750) main: Humidity:    44.0%[0m
+[0;32mI (1051750) main: Lightness:   26.0%[0m
+[0;32mI (1051750) main: ------------------------------------------[0m
+[0;32mI (1053770) main: Temperature: 21.0°C[0m
+[0;32mI (1053770) main: Humidity:    44.0%[0m
+[0;32mI (1053770) main: Lightness:   27.0%[0m
+[0;32mI (1053770) main: ------------------------------------------[0m
+[0;32mI (1055790) main: Temperature: 21.0°C[0m
+[0;32mI (1055790) main: Humidity:    44.0%[0m
+[0;32mI (1055790) main: Lightness:   28.0%[0m
+[0;32mI (1055790) main: ------------------------------------------[0m
+[0;32mI (1057810) main: Temperature: 21.0°C[0m
+[0;32mI (1057810) main: Humidity:    44.0%[0m
+[0;32mI (1057810) main: Lightness:   29.0%[0m
+[0;32mI (1057810) main: ------------------------------------------[0m
+[0;32mI (1059830) main: Temperature: 21.0°C[0m
+[0;32mI (1059830) main: Humidity:    44.0%[0m
+[0;32mI (1059830) main: Lightness:   29.0%[0m
+[0;32mI (1059830) main: ------------------------------------------[0m
+[0;32mI (1061850) main: Temperature: 21.0°C[0m
+[0;32mI (1061850) main: Humidity:    44.0%[0m
+[0;32mI (1061850) main: Lightness:   29.0%[0m
+[0;32mI (1061850) main: ------------------------------------------[0m
+[0;32mI (1063870) main: Temperature: 21.0°C[0m
+[0;32mI (1063870) main: Humidity:    44.0%[0m
+[0;32mI (1063870) main: Lightness:   29.0%[0m
+[0;32mI (1063870) main: ------------------------------------------[0m
+[0;32mI (1065890) main: Temperature: 21.0°C[0m
+[0;32mI (1065890) main: Humidity:    44.0%[0m
+[0;32mI (1065890) main: Lightness:   30.0%[0m
+[0;32mI (1065890) main: ------------------------------------------[0m
+[0;32mI (1067910) main: Temperature: 21.0°C[0m
+[0;32mI (1067910) main: Humidity:    44.0%[0m
+[0;32mI (1067910) main: Lightness:   32.0%[0m
+[0;32mI (1067910) main: ------------------------------------------[0m
+[0;32mI (1069930) main: Temperature: 21.0°C[0m
+[0;32mI (1069930) main: Humidity:    44.0%[0m
+[0;32mI (1069930) main: Lightness:   34.0%[0m
+[0;32mI (1069930) main: ------------------------------------------[0m
+[0;32mI (1071950) main: Temperature: 21.0°C[0m
+[0;32mI (1071950) main: Humidity:    44.0%[0m
+[0;32mI (1071950) main: Lightness:   36.0%[0m
+[0;32mI (1071950) main: ------------------------------------------[0m
+[0;32mI (1073970) main: Temperature: 21.0°C[0m
+[0;32mI (1073970) main: Humidity:    44.0%[0m
+[0;32mI (1073970) main: Lightness:   38.0%[0m
+[0;32mI (1073970) main: ------------------------------------------[0m
+[0;32mI (1075990) main: Temperature: 21.0°C[0m
+[0;32mI (1075990) main: Humidity:    44.0%[0m
+[0;32mI (1075990) main: Lightness:   39.0%[0m
+[0;32mI (1075990) main: ------------------------------------------[0m
+[0;32mI (1078010) main: Temperature: 21.0°C[0m
+[0;32mI (1078010) main: Humidity:    44.0%[0m
+[0;32mI (1078010) main: Lightness:   40.0%[0m
+[0;32mI (1078010) main: ------------------------------------------[0m
+[0;32mI (1080030) main: Temperature: 21.0°C[0m
+[0;32mI (1080030) main: Humidity:    44.0%[0m
+[0;32mI (1080030) main: Lightness:   40.0%[0m
+[0;32mI (1080030) main: ------------------------------------------[0m
+[0;32mI (1082050) main: Temperature: 21.0°C[0m
+[0;32mI (1082050) main: Humidity:    44.0%[0m
+[0;32mI (1082050) main: Lightness:   39.0%[0m
+[0;32mI (1082050) main: ------------------------------------------[0m
+[0;32mI (1084070) main: Temperature: 21.0°C[0m
+[0;32mI (1084070) main: Humidity:    44.0%[0m
+[0;32mI (1084070) main: Lightness:   38.0%[0m
+[0;32mI (1084070) main: ------------------------------------------[0m
+[0;32mI (1086090) main: Temperature: 21.0°C[0m
+[0;32mI (1086090) main: Humidity:    44.0%[0m
+[0;32mI (1086090) main: Lightness:   36.0%[0m
+[0;32mI (1086090) main: ------------------------------------------[0m
+[0;32mI (1088110) main: Temperature: 21.0°C[0m
+[0;32mI (1088110) main: Humidity:    44.0%[0m
+[0;32mI (1088110) main: Lightness:   34.0%[0m
+[0;32mI (1088110) main: ------------------------------------------[0m
+[0;32mI (1090130) main: Temperature: 21.0°C[0m
+[0;32mI (1090130) main: Humidity:    44.0%[0m
+[0;32mI (1090130) main: Lightness:   34.0%[0m
+[0;32mI (1090130) main: ------------------------------------------[0m
+[0;32mI (1092150) main: Temperature: 21.0°C[0m
+[0;32mI (1092150) main: Humidity:    44.0%[0m
+[0;32mI (1092150) main: Lightness:   33.0%[0m
+[0;32mI (1092150) main: ------------------------------------------[0m
+[0;32mI (1094170) main: Temperature: 21.0°C[0m
+[0;32mI (1094170) main: Humidity:    44.0%[0m
+[0;32mI (1094170) main: Lightness:   32.0%[0m
+[0;32mI (1094170) main: ------------------------------------------[0m
+[0;32mI (1096190) main: Temperature: 21.0°C[0m
+[0;32mI (1096190) main: Humidity:    44.0%[0m
+[0;32mI (1096190) main: Lightness:   31.0%[0m
+[0;32mI (1096190) main: ------------------------------------------[0m
+[0;32mI (1098210) main: Temperature: 21.0°C[0m
+[0;32mI (1098210) main: Humidity:    44.0%[0m
+[0;32mI (1098210) main: Lightness:   29.0%[0m
+[0;32mI (1098210) main: ------------------------------------------[0m
+[0;32mI (1100230) main: Temperature: 21.0°C[0m
+[0;32mI (1100230) main: Humidity:    44.0%[0m
+[0;32mI (1100230) main: Lightness:   28.0%[0m
+[0;32mI (1100230) main: ------------------------------------------[0m
+[0;32mI (1102250) main: Temperature: 21.0°C[0m
+[0;32mI (1102250) main: Humidity:    44.0%[0m
+[0;32mI (1102250) main: Lightness:   27.0%[0m
+[0;32mI (1102250) main: ------------------------------------------[0m
+[0;32mI (1104270) main: Temperature: 21.0°C[0m
+[0;32mI (1104270) main: Humidity:    44.0%[0m
+[0;32mI (1104270) main: Lightness:   26.0%[0m
+[0;32mI (1104270) main: ------------------------------------------[0m
+[0;32mI (1106290) main: Temperature: 21.0°C[0m
+[0;32mI (1106290) main: Humidity:    44.0%[0m
+[0;32mI (1106290) main: Lightness:   25.0%[0m
+[0;32mI (1106290) main: ------------------------------------------[0m
+[0;32mI (1108310) main: Temperature: 21.0°C[0m
+[0;32mI (1108310) main: Humidity:    44.0%[0m
+[0;32mI (1108310) main: Lightness:   23.0%[0m
+[0;32mI (1108310) main: ------------------------------------------[0m
+[0;32mI (1110330) main: Temperature: 21.0°C[0m
+[0;32mI (1110330) main: Humidity:    44.0%[0m
+[0;32mI (1110330) main: Lightness:   23.0%[0m
+[0;32mI (1110330) main: ------------------------------------------[0m
+[0;32mI (1112350) main: Temperature: 21.0°C[0m
+[0;32mI (1112350) main: Humidity:    44.0%[0m
+[0;32mI (1112350) main: Lightness:   23.0%[0m
+[0;32mI (1112350) main: ------------------------------------------[0m
+[0;32mI (1114370) main: Temperature: 21.0°C[0m
+[0;32mI (1114370) main: Humidity:    44.0%[0m
+[0;32mI (1114370) main: Lightness:   24.0%[0m
+[0;32mI (1114370) main: ------------------------------------------[0m
+[0;32mI (1116390) main: Temperature: 21.0°C[0m
+[0;32mI (1116390) main: Humidity:    44.0%[0m
+[0;32mI (1116390) main: Lightness:   24.0%[0m
+[0;32mI (1116390) main: ------------------------------------------[0m
+[0;32mI (1118410) main: Temperature: 21.0°C[0m
+[0;32mI (1118410) main: Humidity:    44.0%[0m
+[0;32mI (1118410) main: Lightness:   24.0%[0m
+[0;32mI (1118410) main: ------------------------------------------[0m
+[0;32mI (1120430) main: Temperature: 21.0°C[0m
+[0;32mI (1120430) main: Humidity:    44.0%[0m
+[0;32mI (1120430) main: Lightness:   23.0%[0m
+[0;32mI (1120430) main: ------------------------------------------[0m
+[0;32mI (1122450) main: Temperature: 21.0°C[0m
+[0;32mI (1122450) main: Humidity:    44.0%[0m
+[0;32mI (1122450) main: Lightness:   23.0%[0m
+[0;32mI (1122450) main: ------------------------------------------[0m
+[0;32mI (1124470) main: Temperature: 21.0°C[0m
+[0;32mI (1124470) main: Humidity:    44.0%[0m
+[0;32mI (1124470) main: Lightness:   24.0%[0m
+[0;32mI (1124470) main: ------------------------------------------[0m
+[0;32mI (1126490) main: Temperature: 21.0°C[0m
+[0;32mI (1126490) main: Humidity:    44.0%[0m
+[0;32mI (1126490) main: Lightness:   24.0%[0m
+[0;32mI (1126490) main: ------------------------------------------[0m

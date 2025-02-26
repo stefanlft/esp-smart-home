@@ -1,0 +1,30 @@
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/stefan/esp/esp-idf/Kconfig:148
+    /home/stefan/esp/esp-idf/Kconfig:78
+CMake Warning at /home/stefan/esp/esp-idf/tools/cmake/component.cmake:269 (message):
+  SRCS and SRC_DIRS are both specified; ignoring SRC_DIRS.
+Call Stack (most recent call first):
+  /home/stefan/esp/esp-idf/tools/cmake/component.cmake:443 (__component_add_sources)
+  components/smart-home-alpha/CMakeLists.txt:1 (idf_component_register)
+
+
+Including esp_timer in color
+CMake Error at /home/stefan/esp/esp-idf/tools/cmake/component.cmake:479 (add_library):
+  Cannot find source file:
+
+    /home/stefan/esp/esp-smart-home/main/esp-smart-home.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+  .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Error at /home/stefan/esp/esp-idf/tools/cmake/component.cmake:479 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

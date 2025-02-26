@@ -1,0 +1,279 @@
+��J��}������ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a470h ( 42096) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a498 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001a4a4 vaddr=3ffb0000 size=02298h (  8856) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=0001c744 vaddr=40080000 size=038d4h ( 14548) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15754h ( 87892) map[0m
+[0;32mI (173) esp_image: segment 5: paddr=0003577c vaddr=400838d4 size=08ed0h ( 36560) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (217) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  0aaa70c92...[0m
+[0;32mI (238) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008C7A4 len 0001385C (78 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (302) spi_flash: flash io: dio[0m
+[0;33mW (306) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (320) main_task: Started on CPU0[0m
+[0;32mI (330) main_task: Calling app_main()[0m
+[0;32mI (330) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (330) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (330) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (340) PIEZO: Playing 196Hz for 100ms[0m
+[0;32mI (340) PIEZO: Playing 147Hz for 200ms[0m
+[0;32mI (340) PIEZO: Playing 988Hz for 150ms[0m
+[0;31mE (1350) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1350) DHT: Could not read data from sensor[0m
+[0;32mI (2350) main: Temperature: 2.0°C[0m
+[0;32mI (2350) main: Humidity:    -0.0%[0m
+[0;32mI (2350) main: Lightness:   36.0%[0m
+[0;32mI (2350) main: ------------------------------------------[0m
+[0;32mI (4350) main: Temperature: 19.0°C[0m
+[0;32mI (4350) main: Humidity:    49.0%[0m
+[0;32mI (4350) main: Lightness:   36.0%[0m
+[0;32mI (4350) main: ------------------------------------------[0m
+[0;32mI (6350) main: Temperature: 19.0°C[0m
+[0;32mI (6350) main: Humidity:    49.0%[0m
+[0;32mI (6350) main: Lightness:   36.0%[0m
+[0;32mI (6350) main: ------------------------------------------[0m
+[0;32mI (8350) main: Temperature: 19.0°C[0m
+[0;32mI (8350) main: Humidity:    49.0%[0m
+[0;32mI (8350) main: Lightness:   36.0%[0m
+[0;32mI (8350) main: ------------------------------------------[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a470h ( 42096) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a498 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001a4a4 vaddr=3ffb0000 size=02298h (  8856) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=0001c744 vaddr=40080000 size=038d4h ( 14548) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15754h ( 87892) map[0m
+[0;32mI (173) esp_image: segment 5: paddr=0003577c vaddr=400838d4 size=08ed0h ( 36560) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (217) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  0aaa70c92...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008C7A4 len 0001385C (78 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (302) spi_flash: flash io: dio[0m
+[0;33mW (306) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (320) main_task: Started on CPU0[0m
+[0;32mI (330) main_task: Calling app_main()[0m
+[0;32mI (330) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (330) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (330) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (340) PIEZO: Playing 196Hz for 100ms[0m
+[0;32mI (340) PIEZO: Playing 147Hz for 200ms[0m
+[0;32mI (340) PIEZO: Playing 988Hz for 150ms[0m
+[0;31mE (1350) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1350) DHT: Could not read data from sensor[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a470h ( 42096) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a498 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001a4a4 vaddr=3ffb0000 size=02298h (  8856) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=0001c744 vaddr=40080000 size=038d4h ( 14548) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15754h ( 87892) map[0m
+[0;32mI (173) esp_image: segment 5: paddr=0003577c vaddr=400838d4 size=08ed0h ( 36560) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (217) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  0aaa70c92...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2B90 len 0002D470 (181 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008C7A4 len 0001385C (78 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (302) spi_flash: flash io: dio[0m
+[0;33mW (306) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (320) main_task: Started on CPU0[0m
+[0;32mI (330) main_task: Calling app_main()[0m
+[0;32mI (330) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (330) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (330) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (340) PIEZO: Playing 196Hz for 100ms[0m
+[0;32mI (340) PIEZO: Playing 147Hz for 200ms[0m
+[0;32mI (340) PIEZO: Playing 988Hz for 150ms[0m
+[0;31mE (1350) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1350) DHT: Could not read data from sensor[0m
+[0;32mI (2350) main: Temperature: 2.0°C[0m
+[0;32mI (2350) main: Humidity:    -0.0%[0m
+[0;32mI (2350) main: Lightness:   36.0%[0m
+[0;32mI (2350) main: ------------------------------------------[0m
+[0;32mI (4350) main: Temperature: 20.0°C[0m
+[0;32mI (4350) main: Humidity:    49.0%[0m
+[0;32mI (4350) main: Lightness:   36.0%[0m
+[0;32mI (4350) main: ------------------------------------------[0m
+[0;32mI (6350) main: Temperature: 20.0°C[0m
+[0;32mI (6350) main: Humidity:    49.0%[0m
+[0;32mI (6350) main: Lightness:   36.0%[0m
+[0;32mI (6350) main: ------------------------------------------[0m
+[0;32mI (8350) main: Temperature: 20.0°C[0m
+[0;32mI (8350) main: Humidity:    49.0%[0m
+[0;32mI (8350) main: Lightness:   36.0%[0m
+[0;32mI (8350) main: ------------------------------------------[0m
+[0;32mI (10350) main: Temperature: 20.0°C[0m
+[0;32mI (10350) main: Humidity:    49.0%[0m
+[0;32mI (10350) main: Lightness:   36.0%[0m
+[0;32mI (10350) main: ------------------------------------------[0m
+[0;32mI (12350) main: Temperature: 20.0°C[0m
+[0;32mI (12350) main: Humidity:    49.0%[0m
+[0;32mI (12350) main: Lightness:   37.0%[0m
+[0;32mI (12350) main: ------------------------------------------[0m
+[0;32mI (14350) main: Temperature: 20.0°C[0m
+[0;32mI (14350) main: Humidity:    49.0%[0m
+[0;32mI (14350) main: Lightness:   37.0%[0m
+[0;32mI (14350) main: ------------------------------------------[0m
+[0;32mI (16350) main: Temperature: 20.0°C[0m
+[0;32mI (16350) main: Humidity:    49.0%[0m
+[0;32mI (16350) main: Lightness:   36.0%[0m
+[0;32mI (16350) main: ------------------------------------------[0m
+[0;32mI (18350) main: Temperature: 20.0°C[0m
+[0;32mI (18350) main: Humidity:    49.0%[0m
+[0;32mI (18350) main: Lightness:   36.0%[0m
+[0;32mI (18350) main: ------------------------------------------[0m
+[0;32mI (20350) main: Temperature: 20.0°C[0m
+[0;32mI (20350) main: Humidity:    49.0%[0m
+[0;32mI (20350) main: Lightness:   36.0%[0m
+[0;32mI (20350) main: ------------------------------------------[0m
+[0;32mI (22350) main: Temperature: 20.0°C[0m
+[0;32mI (22350) main: Humidity:    49.0%[0m
+[0;32mI (22350) main: Lightness:   36.0%[0m
+[0;32mI (22350) main: ------------------------------------------[0m
+[0;32mI (24350) main: Temperature: 20.0°C[0m
+[0;32mI (24350) main: Humidity:    49.0%[0m
+[0;32mI (24350) main: Lightness:   36.0%[0m
+[0;32mI (24350) main: ------------------------------------------[0m
+[0;32mI (26350) main: Temperature: 20.0°C[0m
+[0;32mI (26350) main: Humidity:    49.0%[0m
+[0;32mI (26350) main: Lightness:   36.0%[0m
+[0;32mI (26350) main: ------------------------------------------[0m
+[0;32mI (28350) main: Temperature: 20.0°C[0m
+[0;32mI (28350) main: Humidity:    49.0%[0m
+[0;32mI (28350) main: Lightness:   36.0%[0m
+[0;32mI (28350) main: ------------------------------------------[0m
+[0;32mI (30350) main: Temperature: 20.0°C[0m
+[0;32mI (30350) main: Humidity:    49.0%[0m
+[0;32mI (30350) main: Lightness:   36.0%[0m
+[0;32mI (30350) main: ------------------------------------------[0m
+[0;32mI (32350) main: Temperature: 20.0°C[0m
+[0;32mI (32350) main: Humidity:    49.0%[0m
+[0;32mI (32350) main: Lightness:   36.0%[0m
+[0;32mI (32350) main: ------------------------------------------[0m
+[0;32mI (34350) main: Temperature: 20.0°C[0m
+[0;32mI (34350) main: Humidity:    49.0%[0m
+[0;32mI (34350) main: Lightness:   36.0%[0m
+[0;32mI (34350) main: ------------------------------------------[0m

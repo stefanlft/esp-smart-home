@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.ipp": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "string_view": "c",
+        "led_wrapper.h": "c",
+        "wifi_handler.h": "c",
+        "web_handler.h": "c"
+    }
+}

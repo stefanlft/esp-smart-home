@@ -1,0 +1,15 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d81a3: task_wdt_timeout_handling at /home/stefan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8568: task_wdt_isr at /home/stefan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083041: _xt_lowint1 at /home/stefan/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d6488: piezo_wrapper_play_song at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:154 (discriminator 1)
+0x400d6143: app_main at /home/stefan/esp/esp-smart-home/main/main.c:64
+0x400e635c: main_task at /home/stefan/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

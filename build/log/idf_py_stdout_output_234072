@@ -1,0 +1,377 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab10h ( 43792) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab38 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ab44 vaddr=3ffb0000 size=02310h (  8976) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001ce5c vaddr=40080000 size=031bch ( 12732) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168f4h ( 92404) map[0m
+[0;32mI (175) esp_image: segment 5: paddr=0003691c vaddr=400831bc size=09810h ( 38928) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  db4ef7019...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2C50 len 0002D3B0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008C9CC len 00013634 (77 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (433) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (583) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (683) PIEZO: Playing 196Hz for 100ms[0m
+[0;32mI (783) PIEZO: Playing 147Hz for 200ms[0m
+[0;32mI (983) PIEZO: Playing 988Hz for 150ms[0m
+[0;31mE (1353) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1353) DHT: Could not read data from sensor[0m
+[0;32mI (2333) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (2333) main: Temperature: 2.0°C[0m
+[0;32mI (2333) main: Humidity:    2.0%[0m
+[0;32mI (2333) main: Lightness:   30.0%[0m
+[0;32mI (2333) main: ------------------------------------------[0m
+[0;32mI (2433) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (2633) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (2933) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (4343) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (4343) main: Temperature: 19.0°C[0m
+[0;32mI (4343) main: Humidity:    46.0%[0m
+[0;32mI (4343) main: Lightness:   29.0%[0m
+[0;32mI (4343) main: ------------------------------------------[0m
+[0;32mI (4443) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (4643) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (4943) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (6353) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (6353) main: Temperature: 19.0°C[0m
+[0;32mI (6353) main: Humidity:    46.0%[0m
+[0;32mI (6353) main: Lightness:   29.0%[0m
+[0;32mI (6353) main: ------------------------------------------[0m
+[0;32mI (6453) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (6653) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (6953) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (8363) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (8363) main: Temperature: 19.0°C[0m
+[0;32mI (8363) main: Humidity:    46.0%[0m
+[0;32mI (8363) main: Lightness:   27.0%[0m
+[0;32mI (8363) main: ------------------------------------------[0m
+[0;32mI (8463) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (8663) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (8963) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (10373) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (10373) main: Temperature: 19.0°C[0m
+[0;32mI (10373) main: Humidity:    46.0%[0m
+[0;32mI (10373) main: Lightness:   26.0%[0m
+[0;32mI (10373) main: ------------------------------------------[0m
+[0;32mI (10473) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (10673) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (10973) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (12383) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (12383) main: Temperature: 19.0°C[0m
+[0;32mI (12383) main: Humidity:    46.0%[0m
+[0;32mI (12383) main: Lightness:   30.0%[0m
+[0;32mI (12383) main: ------------------------------------------[0m
+[0;32mI (12483) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (12683) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (12983) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (14393) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (14393) main: Temperature: 19.0°C[0m
+[0;32mI (14393) main: Humidity:    46.0%[0m
+[0;32mI (14393) main: Lightness:   29.0%[0m
+[0;32mI (14393) main: ------------------------------------------[0m
+[0;32mI (14493) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (14693) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (14993) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (16403) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (16403) main: Temperature: 19.0°C[0m
+[0;32mI (16403) main: Humidity:    46.0%[0m
+[0;32mI (16403) main: Lightness:   29.0%[0m
+[0;32mI (16403) main: ------------------------------------------[0m
+[0;32mI (16503) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (16703) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (17003) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (18413) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (18413) main: Temperature: 19.0°C[0m
+[0;32mI (18413) main: Humidity:    46.0%[0m
+[0;32mI (18413) main: Lightness:   29.0%[0m
+[0;32mI (18413) main: ------------------------------------------[0m
+[0;32mI (18513) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (18713) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (19013) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (20423) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (20423) main: Temperature: 19.0°C[0m
+[0;32mI (20423) main: Humidity:    46.0%[0m
+[0;32mI (20423) main: Lightness:   29.0%[0m
+[0;32mI (20423) main: ------------------------------------------[0m
+[0;32mI (20523) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (20723) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (21023) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (22433) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (22433) main: Temperature: 19.0°C[0m
+[0;32mI (22433) main: Humidity:    46.0%[0m
+[0;32mI (22433) main: Lightness:   29.0%[0m
+[0;32mI (22433) main: ------------------------------------------[0m
+[0;32mI (22533) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (22733) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (23033) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (24443) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (24443) main: Temperature: 19.0°C[0m
+[0;32mI (24443) main: Humidity:    46.0%[0m
+[0;32mI (24443) main: Lightness:   29.0%[0m
+[0;32mI (24443) main: ------------------------------------------[0m
+[0;32mI (24543) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (24743) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (25043) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (26453) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (26453) main: Temperature: 19.0°C[0m
+[0;32mI (26453) main: Humidity:    46.0%[0m
+[0;32mI (26453) main: Lightness:   29.0%[0m
+[0;32mI (26453) main: ------------------------------------------[0m
+[0;32mI (26553) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (26753) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (27053) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (28463) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (28463) main: Temperature: 19.0°C[0m
+[0;32mI (28463) main: Humidity:    46.0%[0m
+[0;32mI (28463) main: Lightness:   29.0%[0m
+[0;32mI (28463) main: ------------------------------------------[0m
+[0;32mI (28563) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (28763) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (29063) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (30473) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (30473) main: Temperature: 19.0°C[0m
+[0;32mI (30473) main: Humidity:    46.0%[0m
+[0;32mI (30473) main: Lightness:   29.0%[0m
+[0;32mI (30473) main: ------------------------------------------[0m
+[0;32mI (30573) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (30773) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (31073) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (32483) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (32483) main: Temperature: 19.0°C[0m
+[0;32mI (32483) main: Humidity:    46.0%[0m
+[0;32mI (32483) main: Lightness:   29.0%[0m
+[0;32mI (32483) main: ------------------------------------------[0m
+[0;32mI (32583) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (32783) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (33083) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (34493) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (34493) main: Temperature: 19.0°C[0m
+[0;32mI (34493) main: Humidity:    45.0%[0m
+[0;32mI (34493) main: Lightness:   29.0%[0m
+[0;32mI (34493) main: ------------------------------------------[0m
+[0;32mI (34593) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (34793) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (35093) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (36503) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (36503) main: Temperature: 19.0°C[0m
+[0;32mI (36503) main: Humidity:    45.0%[0m
+[0;32mI (36503) main: Lightness:   29.0%[0m
+[0;32mI (36503) main: ------------------------------------------[0m
+[0;32mI (36603) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (36803) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (37103) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (38513) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (38513) main: Temperature: 19.0°C[0m
+[0;32mI (38513) main: Humidity:    45.0%[0m
+[0;32mI (38513) main: Lightness:   29.0%[0m
+[0;32mI (38513) main: ------------------------------------------[0m
+[0;32mI (38613) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (38813) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (39113) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (40523) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (40523) main: Temperature: 19.0°C[0m
+[0;32mI (40523) main: Humidity:    45.0%[0m
+[0;32mI (40523) main: Lightness:   29.0%[0m
+[0;32mI (40523) main: ------------------------------------------[0m
+[0;32mI (40623) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (40823) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (41123) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (42533) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (42533) main: Temperature: 19.0°C[0m
+[0;32mI (42533) main: Humidity:    45.0%[0m
+[0;32mI (42533) main: Lightness:   29.0%[0m
+[0;32mI (42533) main: ------------------------------------------[0m
+[0;32mI (42633) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (42833) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (43133) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (44543) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (44543) main: Temperature: 19.0°C[0m
+[0;32mI (44543) main: Humidity:    45.0%[0m
+[0;32mI (44543) main: Lightness:   29.0%[0m
+[0;32mI (44543) main: ------------------------------------------[0m
+[0;32mI (44643) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (44843) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (45143) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (46553) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (46553) main: Temperature: 19.0°C[0m
+[0;32mI (46553) main: Humidity:    45.0%[0m
+[0;32mI (46553) main: Lightness:   29.0%[0m
+[0;32mI (46553) main: ------------------------------------------[0m
+[0;32mI (46653) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (46853) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (47153) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (48563) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (48563) main: Temperature: 19.0°C[0m
+[0;32mI (48563) main: Humidity:    45.0%[0m
+[0;32mI (48563) main: Lightness:   29.0%[0m
+[0;32mI (48563) main: ------------------------------------------[0m
+[0;32mI (48663) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (48863) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (49163) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (50573) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (50573) main: Temperature: 19.0°C[0m
+[0;32mI (50573) main: Humidity:    45.0%[0m
+[0;32mI (50573) main: Lightness:   29.0%[0m
+[0;32mI (50573) main: ------------------------------------------[0m
+[0;32mI (50673) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (50873) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (51173) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (52583) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (52583) main: Temperature: 19.0°C[0m
+[0;32mI (52583) main: Humidity:    45.0%[0m
+[0;32mI (52583) main: Lightness:   29.0%[0m
+[0;32mI (52583) main: ------------------------------------------[0m
+[0;32mI (52683) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (52883) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (53183) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (54593) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (54593) main: Temperature: 19.0°C[0m
+[0;32mI (54593) main: Humidity:    45.0%[0m
+[0;32mI (54593) main: Lightness:   29.0%[0m
+[0;32mI (54593) main: ------------------------------------------[0m
+[0;32mI (54693) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (54893) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (55193) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (56603) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (56603) main: Temperature: 19.0°C[0m
+[0;32mI (56603) main: Humidity:    45.0%[0m
+[0;32mI (56603) main: Lightness:   29.0%[0m
+[0;32mI (56603) main: ------------------------------------------[0m
+[0;32mI (56703) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (56903) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (57203) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (58613) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (58613) main: Temperature: 19.0°C[0m
+[0;32mI (58613) main: Humidity:    45.0%[0m
+[0;32mI (58613) main: Lightness:   29.0%[0m
+[0;32mI (58613) main: ------------------------------------------[0m
+[0;32mI (58713) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (58913) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (59213) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (60623) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (60623) main: Temperature: 19.0°C[0m
+[0;32mI (60623) main: Humidity:    45.0%[0m
+[0;32mI (60623) main: Lightness:   29.0%[0m
+[0;32mI (60623) main: ------------------------------------------[0m
+[0;32mI (60723) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (60923) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (61223) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (62633) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (62633) main: Temperature: 19.0°C[0m
+[0;32mI (62633) main: Humidity:    45.0%[0m
+[0;32mI (62633) main: Lightness:   29.0%[0m
+[0;32mI (62633) main: ------------------------------------------[0m
+[0;32mI (62733) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (62933) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (63233) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (64643) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (64643) main: Temperature: 19.0°C[0m
+[0;32mI (64643) main: Humidity:    45.0%[0m
+[0;32mI (64643) main: Lightness:   29.0%[0m
+[0;32mI (64643) main: ------------------------------------------[0m
+[0;32mI (64743) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (64943) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (65243) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (66653) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (66653) main: Temperature: 19.0°C[0m
+[0;32mI (66653) main: Humidity:    45.0%[0m
+[0;32mI (66653) main: Lightness:   29.0%[0m
+[0;32mI (66653) main: ------------------------------------------[0m
+[0;32mI (66753) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (66953) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (67253) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (68663) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (68663) main: Temperature: 19.0°C[0m
+[0;32mI (68663) main: Humidity:    45.0%[0m
+[0;32mI (68663) main: Lightness:   29.0%[0m
+[0;32mI (68663) main: ------------------------------------------[0m
+[0;32mI (68763) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (68963) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (69263) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (70673) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (70673) main: Temperature: 19.0°C[0m
+[0;32mI (70673) main: Humidity:    45.0%[0m
+[0;32mI (70673) main: Lightness:   29.0%[0m
+[0;32mI (70673) main: ------------------------------------------[0m
+[0;32mI (70773) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (70973) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (71273) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (72683) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (72683) main: Temperature: 19.0°C[0m
+[0;32mI (72683) main: Humidity:    45.0%[0m
+[0;32mI (72683) main: Lightness:   29.0%[0m
+[0;32mI (72683) main: ------------------------------------------[0m
+[0;32mI (72783) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (72983) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (73283) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (74693) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (74693) main: Temperature: 19.0°C[0m
+[0;32mI (74693) main: Humidity:    45.0%[0m
+[0;32mI (74693) main: Lightness:   29.0%[0m
+[0;32mI (74693) main: ------------------------------------------[0m
+[0;32mI (74793) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (74993) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (75293) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (76703) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (76703) main: Temperature: 19.0°C[0m
+[0;32mI (76703) main: Humidity:    45.0%[0m
+[0;32mI (76703) main: Lightness:   29.0%[0m
+[0;32mI (76703) main: ------------------------------------------[0m
+[0;32mI (76803) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (77003) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (77303) PIEZO: Playing 3951Hz for 200ms[0m
+[0;32mI (78713) PIEZO: Playing 0Hz for 100ms[0m
+[0;32mI (78713) main: Temperature: 19.0°C[0m
+[0;32mI (78713) main: Humidity:    45.0%[0m
+[0;32mI (78713) main: Lightness:   29.0%[0m
+[0;32mI (78713) main: ------------------------------------------[0m
+[0;32mI (78813) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (79013) PIEZO: Playing 0Hz for 300ms[0m
+[0;32mI (79313) PIEZO: Playing 3951Hz for 200ms[0m

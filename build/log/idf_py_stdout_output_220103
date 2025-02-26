@@ -1,0 +1,400 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab10h ( 43792) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab38 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ab44 vaddr=3ffb0000 size=02300h (  8960) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001ce4c vaddr=40080000 size=031cch ( 12748) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168f0h ( 92400) map[0m
+[0;32mI (175) esp_image: segment 5: paddr=00036918 vaddr=400831cc size=09800h ( 38912) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  b625ec43f...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008C9CC len 00013634 (77 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (333) main: Temperature: 2.0°C[0m
+[0;32mI (333) main: Humidity:    2.0%[0m
+[0;32mI (343) main: Lightness:   2.0%[0m
+[0;32mI (343) main: ------------------------------------------[0m
+[0;32mI (343) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (483) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (553) PIEZO: Playing 0Hz for 400ms[0m
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4000d099  PS      : 0x00060830  A0      : 0x800d9214  A1      : 0x3ffba750  
+A2      : 0xc4b40000  A3      : 0x00000004  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000400  A7      : 0x40100400  A8      : 0x00000001  A9      : 0x00000004  
+A10     : 0x00000000  A11     : 0xc4b40000  A12     : 0xc00fffff  A13     : 0x3ffbb4d0  
+A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x00000016  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000d096:0x3ffba750 0x400d9211:0x3ffba770 0x400d9bc9:0x3ffba7b0 0x400d61ee:0x3ffba7f0 0x4008611d:0x3ffba850
+
+
+
+
+ELF file SHA256: b625ec43f
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab10h ( 43792) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab38 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ab44 vaddr=3ffb0000 size=02300h (  8960) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001ce4c vaddr=40080000 size=031cch ( 12748) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168f0h ( 92400) map[0m
+[0;32mI (175) esp_image: segment 5: paddr=00036918 vaddr=400831cc size=09800h ( 38912) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  b625ec43f...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008C9CC len 00013634 (77 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (334) main: Temperature: 2.0°C[0m
+[0;32mI (334) main: Humidity:    2.0%[0m
+[0;32mI (344) main: Lightness:   2.0%[0m
+[0;32mI (344) main: ------------------------------------------[0m
+[0;32mI (344) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (484) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (554) PIEZO: Playing 0Hz for 400ms[0m
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4000d099  PS      : 0x00060830  A0      : 0x800d9214  A1      : 0x3ffba750  
+A2      : 0xc4b40000  A3      : 0x00000004  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000400  A7      : 0x40100400  A8      : 0x00000001  A9      : 0x00000004  
+A10     : 0x00000000  A11     : 0xc4b40000  A12     : 0xc00fffff  A13     : 0x3ffbb4d0  
+A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x00000016  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000d096:0x3ffba750 0x400d9211:0x3ffba770 0x400d9bc9:0x3ffba7b0 0x400d61ee:0x3ffba7f0 0x4008611d:0x3ffba850
+
+
+
+
+ELF file SHA256: b625ec43f
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab10h ( 43792) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab38 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ab44 vaddr=3ffb0000 size=02300h (  8960) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001ce4c vaddr=40080000 size=031cch ( 12748) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168f0h ( 92400) map[0m
+[0;32mI (175) esp_image: segment 5: paddr=00036918 vaddr=400831cc size=09800h ( 38912) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (237) cpu_start: ELF file SHA256:  b625ec43f...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008C9CC len 00013634 (77 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (334) main: Temperature: 2.0°C[0m
+[0;32mI (334) main: Humidity:    2.0%[0m
+[0;32mI (344) main: Lightness:   2.0%[0m
+[0;32mI (344) main: ------------------------------------------[0m
+[0;32mI (344) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (484) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (554) PIEZO: Playing 0Hz for 400ms[0m
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4000d099  PS      : 0x00060830  A0      : 0x800d9214  A1      : 0x3ffba750  
+A2      : 0xc4b40000  A3      : 0x00000004  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000400  A7      : 0x40100400  A8      : 0x00000001  A9      : 0x00000004  
+A10     : 0x00000000  A11     : 0xc4b40000  A12     : 0xc00fffff  A13     : 0x3ffbb4d0  
+A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x00000016  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000d096:0x3ffba750 0x400d9211:0x3ffba770 0x400d9bc9:0x3ffba7b0 0x400d61ee:0x3ffba7f0 0x4008611d:0x3ffba850
+
+
+
+
+ELF file SHA256: b625ec43f
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab10h ( 43792) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab38 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ab44 vaddr=3ffb0000 size=02300h (  8960) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001ce4c vaddr=40080000 size=031cch ( 12748) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168f0h ( 92400) map[0m
+[0;32mI (175) esp_image: segment 5: paddr=00036918 vaddr=400831cc size=09800h ( 38912) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  b625ec43f...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008C9CC len 00013634 (77 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (334) main: Temperature: 2.0°C[0m
+[0;32mI (334) main: Humidity:    2.0%[0m
+[0;32mI (344) main: Lightness:   2.0%[0m
+[0;32mI (344) main: ------------------------------------------[0m
+[0;32mI (344) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (484) PIEZO: Playing 165Hz for 100ms[0m
+[0;32mI (554) PIEZO: Playing 0Hz for 400ms[0m
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4000d099  PS      : 0x00060a30  A0      : 0x800d9214  A1      : 0x3ffba750  
+A2      : 0xc4b40000  A3      : 0x00000004  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000400  A7      : 0x40100400  A8      : 0x00000001  A9      : 0x00000004  
+A10     : 0x00000000  A11     : 0xc4b40000  A12     : 0xc00fffff  A13     : 0x3ffbb4d0  
+A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x00000016  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000d096:0x3ffba750 0x400d9211:0x3ffba770 0x400d9bc9:0x3ffba7b0 0x400d61ee:0x3ffba7f0 0x4008611d:0x3ffba850
+
+
+
+
+ELF file SHA256: b625ec43f
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab10h ( 43792) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab38 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ab44 vaddr=3ffb0000 size=02300h (  8960) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001ce4c vaddr=40080000 size=031cch ( 12748) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=168f0h ( 92400) map[0m
+[0;32mI (175) esp_image: segment 5: paddr=00036918 vaddr=400831cc size=09800h ( 38912) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (237) cpu_start: ELF file SHA256:  b625ec43f...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008C9CC len 00013634 (77 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) PIEZO: Playing 131Hz for 150ms[0m
+[0;32mI (334) main: Temperature: 2.0°C[0m
+[0;32mI (334) main: Humidity:    2.0%[0m
+[0;32mI (344) main: Lightness:   2.0%[0m
+[0;32mI (344) main: ------------------------------------------[0m
+[0;32mI (344) PIEZO: Playing 123Hz for 200ms[0m
+[0;32mI (484) PIEZO: Playing 165Hz for 100ms[0m

@@ -1,0 +1,35 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/stefan/esp/esp-smart-home/build/bootloader/esp-idf/esptool_py && /home/stefan/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/stefan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/stefan/esp/esp-smart-home/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Building C object esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj
+/home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c: In function 'piezo_wrapper_on':
+/home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:68:118: warning: passing argument 6 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |         BaseType_t xReturned = xTaskCreate(piezo_task, "piezo_task", configMINIMAL_STACK_SIZE * 2, piezo_wrapper, 5, &piezo_wrapper->task_handle_);
+      |                                                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                                      |
+      |                                                                                                                      struct tskTaskControlBlock ***
+In file included from /home/stefan/esp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from /home/stefan/esp/esp-smart-home/components/smart-home-alpha/includes/piezo_wrapper.h:5,
+                 from /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:1:
+/home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:376:50: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct tskTaskControlBlock ***'
+  376 |                             TaskHandle_t * const pxCreatedTask ) PRIVILEGED_FUNCTION
+      |                             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/11] Linking C static library esp-idf/smart-home-alpha/libsmart-home-alpha.a
+[6/11] Completed 'bootloader'
+[7/11] Linking C static library esp-idf/main/libmain.a
+[8/11] Generating ld/sections.ld
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/stefan/esp/esp-idf/Kconfig:78
+    /home/stefan/esp/esp-idf/Kconfig:148
+[9/11] Linking CXX executable esp-smart-home.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/stefan/esp/esp-smart-home/build/esp-smart-home.bin
+[11/11] cd /home/stefan/esp/esp-smart-home/build/esp-idf/esptool_py && /home/stefan/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/stefan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/stefan/esp/esp-smart-home/build/partition_table/partition-table.bin /home/stefan/esp/esp-smart-home/build/esp-smart-home.bin
+esp-smart-home.bin binary size 0x304d0 bytes. Smallest app partition is 0x100000 bytes. 0xcfb30 bytes (81%) free.

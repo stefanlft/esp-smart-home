@@ -1,0 +1,259 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15556
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3-dev-1724-ga5b261f699 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Feb 21 2025 15:06:39[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25530h (152880) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00035558 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00035564 vaddr=3ffb0000 size=03d18h ( 15640) load[0m
+[0;32mI (169) esp_image: segment 3: paddr=00039284 vaddr=40080000 size=06d94h ( 28052) load[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=8ce6ch (577132) map[0m
+[0;32mI (381) esp_image: segment 5: paddr=000cce94 vaddr=40086d94 size=0fcc8h ( 64712) load[0m
+[0;32mI (418) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (418) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     esp-smart-home[0m
+[0;32mI (447) cpu_start: App version:      1[0m
+[0;32mI (451) cpu_start: Compile time:     Feb 21 2025 15:52:31[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  b4f5ef495...[0m
+[0;32mI (463) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699[0m
+[0;32mI (469) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (474) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (479) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (484) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (491) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFB7EC8 len 00028138 (160 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (509) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (516) heap_init: At 40096A5C len 000095A4 (37 KiB): IRAM[0m
+[0;32mI (523) spi_flash: detected chip: generic[0m
+[0;32mI (526) spi_flash: flash io: dio[0m
+[0;33mW (530) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (544) main_task: Started on CPU0[0m
+[0;32mI (554) main_task: Calling app_main()[0m
+[0;32mI (594) wifi:wifi driver task: 3ffc4bc0, prio:23, stack:6656, core=0[0m
+[0;32mI (604) wifi:wifi firmware version: 3865d68[0m
+[0;32mI (604) wifi:wifi certification version: v7.0[0m
+[0;32mI (604) wifi:config NVS flash: enabled[0m
+[0;32mI (604) wifi:config nano formating: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (614) wifi:Init management short buffer num: 32[0m
+[0;32mI (624) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (624) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (634) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (634) wifi_init: accept mbox: 6[0m
+[0;32mI (644) wifi_init: tcpip mbox: 32[0m
+[0;32mI (644) wifi_init: udp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp tx win: 5760[0m
+[0;32mI (654) wifi_init: tcp rx win: 5760[0m
+[0;32mI (664) wifi_init: tcp mss: 1440[0m
+[0;32mI (664) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (674) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (684) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (764) wifi:mode : sta (30:c6:f7:04:86:20) + softAP (30:c6:f7:04:86:21)[0m
+[0;32mI (764) wifi:enable tsf[0m
+[0;32mI (764) wifi:Total power save buffer number: 16[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (774) WIFI_HANDLER: Wi-Fi AP Mode Initialized[0m
+[0;32mI (774) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (794) WEB_HANDLER: STARTED HTTP[0m
+[0;31mE (1574) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1574) DHT: Could not read data from sensor[0m
+[0;32mI (2594) main: Temperature: 2.0°C[0m
+[0;32mI (2594) main: Humidity:    -0.0%[0m
+[0;32mI (2594) main: Lightness:   42.0%[0m
+[0;32mI (2594) main: ------------------------------------------[0m
+[0;32mI (3554) PIR: Motion detected![0m
+[0;32mI (3554) main: Movement started![0m
+[0;32mI (4594) main: Temperature: 24.0°C[0m
+[0;32mI (4594) main: Humidity:    41.0%[0m
+[0;32mI (4594) main: Lightness:   41.0%[0m
+[0;32mI (4594) main: ------------------------------------------[0m
+[0;32mI (6594) main: Temperature: 24.0°C[0m
+[0;32mI (6594) main: Humidity:    41.0%[0m
+[0;32mI (6594) main: Lightness:   41.0%[0m
+[0;32mI (6594) main: ------------------------------------------[0m
+[0;32mI (6654) PIR: Motion stopped![0m
+[0;32mI (7944) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1[0m
+[0;32mI (7944) wifi:station: 3a:5a:52:ba:8a:59 join, AID=1, bgn, 40U[0m
+[0;32mI (7984) WIFI_HANDLER: Client connected! MAC: 3A:5A:52:BA:8A:59[0m
+[0;32mI (8224) wifi:<ba-add>idx:2 (ifx:1, 3a:5a:52:ba:8a:59), tid:7, ssn:1, winSize:64[0m
+[0;32mI (8224) wifi:<ba-add>idx:3 (ifx:1, 3a:5a:52:ba:8a:59), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8254) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (8584) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (8584) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (8594) main: Temperature: 24.0°C[0m
+[0;32mI (8594) main: Humidity:    41.0%[0m
+[0;32mI (8594) main: Lightness:   41.0%[0m
+[0;32mI (8604) main: ------------------------------------------[0m
+[0;31mE (9654) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (9654) DHT: Could not read data from sensor[0m
+[0;32mI (10604) main: Temperature: 24.0°C[0m
+[0;32mI (10604) main: Humidity:    41.0%[0m
+[0;32mI (10604) main: Lightness:   41.0%[0m
+[0;32mI (10604) main: ------------------------------------------[0m
+[0;32mI (12604) main: Temperature: 24.0°C[0m
+[0;32mI (12604) main: Humidity:    41.0%[0m
+[0;32mI (12604) main: Lightness:   41.0%[0m
+[0;32mI (12604) main: ------------------------------------------[0m
+[0;32mI (14604) main: Temperature: 24.0°C[0m
+[0;32mI (14604) main: Humidity:    41.0%[0m
+[0;32mI (14604) main: Lightness:   41.0%[0m
+[0;32mI (14604) main: ------------------------------------------[0m
+[0;32mI (16604) main: Temperature: 24.0°C[0m
+[0;32mI (16604) main: Humidity:    41.0%[0m
+[0;32mI (16604) main: Lightness:   41.0%[0m
+[0;32mI (16604) main: ------------------------------------------[0m
+[0;32mI (18604) main: Temperature: 24.0°C[0m
+[0;32mI (18604) main: Humidity:    41.0%[0m
+[0;32mI (18604) main: Lightness:   42.0%[0m
+[0;32mI (18604) main: ------------------------------------------[0m
+[0;32mI (18654) PIR: Motion detected![0m
+[0;32mI (18654) main: Movement started![0m
+[0;32mI (19544) WEB_HANDLER: Requested /ldr![0m
+[0;32mI (19554) WEB_HANDLER: Requested /events![0m
+[0;31mE (19754) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (19754) DHT: Could not read data from sensor[0m
+[0;32mI (20604) main: Temperature: 24.0°C[0m
+[0;32mI (20604) main: Humidity:    41.0%[0m
+[0;32mI (20604) main: Lightness:   40.0%[0m
+[0;32mI (20604) main: ------------------------------------------[0m
+[0;32mI (21754) PIR: Motion stopped![0m
+[0;32mI (22604) main: Temperature: 24.0°C[0m
+[0;32mI (22604) main: Humidity:    40.0%[0m
+[0;32mI (22604) main: Lightness:   41.0%[0m
+[0;32mI (22604) main: ------------------------------------------[0m
+[0;32mI (24604) main: Temperature: 24.0°C[0m
+[0;32mI (24604) main: Humidity:    40.0%[0m
+[0;32mI (24604) main: Lightness:   41.0%[0m
+[0;32mI (24604) main: ------------------------------------------[0m
+[0;32mI (24754) PIR: Motion detected![0m
+[0;32mI (24754) main: Movement started![0m
+[0;33mW (25564) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (26564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (26604) main: Temperature: 24.0°C[0m
+[0;32mI (26604) main: Humidity:    40.0%[0m
+[0;32mI (26604) main: Lightness:   41.0%[0m
+[0;32mI (26604) main: ------------------------------------------[0m
+[0;33mW (27564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (27854) PIR: Motion stopped![0m
+[0;33mW (28564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (28604) main: Temperature: 24.0°C[0m
+[0;32mI (28604) main: Humidity:    40.0%[0m
+[0;32mI (28604) main: Lightness:   40.0%[0m
+[0;32mI (28604) main: ------------------------------------------[0m
+[0;33mW (29564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (30564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (30604) main: Temperature: 24.0°C[0m
+[0;32mI (30604) main: Humidity:    40.0%[0m
+[0;32mI (30604) main: Lightness:   41.0%[0m
+[0;32mI (30604) main: ------------------------------------------[0m
+[0;32mI (30854) PIR: Motion detected![0m
+[0;32mI (30854) main: Movement started![0m
+[0;33mW (30854) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (31564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (32564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (32604) main: Temperature: 24.0°C[0m
+[0;32mI (32604) main: Humidity:    40.0%[0m
+[0;32mI (32604) main: Lightness:   41.0%[0m
+[0;32mI (32604) main: ------------------------------------------[0m
+[0;33mW (33564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (34564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (34604) main: Temperature: 24.0°C[0m
+[0;32mI (34604) main: Humidity:    40.0%[0m
+[0;32mI (34604) main: Lightness:   40.0%[0m
+[0;32mI (34604) main: ------------------------------------------[0m
+[0;33mW (35564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (36564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (36604) main: Temperature: 24.0°C[0m
+[0;32mI (36604) main: Humidity:    40.0%[0m
+[0;32mI (36604) main: Lightness:   41.0%[0m
+[0;32mI (36604) main: ------------------------------------------[0m
+[0;32mI (36954) PIR: Motion stopped![0m
+[0;33mW (37564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (38564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (38604) main: Temperature: 24.0°C[0m
+[0;32mI (38604) main: Humidity:    40.0%[0m
+[0;32mI (38604) main: Lightness:   5.0%[0m
+[0;32mI (38604) main: ------------------------------------------[0m
+[0;33mW (39564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (40564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (40604) main: Temperature: 24.0°C[0m
+[0;32mI (40604) main: Humidity:    40.0%[0m
+[0;32mI (40604) main: Lightness:   41.0%[0m
+[0;32mI (40604) main: ------------------------------------------[0m
+[0;33mW (41564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (42564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (42604) main: Temperature: 24.0°C[0m
+[0;32mI (42604) main: Humidity:    40.0%[0m
+[0;32mI (42604) main: Lightness:   41.0%[0m
+[0;32mI (42604) main: ------------------------------------------[0m
+[0;33mW (43564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (44564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (44604) main: Temperature: 24.0°C[0m
+[0;32mI (44604) main: Humidity:    40.0%[0m
+[0;32mI (44604) main: Lightness:   41.0%[0m
+[0;32mI (44604) main: ------------------------------------------[0m
+[0;33mW (45564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (45954) PIR: Motion detected![0m
+[0;32mI (45954) main: Movement started![0m
+[0;33mW (45954) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (46564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (46604) main: Temperature: 24.0°C[0m
+[0;32mI (46604) main: Humidity:    40.0%[0m
+[0;32mI (46604) main: Lightness:   41.0%[0m
+[0;32mI (46604) main: ------------------------------------------[0m
+[0;33mW (47564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (48564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (48604) main: Temperature: 24.0°C[0m
+[0;32mI (48604) main: Humidity:    40.0%[0m
+[0;32mI (48604) main: Lightness:   41.0%[0m
+[0;32mI (48604) main: ------------------------------------------[0m
+[0;32mI (49054) PIR: Motion stopped![0m
+[0;33mW (49564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (50564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (50604) main: Temperature: 24.0°C[0m
+[0;32mI (50604) main: Humidity:    40.0%[0m
+[0;32mI (50604) main: Lightness:   42.0%[0m
+[0;32mI (50604) main: ------------------------------------------[0m
+[0;33mW (51564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (52564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (52604) main: Temperature: 24.0°C[0m
+[0;32mI (52604) main: Humidity:    40.0%[0m
+[0;32mI (52604) main: Lightness:   46.0%[0m
+[0;32mI (52604) main: ------------------------------------------[0m
+[0;33mW (53564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;33mW (54564) httpd_txrx: httpd_sock_err: error in send : 128[0m
+[0;32mI (54604) main: Temperature: 24.0°C[0m
+[0;32mI (54604) main: Humidity:    41.0%[0m
+[0;32mI (54604) main: Lightness:   46.0%[0m
+[0;32mI (54604) main: ------------------------------------------[0m

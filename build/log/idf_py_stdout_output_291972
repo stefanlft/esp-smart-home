@@ -1,0 +1,20 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/stefan/esp/esp-smart-home/build/bootloader/esp-idf/esptool_py && /home/stefan/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/stefan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/stefan/esp/esp-smart-home/build/bootloader/bootloader.bin
+Bootloader binary size 0x6870 bytes. 0x790 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Building C object esp-idf/smart-home-alpha/CMakeFiles/__idf_smart-home-alpha.dir/src/piezo_wrapper.c.obj
+[4/9] Linking C static library esp-idf/smart-home-alpha/libsmart-home-alpha.a
+[5/9] Completed 'bootloader'
+[6/9] Generating ld/sections.ld
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/stefan/esp/esp-idf/Kconfig:148
+    /home/stefan/esp/esp-idf/Kconfig:78
+[7/9] Linking CXX executable esp-smart-home.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/stefan/esp/esp-smart-home/build/esp-smart-home.bin
+[9/9] cd /home/stefan/esp/esp-smart-home/build/esp-idf/esptool_py && /home/stefan/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/stefan/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/stefan/esp/esp-smart-home/build/partition_table/partition-table.bin /home/stefan/esp/esp-smart-home/build/esp-smart-home.bin
+esp-smart-home.bin binary size 0x30340 bytes. Smallest app partition is 0x100000 bytes. 0xcfcc0 bytes (81%) free.

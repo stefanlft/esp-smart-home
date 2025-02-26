@@ -1,0 +1,47 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6428: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:132
+[0m
+[0;33m--- 0x400d6425: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:129
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6428: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:132
+[0m
+[0;33m--- 0x400d6425: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:129
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6428: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:132
+[0m
+[0;33m--- 0x400d6425: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:129
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6428: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:132
+[0m
+[0;33m--- 0x400d6425: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:129
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6428: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:132
+[0m
+[0;33m--- 0x400d6425: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:129
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6428: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:132
+[0m
+[0;33m--- 0x400d6425: piezo_play_song_task at /home/stefan/esp/esp-smart-home/components/smart-home-alpha/src/piezo_wrapper.c:129
+0x4008611d: vPortTaskWrapper at /home/stefan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m
