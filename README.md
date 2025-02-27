@@ -1,1 +1,1 @@
-Used ((ESP IDF LIB)[https://github.com/UncleRus/esp-idf-lib.git])
+Used [ESP IDF LIB](https://github.com/UncleRus/esp-idf-lib.git)
