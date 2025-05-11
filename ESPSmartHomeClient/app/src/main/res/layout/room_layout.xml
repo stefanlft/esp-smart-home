@@ -1,0 +1,59 @@
+<!-- res/layout/room_template.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/room_background"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp" >
+
+    <TextView
+        android:id="@+id/room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Name"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/lightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lightness"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/motion_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion Status"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/active_nodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active Nodes"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+</LinearLayout>

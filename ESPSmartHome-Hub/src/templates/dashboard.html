@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ESP Smart Home Dashboard</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #e0e0e0;
+      --accent-color: #4CAF50;
+      --shadow-color: rgba(0, 0, 0, 0.5);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: var(--accent-color);
+      font-size: 2.5rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px var(--shadow-color);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--text-color);
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #ccc;
+    }
+
+    .status {
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ESP Smart Home Dashboard</h1>
+
+  <div class="container" id="room-cards">
+    <!-- Cards will be inserted here -->
+  </div>
+
+  <script>
+    async function fetchRoomData() {
+        try {
+          const response = await fetch('/json');
+          const data = await response.json();
+          const rooms = data.rooms;
+          const container = document.getElementById('room-cards');
+          container.innerHTML = ''; // Clear previous cards
+    
+          for (const [roomName, roomData] of Object.entries(rooms)) {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            card.innerHTML = `
+              <h3>${roomName}</h3>
+              <p>Temperature: ${roomData.temperature}</p>
+              <p>Humidity: ${roomData.humidity}</p>
+              <p>Motion: <span class="status">${roomData.motion ? 'Detected' : 'Not Detected'}</span></p>
+              <p>Lightness: ${roomData.lightness}</p>
+              <p>Active Nodes: ${roomData.nodes.join(', ')}</p>
+            `;
+            container.appendChild(card);
+          }
+          console.log("Retreived new data!");
+        } catch (error) {
+          console.error('Failed to fetch data from /json:', error);
+          container.innerHTML = '<h1>Failed to receive data</h1>';
+        }
+    }
+
+    window.onload = () => {
+        fetchRoomData();
+        // Refresh every 10 seconds
+        setInterval(fetchRoomData, 2000);
+      };
+  </script>
+
+</body>
+</html>
