@@ -1,0 +1,12 @@
+<!-- res/drawable/border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:angle="315"
+        android:startColor="#FE5254"
+        android:endColor="#FE7B7D"/>
+    <stroke
+        android:color="#471769"
+        android:width="2dp"/>
+    <corners android:radius="8dp"/>
+</shape>
